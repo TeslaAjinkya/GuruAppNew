@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "576795723071",
+    "firebase_url": "https://guruapp-9fd93.firebaseio.com",
+    "project_id": "guruapp-9fd93",
+    "storage_bucket": "guruapp-9fd93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576795723071:android:5deba5712de03e98f6bf8a",
+        "android_client_info": {
+          "package_name": "com.guruapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576795723071-5no59a7211jvorgd3sujjkf05skcagsl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.guruapp",
+            "certificate_hash": "d9db67a1b0efe5b05eedbe9d7fe5e95db77bbbba"
+          }
+        },
+        {
+          "client_id": "576795723071-46tu64ouqibmm2sh0i0cvh1mhtrfau4m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8XGz8Mx8JwvLIoRei41fX_7kh4Zuueog"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576795723071-g5t9k6fg9kmeij6aeka03735nnltt8vr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "576795723071-kd0sv5df98fud6rg9f8btm15dnd5rig5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.GuruApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/966270339/@react-native-community_cameraroll.iml" filepath="$PROJECT_DIR$/.idea/modules/966270339/@react-native-community_cameraroll.iml" group="GuruApp/@react-native-community_cameraroll" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GuruApp.iml" filepath="$PROJECT_DIR$/.idea/modules/GuruApp.iml" group="GuruApp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="GuruApp/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-863148311/react-native-community_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/-863148311/react-native-community_async-storage.iml" group="GuruApp/react-native-community_async-storage" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/966270339/react-native-community_cameraroll.iml" filepath="$PROJECT_DIR$/.idea/modules/966270339/react-native-community_cameraroll.iml" group="GuruApp/react-native-community_cameraroll" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-473632598/react-native-community_datetimepicker.iml" filepath="$PROJECT_DIR$/.idea/modules/-473632598/react-native-community_datetimepicker.iml" group="GuruApp/react-native-community_datetimepicker" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1901499354/react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/-1901499354/react-native-community_masked-view.iml" group="GuruApp/react-native-community_masked-view" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-603741455/react-native-community_voice.iml" filepath="$PROJECT_DIR$/.idea/modules/-603741455/react-native-community_voice.iml" group="GuruApp/react-native-community_voice" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1908889705/react-native-fbsdk.iml" filepath="$PROJECT_DIR$/.idea/modules/1908889705/react-native-fbsdk.iml" group="GuruApp/react-native-fbsdk" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-471132303/react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/-471132303/react-native-gesture-handler.iml" group="GuruApp/react-native-gesture-handler" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1858337057/react-native-google-signin.iml" filepath="$PROJECT_DIR$/.idea/modules/1858337057/react-native-google-signin.iml" group="GuruApp/react-native-google-signin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/128815076/react-native-image-crop-picker.iml" filepath="$PROJECT_DIR$/.idea/modules/128815076/react-native-image-crop-picker.iml" group="GuruApp/react-native-image-crop-picker" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1929576757/react-native-image-picker.iml" filepath="$PROJECT_DIR$/.idea/modules/1929576757/react-native-image-picker.iml" group="GuruApp/react-native-image-picker" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1154160874/react-native-orientation-locker.iml" filepath="$PROJECT_DIR$/.idea/modules/1154160874/react-native-orientation-locker.iml" group="GuruApp/react-native-orientation-locker" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/210953227/react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/210953227/react-native-reanimated.iml" group="GuruApp/react-native-reanimated" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1135208550/react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/-1135208550/react-native-safe-area-context.iml" group="GuruApp/react-native-safe-area-context" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2139312178/react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/2139312178/react-native-screens.iml" group="GuruApp/react-native-screens" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/653103434/react-native-share.iml" filepath="$PROJECT_DIR$/.idea/modules/653103434/react-native-share.iml" group="GuruApp/react-native-share" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/223572367/react-native-svg.iml" filepath="$PROJECT_DIR$/.idea/modules/223572367/react-native-svg.iml" group="GuruApp/react-native-svg" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-740123131/react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/-740123131/react-native-vector-icons.iml" group="GuruApp/react-native-vector-icons" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1558533334/react-native-video.iml" filepath="$PROJECT_DIR$/.idea/modules/1558533334/react-native-video.iml" group="GuruApp/react-native-video" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1398254756/react-native-webview.iml" filepath="$PROJECT_DIR$/.idea/modules/1398254756/react-native-webview.iml" group="GuruApp/react-native-webview" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1641479986/rn-fetch-blob.iml" filepath="$PROJECT_DIR$/.idea/modules/-1641479986/rn-fetch-blob.iml" group="GuruApp/rn-fetch-blob" />
+    </modules>
+  </component>
+</project>

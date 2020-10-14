@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>576795723071-kd0sv5df98fud6rg9f8btm15dnd5rig5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.576795723071-kd0sv5df98fud6rg9f8btm15dnd5rig5</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>576795723071-47rd8ldf5lnlg36qnjh0eogdljlk1uck.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBdmDJCXfKvr0Nx2eb_rXGHYjQ3xVqg6CQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>576795723071</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.example.GuruApp</string>
+	<key>PROJECT_ID</key>
+	<string>guruapp-9fd93</string>
+	<key>STORAGE_BUCKET</key>
+	<string>guruapp-9fd93.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:576795723071:ios:ecdfe22ab6e3ea64f6bf8a</string>
+	<key>DATABASE_URL</key>
+	<string>https://guruapp-9fd93.firebaseio.com</string>
+</dict>
+</plist>

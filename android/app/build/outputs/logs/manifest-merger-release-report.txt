@@ -1,0 +1,697 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:1:1-65:12
+INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:1:1-65:12
+INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:1:1-65:12
+INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:1:1-65:12
+MERGED from [:react-native-fast-image] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-fast-image/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:@react-native-community_cameraroll] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/cameraroll/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-34:12
+MERGED from [:react-native-image-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-21:12
+MERGED from [:react-native-video] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-video/android-exoplayer/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-community_async-storage] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_cameraroll] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/cameraroll/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_datetimepicker] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-13:12
+MERGED from [:react-native-community_masked-view] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_voice] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/voice/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-16:12
+MERGED from [:react-native-fbsdk] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-fbsdk/android/build/intermediates/library_manifest/release/AndroidManifest.xml:21:1-28:12
+MERGED from [:react-native-gesture-handler] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-google-signin] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-google-signin/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-orientation-locker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-orientation-locker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-reanimated] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-safe-area-context] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-screens] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-screens/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-share] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-svg] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-svg/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-webview] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-23:12
+MERGED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-47:12
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/945e7d6a422b2de77a2d10dabd5fb658/jetified-react-native-0.61.5/AndroidManifest.xml:2:1-13:12
+MERGED from [com.github.yalantis:ucrop:2.2.6-native] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/015fa486f89df04c0c4cc855c3a460d0/jetified-ucrop-2.2.6-native/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.android:facebook-android-sdk:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/af032a041ac459bd26e8dac26be7d215/jetified-facebook-android-sdk-5.15.3/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-login:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/85ca9957946ef41cf136c679c4cb416b/jetified-facebook-login-5.15.3/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-share:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/1c8b69abc34b0b84ff736b1919b7a880/jetified-facebook-share-5.15.3/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-common:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b3e2f255937ae1ba83ab810694a732b5/jetified-facebook-common-5.15.3/AndroidManifest.xml:21:1-52:12
+MERGED from [com.google.android.material:material:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/e8170964da10c0aa08ef4ff1142fca13/material-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/396e7ddea1addefd32f4f3d87ec48909/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/aab5293454cabe85272e9de04d494d57/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/df379a886b622d3c4bca01668724628c/browser-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/226817fd352d0debd037c03d8ec9b5c1/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/754956140eea3462feb1fe04256f9c34/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:animated-gif:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/8f73a2bdb6a1777bac53836ae8d38d7d/jetified-animated-gif-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/48149870f4c04ad6fb8a03a8c24aa131/jetified-fresco-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.multidex:multidex:2.0.1] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/55674f955563e8a5068a5363e1a44c6c/multidex-2.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [org.webkit:android-jsc:r245459] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/8ed39a0716d234891ae9d27a33743bce/jetified-android-jsc-r245459/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.exoplayer:exoplayer:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/489e936d64965049210f23a0b4b7c7ed/jetified-exoplayer-2.9.3/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/7d50bfeabb728273e2e927b535fdddd1/jetified-exoplayer-ui-2.9.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/47ce40ad459cbf22b0d81e337967e729/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.11.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/f30750233a97a4baddea203a9026c758/jetified-okhttp3-integration-4.11.0/AndroidManifest.xml:2:1-16:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/ae1be6d96d300b045ae2520a77aabf40/jetified-glide-4.11.0/AndroidManifest.xml:2:1-12:12
+MERGED from [com.google.android.gms:play-services-auth:18.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bd15c1042c9c3e1feddcdb7b9c87d6a4/jetified-play-services-auth-18.0.0/AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/4bd111c56cbfef19d0a73d50a80a2fee/jetified-play-services-auth-api-phone-17.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/dc0e7793c1b91268fe823d74f68c633f/jetified-play-services-auth-base-17.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/73f874509465423414ab7604a318e1cc/jetified-play-services-base-17.1.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/61b6250f2312bb6eaf48524efa92324f/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.1.1] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/5eb669ce5a805bc6842a7cd8fb336c21/jetified-play-services-basement-17.1.1/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/305c2898fe2457e82c9da2257c2bc0a1/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.2.1] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/7f83c2364e2c4122111c73f93377b4c2/fragment-1.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/8c1aed4303e761aac5e34d2036bbfc96/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.android:facebook-places:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/000e3fa95a2b908aea47f9f911df84cc/jetified-facebook-places-5.15.3/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-applinks:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/61740f6da47383aac454d6aa7e87788c/jetified-facebook-applinks-5.15.3/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-messenger:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6ffd2dd27d03b35ca562722b998004f2/jetified-facebook-messenger-5.15.3/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-core:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/550977da6a1715f858f5d2cb17d20c38/jetified-facebook-core-5.15.3/AndroidManifest.xml:21:1-53:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/92ce016465e3a6bb2a1c0eeefed0193e/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/148f2fd794536689e5a7e95e250ac390/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/e66da8b5301e9a6b4d099a6eed9ee5b8/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6984223d1aa8f315c8c42812a9db3a3b/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bd24342c93fd52cb5e9c9c7bb35f50f1/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/31b1b5f945c48f9a38ecdd855f083480/jetified-activity-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/8d8a8abf56b0acf243894e5c793a7480/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/4ee2c6fbb04620a960d68455ede34459/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/2be247bf8cbe2dd724b705391ddac84d/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a444f209b7c59a0fec306c6e0a516b3f/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/7369d370d1c3f03944cff7adb4eeb0ab/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/57d4ae6adbb5ccfa9dafa8ad36f43ff8/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/ccd497c0d55509e00fa2c4ec5a0ae967/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6cdf211888e0a7ccbf81d39b63072413/core-1.1.0/AndroidManifest.xml:17:1-26:12
+MERGED from [com.google.android.exoplayer:extension-okhttp:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/3705c1129fc08bdb79dbb2fd1883f169/jetified-extension-okhttp-2.9.3/AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/4ed62775c58d00d3809b67bee6e0a138/jetified-gifdecoder-4.11.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6435850e23f2d01013861f1c8dbdb3a0/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.1.0-beta01] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a627fcb45e915e30c8b945b04c690af1/exifinterface-1.1.0-beta01/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/950716cf5a2a7da99c715f7322f8b307/jetified-exoplayer-dash-2.9.3/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/db97e542c79a98d77be9a3cc3e7b8d1a/jetified-exoplayer-hls-2.9.3/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/4ffdf88cba1435da67bbb74b9c8e7321/jetified-exoplayer-smoothstreaming-2.9.3/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/312fd6d231935c84d553f0f5b7580e0f/jetified-exoplayer-core-2.9.3/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/adb371d4d53f86eab98a28717d70cc7e/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/705071dba30571a9226503cb1f0dac80/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/324b5866ad2c13339651997b434b41f3/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/793b5d87405bf3f75f1562f8aa980318/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/1da6d6eead31d48fd5b35953c9c19e52/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6ca55331635d9ca1071738b385928a75/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bf3e5eb0de5dbaf7174c5a9a34f69c5a/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/d5fd7fbc692311a845217063332ce16c/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/f6da952f61b4019c537f7d9fa681a24f/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/d831d74eee9f185c588b244b4025c98f/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/f15487c13029c5c78640eedfe3e4179f/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/32197d49c9b9c9fddb43d2962875a884/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a8036b2d7daf51b21fe1ce4c1edd512b/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b342e2a2ef4aa21b0793d6d5783c389e/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:animated-base:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/2ae7a1959def1768496e7a87143c5b0d/jetified-animated-base-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:animated-drawable:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/ef8126886e64b25644c4a18297cf2022/jetified-animated-drawable-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a690a8d2837471805c44278675b77a48/jetified-drawee-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/c5f1321226750dc4797ff1bc353dc5f3/jetified-nativeimagefilters-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/338ef9930ed55e51db00b0387870054c/jetified-imagepipeline-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/dca53aa6dcf6f6d8ed6095ca7d23e6de/jetified-nativeimagetranscoder-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/cb35872c2a2dad9143574d24b5b30ace/jetified-imagepipeline-base-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/d737748bc03b85f9d275f6a48b21db76/jetified-soloader-0.6.0/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b19dcfc72a8b5ad080b943f612016aee/jetified-fbcore-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.installreferrer:installreferrer:1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a518c88900f6739297c1ca16376ec562/jetified-installreferrer-1.0/AndroidManifest.xml:2:1-13:12
+INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:1:1-65:12
+INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:1:1-65:12
+INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:1:1-65:12
+	package
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:2:3-24
+		INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:1:1-65:12
+		INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:1:1-65:12
+		INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [:react-native-community_voice] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/voice/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:5-67
+MERGED from [:react-native-community_voice] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/voice/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:5-67
+MERGED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:5-67
+MERGED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:5-67
+	android:name
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:5:5-71
+MERGED from [:react-native-community_voice] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/voice/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:5-71
+MERGED from [:react-native-community_voice] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/voice/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:5-71
+	android:name
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:5:22-68
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:6:22-77
+uses-permission#android.permission.CAMERA
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:7:5-65
+	android:name
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:7:22-62
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:8:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:9:5-81
+MERGED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:5-81
+MERGED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:5-81
+MERGED from [:react-native-share] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-81
+MERGED from [:react-native-share] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-81
+MERGED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:33:5-81
+MERGED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:33:5-81
+	android:name
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:9:22-78
+application
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:11:5-61:19
+MERGED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:18:5-32:19
+MERGED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:18:5-32:19
+MERGED from [:react-native-image-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-19:19
+MERGED from [:react-native-image-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-19:19
+MERGED from [:react-native-community_datetimepicker] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:5-20
+MERGED from [:react-native-community_datetimepicker] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:5-20
+MERGED from [:react-native-share] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-share] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-webview] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-webview] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:5-21:19
+MERGED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:35:5-45:19
+MERGED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:35:5-45:19
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/945e7d6a422b2de77a2d10dabd5fb658/jetified-react-native-0.61.5/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/945e7d6a422b2de77a2d10dabd5fb658/jetified-react-native-0.61.5/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/af032a041ac459bd26e8dac26be7d215/jetified-facebook-android-sdk-5.15.3/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-android-sdk:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/af032a041ac459bd26e8dac26be7d215/jetified-facebook-android-sdk-5.15.3/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/85ca9957946ef41cf136c679c4cb416b/jetified-facebook-login-5.15.3/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/85ca9957946ef41cf136c679c4cb416b/jetified-facebook-login-5.15.3/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/1c8b69abc34b0b84ff736b1919b7a880/jetified-facebook-share-5.15.3/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/1c8b69abc34b0b84ff736b1919b7a880/jetified-facebook-share-5.15.3/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b3e2f255937ae1ba83ab810694a732b5/jetified-facebook-common-5.15.3/AndroidManifest.xml:29:5-50:19
+MERGED from [com.facebook.android:facebook-common:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b3e2f255937ae1ba83ab810694a732b5/jetified-facebook-common-5.15.3/AndroidManifest.xml:29:5-50:19
+MERGED from [com.google.android.material:material:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/e8170964da10c0aa08ef4ff1142fca13/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/e8170964da10c0aa08ef4ff1142fca13/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.11.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/f30750233a97a4baddea203a9026c758/jetified-okhttp3-integration-4.11.0/AndroidManifest.xml:10:5-14:19
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.11.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/f30750233a97a4baddea203a9026c758/jetified-okhttp3-integration-4.11.0/AndroidManifest.xml:10:5-14:19
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/ae1be6d96d300b045ae2520a77aabf40/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/ae1be6d96d300b045ae2520a77aabf40/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [com.google.android.gms:play-services-auth:18.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bd15c1042c9c3e1feddcdb7b9c87d6a4/jetified-play-services-auth-18.0.0/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:18.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bd15c1042c9c3e1feddcdb7b9c87d6a4/jetified-play-services-auth-18.0.0/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/73f874509465423414ab7604a318e1cc/jetified-play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/73f874509465423414ab7604a318e1cc/jetified-play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/61b6250f2312bb6eaf48524efa92324f/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/61b6250f2312bb6eaf48524efa92324f/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.1.1] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/5eb669ce5a805bc6842a7cd8fb336c21/jetified-play-services-basement-17.1.1/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.1.1] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/5eb669ce5a805bc6842a7cd8fb336c21/jetified-play-services-basement-17.1.1/AndroidManifest.xml:22:5-26:19
+MERGED from [com.facebook.android:facebook-places:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/000e3fa95a2b908aea47f9f911df84cc/jetified-facebook-places-5.15.3/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-places:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/000e3fa95a2b908aea47f9f911df84cc/jetified-facebook-places-5.15.3/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/61740f6da47383aac454d6aa7e87788c/jetified-facebook-applinks-5.15.3/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/61740f6da47383aac454d6aa7e87788c/jetified-facebook-applinks-5.15.3/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6ffd2dd27d03b35ca562722b998004f2/jetified-facebook-messenger-5.15.3/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6ffd2dd27d03b35ca562722b998004f2/jetified-facebook-messenger-5.15.3/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-core:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/550977da6a1715f858f5d2cb17d20c38/jetified-facebook-core-5.15.3/AndroidManifest.xml:28:5-51:19
+MERGED from [com.facebook.android:facebook-core:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/550977da6a1715f858f5d2cb17d20c38/jetified-facebook-core-5.15.3/AndroidManifest.xml:28:5-51:19
+MERGED from [androidx.core:core:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6cdf211888e0a7ccbf81d39b63072413/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6cdf211888e0a7ccbf81d39b63072413/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/4ed62775c58d00d3809b67bee6e0a138/jetified-gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/4ed62775c58d00d3809b67bee6e0a138/jetified-gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/324b5866ad2c13339651997b434b41f3/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/324b5866ad2c13339651997b434b41f3/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/d737748bc03b85f9d275f6a48b21db76/jetified-soloader-0.6.0/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/d737748bc03b85f9d275f6a48b21db76/jetified-soloader-0.6.0/AndroidManifest.xml:11:5-20
+MERGED from [com.android.installreferrer:installreferrer:1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a518c88900f6739297c1ca16376ec562/jetified-installreferrer-1.0/AndroidManifest.xml:11:5-20
+MERGED from [com.android.installreferrer:installreferrer:1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a518c88900f6739297c1ca16376ec562/jetified-installreferrer-1.0/AndroidManifest.xml:11:5-20
+	android:requestLegacyExternalStorage
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:17:7-50
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6cdf211888e0a7ccbf81d39b63072413/core-1.1.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from [com.facebook.android:facebook-android-sdk:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/af032a041ac459bd26e8dac26be7d215/jetified-facebook-android-sdk-5.15.3/AndroidManifest.xml:28:18-44
+	android:label
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:14:7-39
+	android:roundIcon
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:18:7-52
+	android:icon
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:15:7-41
+	android:allowBackup
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:19:7-34
+	android:theme
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:20:7-38
+	android:networkSecurityConfig
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:21:8-68
+	android:usesCleartextTraffic
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:16:7-42
+	android:name
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:13:7-38
+activity#com.guruapp.MainActivity
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:22:7-32:18
+	android:screenOrientation
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:26:9-45
+	android:label
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:24:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:27:9-51
+	android:configChanges
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:25:9-79
+	android:name
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:23:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:28:9-31:25
+action#android.intent.action.MAIN
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:29:13-65
+	android:name
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:29:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:30:13-73
+	android:name
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:30:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:33:7-84
+	android:name
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:33:17-81
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:35:7-36:58
+	android:value
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:36:17-56
+	android:name
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:35:18-63
+activity#com.facebook.FacebookActivity
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:40:9-43:48
+MERGED from [com.facebook.android:facebook-common:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b3e2f255937ae1ba83ab810694a732b5/jetified-facebook-common-5.15.3/AndroidManifest.xml:30:9-33:66
+MERGED from [com.facebook.android:facebook-common:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b3e2f255937ae1ba83ab810694a732b5/jetified-facebook-common-5.15.3/AndroidManifest.xml:30:9-33:66
+	android:label
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:43:13-45
+	android:configChanges
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:41:13-113
+	android:theme
+		ADDED from [com.facebook.android:facebook-common:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b3e2f255937ae1ba83ab810694a732b5/jetified-facebook-common-5.15.3/AndroidManifest.xml:33:13-63
+	android:name
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:40:19-63
+activity#com.facebook.CustomTabActivity
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:44:9-53:20
+MERGED from [com.facebook.android:facebook-common:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b3e2f255937ae1ba83ab810694a732b5/jetified-facebook-common-5.15.3/AndroidManifest.xml:35:9-49:20
+MERGED from [com.facebook.android:facebook-common:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b3e2f255937ae1ba83ab810694a732b5/jetified-facebook-common-5.15.3/AndroidManifest.xml:35:9-49:20
+	tools:node
+		ADDED from [com.facebook.android:facebook-common:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b3e2f255937ae1ba83ab810694a732b5/jetified-facebook-common-5.15.3/AndroidManifest.xml:38:13-31
+	android:exported
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:46:13-36
+	android:name
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:45:13-58
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:47:13-52:29
+action#android.intent.action.VIEW
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:48:17-69
+	android:name
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:48:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:49:17-76
+	android:name
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:49:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:50:17-78
+	android:name
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:50:27-75
+data
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:51:17-75
+	android:scheme
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:51:23-72
+provider#com.facebook.FacebookContentProvider
+ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:57:9-59:39
+	android:authorities
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:57:19-85
+	android:exported
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:59:13-36
+	android:name
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:58:13-64
+uses-sdk
+INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-fast-image] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-fast-image/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fast-image] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-fast-image/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:@react-native-community_cameraroll] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/cameraroll/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_cameraroll] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/cameraroll/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:6:5-8:41
+MERGED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:6:5-8:41
+MERGED from [:react-native-image-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-video] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-video/android-exoplayer/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-video] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-video/android-exoplayer/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_async-storage] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_async-storage] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_cameraroll] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/cameraroll/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_cameraroll] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/cameraroll/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_datetimepicker] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_datetimepicker] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/datetimepicker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_masked-view] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_masked-view] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_voice] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/voice/android/build/intermediates/library_manifest/release/AndroidManifest.xml:8:5-11:54
+MERGED from [:react-native-community_voice] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/voice/android/build/intermediates/library_manifest/release/AndroidManifest.xml:8:5-11:54
+MERGED from [:react-native-fbsdk] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-fbsdk/android/build/intermediates/library_manifest/release/AndroidManifest.xml:24:5-26:41
+MERGED from [:react-native-fbsdk] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-fbsdk/android/build/intermediates/library_manifest/release/AndroidManifest.xml:24:5-26:41
+MERGED from [:react-native-gesture-handler] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-google-signin] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-google-signin/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-google-signin] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-google-signin/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-orientation-locker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-orientation-locker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-orientation-locker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-orientation-locker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-safe-area-context] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-screens/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-screens/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-share] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-share] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-svg/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-svg/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/945e7d6a422b2de77a2d10dabd5fb658/jetified-react-native-0.61.5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/945e7d6a422b2de77a2d10dabd5fb658/jetified-react-native-0.61.5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.6-native] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/015fa486f89df04c0c4cc855c3a460d0/jetified-ucrop-2.2.6-native/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.6-native] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/015fa486f89df04c0c4cc855c3a460d0/jetified-ucrop-2.2.6-native/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.android:facebook-android-sdk:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/af032a041ac459bd26e8dac26be7d215/jetified-facebook-android-sdk-5.15.3/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/af032a041ac459bd26e8dac26be7d215/jetified-facebook-android-sdk-5.15.3/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/85ca9957946ef41cf136c679c4cb416b/jetified-facebook-login-5.15.3/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/85ca9957946ef41cf136c679c4cb416b/jetified-facebook-login-5.15.3/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/1c8b69abc34b0b84ff736b1919b7a880/jetified-facebook-share-5.15.3/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/1c8b69abc34b0b84ff736b1919b7a880/jetified-facebook-share-5.15.3/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b3e2f255937ae1ba83ab810694a732b5/jetified-facebook-common-5.15.3/AndroidManifest.xml:25:5-27:41
+MERGED from [com.facebook.android:facebook-common:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b3e2f255937ae1ba83ab810694a732b5/jetified-facebook-common-5.15.3/AndroidManifest.xml:25:5-27:41
+MERGED from [com.google.android.material:material:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/e8170964da10c0aa08ef4ff1142fca13/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/e8170964da10c0aa08ef4ff1142fca13/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/396e7ddea1addefd32f4f3d87ec48909/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/396e7ddea1addefd32f4f3d87ec48909/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/aab5293454cabe85272e9de04d494d57/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/aab5293454cabe85272e9de04d494d57/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/df379a886b622d3c4bca01668724628c/browser-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/df379a886b622d3c4bca01668724628c/browser-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/226817fd352d0debd037c03d8ec9b5c1/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/226817fd352d0debd037c03d8ec9b5c1/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/754956140eea3462feb1fe04256f9c34/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/754956140eea3462feb1fe04256f9c34/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.fresco:animated-gif:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/8f73a2bdb6a1777bac53836ae8d38d7d/jetified-animated-gif-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-gif:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/8f73a2bdb6a1777bac53836ae8d38d7d/jetified-animated-gif-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/48149870f4c04ad6fb8a03a8c24aa131/jetified-fresco-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/48149870f4c04ad6fb8a03a8c24aa131/jetified-fresco-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.multidex:multidex:2.0.1] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/55674f955563e8a5068a5363e1a44c6c/multidex-2.0.1/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.1] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/55674f955563e8a5068a5363e1a44c6c/multidex-2.0.1/AndroidManifest.xml:20:5-43
+MERGED from [org.webkit:android-jsc:r245459] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/8ed39a0716d234891ae9d27a33743bce/jetified-android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/8ed39a0716d234891ae9d27a33743bce/jetified-android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.exoplayer:exoplayer:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/489e936d64965049210f23a0b4b7c7ed/jetified-exoplayer-2.9.3/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/489e936d64965049210f23a0b4b7c7ed/jetified-exoplayer-2.9.3/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/7d50bfeabb728273e2e927b535fdddd1/jetified-exoplayer-ui-2.9.3/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/7d50bfeabb728273e2e927b535fdddd1/jetified-exoplayer-ui-2.9.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/47ce40ad459cbf22b0d81e337967e729/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/47ce40ad459cbf22b0d81e337967e729/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.11.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/f30750233a97a4baddea203a9026c758/jetified-okhttp3-integration-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.11.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/f30750233a97a4baddea203a9026c758/jetified-okhttp3-integration-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/ae1be6d96d300b045ae2520a77aabf40/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/ae1be6d96d300b045ae2520a77aabf40/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-auth:18.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bd15c1042c9c3e1feddcdb7b9c87d6a4/jetified-play-services-auth-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:18.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bd15c1042c9c3e1feddcdb7b9c87d6a4/jetified-play-services-auth-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/4bd111c56cbfef19d0a73d50a80a2fee/jetified-play-services-auth-api-phone-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/4bd111c56cbfef19d0a73d50a80a2fee/jetified-play-services-auth-api-phone-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/dc0e7793c1b91268fe823d74f68c633f/jetified-play-services-auth-base-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/dc0e7793c1b91268fe823d74f68c633f/jetified-play-services-auth-base-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/73f874509465423414ab7604a318e1cc/jetified-play-services-base-17.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/73f874509465423414ab7604a318e1cc/jetified-play-services-base-17.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/61b6250f2312bb6eaf48524efa92324f/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/61b6250f2312bb6eaf48524efa92324f/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.1.1] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/5eb669ce5a805bc6842a7cd8fb336c21/jetified-play-services-basement-17.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.1.1] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/5eb669ce5a805bc6842a7cd8fb336c21/jetified-play-services-basement-17.1.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/305c2898fe2457e82c9da2257c2bc0a1/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/305c2898fe2457e82c9da2257c2bc0a1/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/7f83c2364e2c4122111c73f93377b4c2/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/7f83c2364e2c4122111c73f93377b4c2/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/8c1aed4303e761aac5e34d2036bbfc96/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/8c1aed4303e761aac5e34d2036bbfc96/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.android:facebook-places:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/000e3fa95a2b908aea47f9f911df84cc/jetified-facebook-places-5.15.3/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-places:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/000e3fa95a2b908aea47f9f911df84cc/jetified-facebook-places-5.15.3/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/61740f6da47383aac454d6aa7e87788c/jetified-facebook-applinks-5.15.3/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/61740f6da47383aac454d6aa7e87788c/jetified-facebook-applinks-5.15.3/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6ffd2dd27d03b35ca562722b998004f2/jetified-facebook-messenger-5.15.3/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6ffd2dd27d03b35ca562722b998004f2/jetified-facebook-messenger-5.15.3/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/550977da6a1715f858f5d2cb17d20c38/jetified-facebook-core-5.15.3/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/550977da6a1715f858f5d2cb17d20c38/jetified-facebook-core-5.15.3/AndroidManifest.xml:24:5-26:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/92ce016465e3a6bb2a1c0eeefed0193e/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/92ce016465e3a6bb2a1c0eeefed0193e/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/148f2fd794536689e5a7e95e250ac390/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/148f2fd794536689e5a7e95e250ac390/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/e66da8b5301e9a6b4d099a6eed9ee5b8/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/e66da8b5301e9a6b4d099a6eed9ee5b8/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6984223d1aa8f315c8c42812a9db3a3b/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6984223d1aa8f315c8c42812a9db3a3b/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bd24342c93fd52cb5e9c9c7bb35f50f1/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bd24342c93fd52cb5e9c9c7bb35f50f1/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/31b1b5f945c48f9a38ecdd855f083480/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/31b1b5f945c48f9a38ecdd855f083480/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/8d8a8abf56b0acf243894e5c793a7480/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/8d8a8abf56b0acf243894e5c793a7480/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/4ee2c6fbb04620a960d68455ede34459/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/4ee2c6fbb04620a960d68455ede34459/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/2be247bf8cbe2dd724b705391ddac84d/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/2be247bf8cbe2dd724b705391ddac84d/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a444f209b7c59a0fec306c6e0a516b3f/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a444f209b7c59a0fec306c6e0a516b3f/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/7369d370d1c3f03944cff7adb4eeb0ab/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/7369d370d1c3f03944cff7adb4eeb0ab/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/57d4ae6adbb5ccfa9dafa8ad36f43ff8/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/57d4ae6adbb5ccfa9dafa8ad36f43ff8/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/ccd497c0d55509e00fa2c4ec5a0ae967/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/ccd497c0d55509e00fa2c4ec5a0ae967/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6cdf211888e0a7ccbf81d39b63072413/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6cdf211888e0a7ccbf81d39b63072413/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:extension-okhttp:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/3705c1129fc08bdb79dbb2fd1883f169/jetified-extension-okhttp-2.9.3/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:extension-okhttp:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/3705c1129fc08bdb79dbb2fd1883f169/jetified-extension-okhttp-2.9.3/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/4ed62775c58d00d3809b67bee6e0a138/jetified-gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/4ed62775c58d00d3809b67bee6e0a138/jetified-gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6435850e23f2d01013861f1c8dbdb3a0/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6435850e23f2d01013861f1c8dbdb3a0/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.1.0-beta01] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a627fcb45e915e30c8b945b04c690af1/exifinterface-1.1.0-beta01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.1.0-beta01] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a627fcb45e915e30c8b945b04c690af1/exifinterface-1.1.0-beta01/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/950716cf5a2a7da99c715f7322f8b307/jetified-exoplayer-dash-2.9.3/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/950716cf5a2a7da99c715f7322f8b307/jetified-exoplayer-dash-2.9.3/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/db97e542c79a98d77be9a3cc3e7b8d1a/jetified-exoplayer-hls-2.9.3/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/db97e542c79a98d77be9a3cc3e7b8d1a/jetified-exoplayer-hls-2.9.3/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/4ffdf88cba1435da67bbb74b9c8e7321/jetified-exoplayer-smoothstreaming-2.9.3/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/4ffdf88cba1435da67bbb74b9c8e7321/jetified-exoplayer-smoothstreaming-2.9.3/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/312fd6d231935c84d553f0f5b7580e0f/jetified-exoplayer-core-2.9.3/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/312fd6d231935c84d553f0f5b7580e0f/jetified-exoplayer-core-2.9.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/adb371d4d53f86eab98a28717d70cc7e/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/adb371d4d53f86eab98a28717d70cc7e/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/705071dba30571a9226503cb1f0dac80/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/705071dba30571a9226503cb1f0dac80/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/324b5866ad2c13339651997b434b41f3/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/324b5866ad2c13339651997b434b41f3/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/793b5d87405bf3f75f1562f8aa980318/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/793b5d87405bf3f75f1562f8aa980318/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/1da6d6eead31d48fd5b35953c9c19e52/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/1da6d6eead31d48fd5b35953c9c19e52/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6ca55331635d9ca1071738b385928a75/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6ca55331635d9ca1071738b385928a75/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bf3e5eb0de5dbaf7174c5a9a34f69c5a/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bf3e5eb0de5dbaf7174c5a9a34f69c5a/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/d5fd7fbc692311a845217063332ce16c/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/d5fd7fbc692311a845217063332ce16c/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/f6da952f61b4019c537f7d9fa681a24f/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/f6da952f61b4019c537f7d9fa681a24f/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/d831d74eee9f185c588b244b4025c98f/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/d831d74eee9f185c588b244b4025c98f/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/f15487c13029c5c78640eedfe3e4179f/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/f15487c13029c5c78640eedfe3e4179f/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/32197d49c9b9c9fddb43d2962875a884/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/32197d49c9b9c9fddb43d2962875a884/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a8036b2d7daf51b21fe1ce4c1edd512b/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a8036b2d7daf51b21fe1ce4c1edd512b/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b342e2a2ef4aa21b0793d6d5783c389e/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b342e2a2ef4aa21b0793d6d5783c389e/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-base:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/2ae7a1959def1768496e7a87143c5b0d/jetified-animated-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-base:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/2ae7a1959def1768496e7a87143c5b0d/jetified-animated-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-drawable:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/ef8126886e64b25644c4a18297cf2022/jetified-animated-drawable-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-drawable:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/ef8126886e64b25644c4a18297cf2022/jetified-animated-drawable-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a690a8d2837471805c44278675b77a48/jetified-drawee-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a690a8d2837471805c44278675b77a48/jetified-drawee-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/c5f1321226750dc4797ff1bc353dc5f3/jetified-nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/c5f1321226750dc4797ff1bc353dc5f3/jetified-nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/338ef9930ed55e51db00b0387870054c/jetified-imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/338ef9930ed55e51db00b0387870054c/jetified-imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/dca53aa6dcf6f6d8ed6095ca7d23e6de/jetified-nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/dca53aa6dcf6f6d8ed6095ca7d23e6de/jetified-nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/cb35872c2a2dad9143574d24b5b30ace/jetified-imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/cb35872c2a2dad9143574d24b5b30ace/jetified-imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/d737748bc03b85f9d275f6a48b21db76/jetified-soloader-0.6.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/d737748bc03b85f9d275f6a48b21db76/jetified-soloader-0.6.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b19dcfc72a8b5ad080b943f612016aee/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b19dcfc72a8b5ad080b943f612016aee/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.installreferrer:installreferrer:1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a518c88900f6739297c1ca16376ec562/jetified-installreferrer-1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.installreferrer:installreferrer:1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a518c88900f6739297c1ca16376ec562/jetified-installreferrer-1.0/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [:react-native-community_voice] /Users/ajinkya/Desktop/guruApp/node_modules/@react-native-community/voice/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:9-51
+	android:targetSdkVersion
+		INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml
+queries
+ADDED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:5-14:15
+intent
+ADDED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:9-13:18
+action#android.media.action.IMAGE_CAPTURE
+ADDED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:13-73
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:21-70
+provider#androidx.core.content.FileProvider
+ADDED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:19:9-27:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:23:13-47
+	android:authorities
+		ADDED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:21:13-60
+	android:exported
+		ADDED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:22:13-37
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:20:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:24:13-26:58
+	android:resource
+		ADDED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:26:17-55
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:25:17-67
+activity#com.yalantis.ucrop.UCropActivity
+ADDED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:29:9-31:72
+	android:theme
+		ADDED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:31:13-69
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:30:13-60
+provider#com.imagepicker.FileProvider
+ADDED from [:react-native-image-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:9-18:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-47
+	android:authorities
+		ADDED from [:react-native-image-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:13-60
+	android:exported
+		ADDED from [:react-native-image-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-37
+	android:name
+		ADDED from [:react-native-image-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:13-56
+provider#cl.json.RNShareFileProvider
+ADDED from [:react-native-share] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from [:react-native-share] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:13-47
+	android:authorities
+		ADDED from [:react-native-share] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-72
+	android:exported
+		ADDED from [:react-native-share] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [:react-native-share] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-55
+provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
+ADDED from [:react-native-webview] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from [:react-native-webview] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:13-47
+	android:authorities
+		ADDED from [:react-native-webview] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-64
+	android:exported
+		ADDED from [:react-native-webview] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [:react-native-webview] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-83
+uses-permission#com.android.vending.CHECK_LICENSE
+ADDED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:5-73
+	android:name
+		ADDED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:22-70
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:21:5-68
+	android:name
+		ADDED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:21:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:27:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/312fd6d231935c84d553f0f5b7580e0f/jetified-exoplayer-core-2.9.3/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/312fd6d231935c84d553f0f5b7580e0f/jetified-exoplayer-core-2.9.3/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:27:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:30:5-76
+	android:name
+		ADDED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:30:22-73
+provider#com.RNFetchBlob.Utils.FileProvider
+ADDED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:36:9-44:20
+	android:grantUriPermissions
+		ADDED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:40:13-47
+	android:authorities
+		ADDED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:38:13-60
+	android:exported
+		ADDED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from [:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:37:13-62
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-common:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b3e2f255937ae1ba83ab810694a732b5/jetified-facebook-common-5.15.3/AndroidManifest.xml:34:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-common:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b3e2f255937ae1ba83ab810694a732b5/jetified-facebook-common-5.15.3/AndroidManifest.xml:34:19-68
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:cct.${applicationId}+data:scheme:fbconnect
+ADDED from [com.facebook.android:facebook-common:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b3e2f255937ae1ba83ab810694a732b5/jetified-facebook-common-5.15.3/AndroidManifest.xml:39:13-48:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:cct.com.guruapp+data:scheme:fbconnect
+ADDED from [com.facebook.android:facebook-common:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b3e2f255937ae1ba83ab810694a732b5/jetified-facebook-common-5.15.3/AndroidManifest.xml:39:13-48:29
+meta-data#com.bumptech.glide.integration.okhttp3.OkHttpGlideModule
+ADDED from [com.github.bumptech.glide:okhttp3-integration:4.11.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/f30750233a97a4baddea203a9026c758/jetified-okhttp3-integration-4.11.0/AndroidManifest.xml:11:9-13:43
+	android:value
+		ADDED from [com.github.bumptech.glide:okhttp3-integration:4.11.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/f30750233a97a4baddea203a9026c758/jetified-okhttp3-integration-4.11.0/AndroidManifest.xml:13:13-40
+	android:name
+		ADDED from [com.github.bumptech.glide:okhttp3-integration:4.11.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/f30750233a97a4baddea203a9026c758/jetified-okhttp3-integration-4.11.0/AndroidManifest.xml:12:13-84
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:18.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bd15c1042c9c3e1feddcdb7b9c87d6a4/jetified-play-services-auth-18.0.0/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:18.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bd15c1042c9c3e1feddcdb7b9c87d6a4/jetified-play-services-auth-18.0.0/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:18.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bd15c1042c9c3e1feddcdb7b9c87d6a4/jetified-play-services-auth-18.0.0/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:18.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bd15c1042c9c3e1feddcdb7b9c87d6a4/jetified-play-services-auth-18.0.0/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:18.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bd15c1042c9c3e1feddcdb7b9c87d6a4/jetified-play-services-auth-18.0.0/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:18.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bd15c1042c9c3e1feddcdb7b9c87d6a4/jetified-play-services-auth-18.0.0/AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:18.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bd15c1042c9c3e1feddcdb7b9c87d6a4/jetified-play-services-auth-18.0.0/AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:18.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bd15c1042c9c3e1feddcdb7b9c87d6a4/jetified-play-services-auth-18.0.0/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:18.0.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/bd15c1042c9c3e1feddcdb7b9c87d6a4/jetified-play-services-auth-18.0.0/AndroidManifest.xml:34:13-89
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/73f874509465423414ab7604a318e1cc/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/73f874509465423414ab7604a318e1cc/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/73f874509465423414ab7604a318e1cc/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/73f874509465423414ab7604a318e1cc/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.1.1] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/5eb669ce5a805bc6842a7cd8fb336c21/jetified-play-services-basement-17.1.1/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.1.1] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/5eb669ce5a805bc6842a7cd8fb336c21/jetified-play-services-basement-17.1.1/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.1.1] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/5eb669ce5a805bc6842a7cd8fb336c21/jetified-play-services-basement-17.1.1/AndroidManifest.xml:24:13-58
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-core:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/550977da6a1715f858f5d2cb17d20c38/jetified-facebook-core-5.15.3/AndroidManifest.xml:39:9-42:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-core:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/550977da6a1715f858f5d2cb17d20c38/jetified-facebook-core-5.15.3/AndroidManifest.xml:41:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/550977da6a1715f858f5d2cb17d20c38/jetified-facebook-core-5.15.3/AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/550977da6a1715f858f5d2cb17d20c38/jetified-facebook-core-5.15.3/AndroidManifest.xml:40:13-70
+receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
+ADDED from [com.facebook.android:facebook-core:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/550977da6a1715f858f5d2cb17d20c38/jetified-facebook-core-5.15.3/AndroidManifest.xml:44:9-50:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/550977da6a1715f858f5d2cb17d20c38/jetified-facebook-core-5.15.3/AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/550977da6a1715f858f5d2cb17d20c38/jetified-facebook-core-5.15.3/AndroidManifest.xml:45:13-86
+intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/550977da6a1715f858f5d2cb17d20c38/jetified-facebook-core-5.15.3/AndroidManifest.xml:47:13-49:29
+action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/550977da6a1715f858f5d2cb17d20c38/jetified-facebook-core-5.15.3/AndroidManifest.xml:48:17-95
+	android:name
+		ADDED from [com.facebook.android:facebook-core:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/550977da6a1715f858f5d2cb17d20c38/jetified-facebook-core-5.15.3/AndroidManifest.xml:48:25-92
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.android.installreferrer:installreferrer:1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a518c88900f6739297c1ca16376ec562/jetified-installreferrer-1.0/AndroidManifest.xml:9:5-110
+	android:name
+		ADDED from [com.android.installreferrer:installreferrer:1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a518c88900f6739297c1ca16376ec562/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
