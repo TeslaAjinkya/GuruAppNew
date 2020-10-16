@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ajinkya/Desktop/guruApp/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-sv/values-sv.xml",
+            "outputFile": "/Users/ajinkya/Desktop/GuruAppNew/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-sv/values-sv.xml",
             "map": [
                 {
                     "source": "/Users/ajinkya/.gradle/caches/transforms-2/files-2.1/85ca9957946ef41cf136c679c4cb416b/jetified-facebook-login-5.15.3/res/values-sv/values-sv.xml",

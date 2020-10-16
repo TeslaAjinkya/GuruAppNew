@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ajinkya/Desktop/guruApp/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-pl/values-pl.xml",
+            "outputFile": "/Users/ajinkya/Desktop/GuruAppNew/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-pl/values-pl.xml",
             "map": [
                 {
                     "source": "/Users/ajinkya/.gradle/caches/transforms-2/files-2.1/396e7ddea1addefd32f4f3d87ec48909/appcompat-1.1.0/res/values-pl/values-pl.xml",

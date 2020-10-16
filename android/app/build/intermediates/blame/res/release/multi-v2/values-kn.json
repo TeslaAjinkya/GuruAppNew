@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ajinkya/Desktop/guruApp/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-kn/values-kn.xml",
+            "outputFile": "/Users/ajinkya/Desktop/GuruAppNew/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-kn/values-kn.xml",
             "map": [
                 {
                     "source": "/Users/ajinkya/.gradle/caches/transforms-2/files-2.1/73f874509465423414ab7604a318e1cc/jetified-play-services-base-17.1.0/res/values-kn/values.xml",

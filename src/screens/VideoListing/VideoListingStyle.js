@@ -166,7 +166,7 @@ export default {
   },
   activityIndicatorView: {
     position: 'absolute',
-    height: hp(90),
+    height: hp(80),
     width: wp(100),
     backgroundColor: 'transparent',
     justifyContent: 'center',

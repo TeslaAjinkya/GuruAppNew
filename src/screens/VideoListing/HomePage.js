@@ -456,7 +456,9 @@ class HomePage extends Component {
       started,
       results,
     } = this.state;
-    const {videoData} = this.props;
+    const {videoData, viewProfileData} = this.props;
+
+   const profileData = viewProfileData &&  viewProfileData.userProfile
 
     return (
       <SafeAreaView style={safeAreaView}>
@@ -679,11 +681,7 @@ class HomePage extends Component {
         <_Container
           showHeader
           showSearch
-          profilePic={
-            this.state.viewProfileDataSource
-              ? this.state.viewProfileDataSource[0].userpic
-              : null
-          }
+          profilePic={ profileData  ? profileData[0].userpic : null }
           showLoading={false}
           onSearchPress={() => this.renderSearchbar()}
           onProfilePress={() => this.onProfilePress()}>
@@ -698,8 +696,7 @@ function mapStateToProps(state) {
   return {
     searchErrorMsg: state.homePageReducer.searchErrorMsg,
     searchedData: state.homePageReducer.searchedData,
-    successSearchedDataVersion:
-      state.homePageReducer.successSearchedDataVersion,
+    successSearchedDataVersion:state.homePageReducer.successSearchedDataVersion,
     errorSearchedDataVersion: state.homePageReducer.errorSearchedDataVersion,
     viewProfileData: state.profileReducer.viewProfileData,
     errorViewProfile: state.profileReducer.errorViewProfile,

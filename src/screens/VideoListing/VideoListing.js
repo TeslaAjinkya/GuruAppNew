@@ -26,20 +26,16 @@ import VideoListingStyle from '@videoListing/VideoListingStyle';
 import { urls } from '@api/urls';
 import { CubeNavigationHorizontal } from 'react-native-3dcube-navigation';
 import StoryContainer from '@stories/StoryContainer';
-import {
-  getCategory,
-  getStories,
-  getVideoList,
-  getLikeDislikeCount,
-  getShareCount,
-  resetAllReducer,
-} from '@videoListing/VideoListingAction';
+// import { } from '@videoListing/VideoListingAction';
+
+import { getVideoList, getCategory, getLikeDislikeCount, getShareCount, getStories }
+  from "../../sagaModules/VideoList";
+
 
 import _Card from '@card/_Card';
 import _CardContent from '@cardContent/_CardContent';
 import * as Animatable from 'react-native-animatable';
 import AsyncStorage from '@react-native-community/async-storage';
-import { viewProfile } from '@profile/ProfileAction';
 import FastImage from 'react-native-fast-image'
 
 
@@ -89,6 +85,10 @@ class VideoListing extends Component {
       successViewProfileVersion: 0,
       errorViewProfileVersion: 0,
       viewProfileDataSource: '',
+      page: 0,
+      clickedLoadMore: false,
+      categorySelected: false
+
     };
     this.modalScroll = createRef();
 
@@ -96,7 +96,7 @@ class VideoListing extends Component {
     requestBody = {
       payload: {
         categoryId: '',
-        startLimit: '0',
+        startLimit: 0,
         userId: userId,
       },
 
@@ -104,9 +104,14 @@ class VideoListing extends Component {
 
   }
 
-  // componentWillUnmount() {
-  //   this.props.resetReducer();
-  // }
+  async componentDidMount() {
+    actionArray = [];
+
+    await this.props.getCategory();
+    await this.props.getVideoList(requestBody);
+    // await this.props.getStories();
+
+  }
 
   onLoad = data => {
     var minutes = Math.floor(data.duration / 60);
@@ -167,23 +172,7 @@ class VideoListing extends Component {
     return 0;
   }
 
-  componentDidMount() {
-    actionArray = [];
 
-    this.props.getCategory();
-    //this.props.getStories();
-
-    this.props.getVideoList(requestBody);
-
-    var requestpayload = {
-      payload: {
-        userId: userId,
-        startLimit: '0',
-      },
-    };
-    this.props.viewProfile(requestpayload);
-
-  }
 
   static getDerivedStateFromProps(nextProps, prevState) {
     const {
@@ -309,6 +298,8 @@ class VideoListing extends Component {
     return newState;
   }
 
+
+
   async componentDidUpdate(prevProps, prevState) {
     const {
       categoryData, storiesData,
@@ -317,24 +308,22 @@ class VideoListing extends Component {
       videoErrorMsg, shareData, viewProfileData
     } = this.props;
 
-    if (
-      this.state.successCategoryDataVersion >
-      prevState.successCategoryDataVersion
-    ) {
-      this.setState({ categoryDataSource: categoryData });
-    }
+
+    // if (this.state.successCategoryDataVersion > prevState.successCategoryDataVersion) {
+    //   this.setState({ categoryDataSource: categoryData });
+    // }
     if (this.state.successStoriesVersion > prevState.successStoriesVersion) {
       this.setState({ storiesDataSource: storiesData });
     }
-    if (
-      this.state.successVideoDataVersion > prevState.successVideoDataVersion
-    ) {
-      this.setState({ videoDataSource: videoData });
+    if (this.state.successVideoDataVersion > prevState.successVideoDataVersion) {
+      // this.setState({ videoDataSource: videoData });
+      this.setState({
+        videoDataSource:
+          this.state.page === 0 ? videoData : [...this.state.videoDataSource, ...videoData],
+      });
+
     }
-    if (
-      this.state.successLikeDislikeCountVersion >
-      prevState.successLikeDislikeCountVersion
-    ) {
+    if (this.state.successLikeDislikeCountVersion > prevState.successLikeDislikeCountVersion) {
       var array = _.find(actionArray, {
         videoid: this.props.likeDislikeData.videoId,
       });
@@ -397,19 +386,14 @@ class VideoListing extends Component {
       }
     }
 
-    if (
-      this.state.errorLikeDislikeCountVersion >
-      prevState.errorLikeDislikeCountVersion
-    ) {
+    if (this.state.errorLikeDislikeCountVersion > prevState.errorLikeDislikeCountVersion) {
       Toast.show({
         text: this.props.likeDislikeErrorMsg,
         type: 'danger',
       });
     }
 
-    if (
-      this.state.successShareCountVersion > prevState.successShareCountVersion
-    ) {
+    if (this.state.successShareCountVersion > prevState.successShareCountVersion) {
       var Index = _.findIndex(this.state.videoDataSource, {
         videoid: parseInt(this.props.shareData.videoId),
       });
@@ -480,13 +464,18 @@ class VideoListing extends Component {
     }
   };
 
-  onCategoryPress(videoListPayload) {
-    this.props.getVideoList(videoListPayload);
+  onCategoryPress = async (videoListPayload) => {
+    await this.props.getVideoList(videoListPayload);
+    this.setState({ page: 0 })
+
+    // if (videoListPayload.payload) {
+    //   this.setState({ categorySelected: videoListPayload.payload.categoryId })
+    // }
   }
 
-  getCategory(item) {
+  getCategory = (item) => {
 
-    var videoListPayload = {
+    let categoryData = {
       payload: {
         categoryId: item.id == 16 ? '' : item.id,
         startLimit: '0',
@@ -500,12 +489,13 @@ class VideoListing extends Component {
       categoryImg,
       categoryText,
     } = VideoListingStyle;
+
     return (
       <View style={categoryInnerView}>
         <View style={catgeoryInnerSecondView}>
           <TouchableOpacity
             style={{ alignItems: 'center' }}
-            onPress={() => this.onCategoryPress(videoListPayload)}>
+            onPress={() => this.onCategoryPress(categoryData)}>
             <View style={categoryIconView}>
               {/* <Image
                 resizeMode={'cover'}
@@ -516,7 +506,7 @@ class VideoListing extends Component {
                 style={categoryImg}
                 source={{
                   uri: urls.baseUrl + item.categoryIcon,
-                  priority: FastImage.priority.normal,
+                  priority: FastImage.priority.high,
                 }}
                 resizeMode={FastImage.resizeMode.cover}
               />
@@ -616,11 +606,7 @@ class VideoListing extends Component {
   shareVideo = async (url, item) => {
 
     const shareOptions = {
-      title: 'Share file',
-      email: 'gt20.ajinkya@gmail.com',
-      url: url,
-      social: Share.Social.INSTAGRAM,
-      failOnCancel: false,
+      message: url
     };
 
     try {
@@ -638,9 +624,9 @@ class VideoListing extends Component {
       }
     } catch (error) {
       console.log('Error =>', error);
-      //setResult('error: '.concat(getErrorString(error)))
     }
   };
+
 
   getStories = (item, index) => {
     const {
@@ -722,10 +708,21 @@ class VideoListing extends Component {
   };
 
   onPullRefresh = async () => {
+
+    let refreshBody = {
+      payload: {
+        categoryId: '',
+        startLimit: '0',
+        userId: userId,
+      },
+    }
     await this.props.getCategory();
-    await this.props.getStories();
-    await this.props.getVideoList(requestBody);
+    // await this.props.getStories();
+    await this.props.getVideoList(refreshBody);
+
+    this.setState({ page: 0 })
   };
+
 
   onLikeClicked(data) {
     // debugger
@@ -927,7 +924,7 @@ class VideoListing extends Component {
   getVideoListing(item, index) {
     var date = new Date(item.uploadedDate).toUTCString();
     return (
-      <View key={item.id}>
+      <View key={item.videoid}>
         <View
           style={{
             backgroundColor: color.videoListingbackgroundColor,
@@ -938,9 +935,7 @@ class VideoListing extends Component {
           <_Card>
             <_CardContent
               item={item}
-              onPressShare={() =>
-                this.shareVideo(urls.baseUrl + item.videoUrl, item)
-              }
+              onPressShare={() => this.shareVideo(urls.baseUrl + item.videoUrl, item)}
               onPressDetails={() => this.goToDetailsScreen(item)}
               onPressLike={() => this.onLikeClicked(item)}
               onPressDislike={() => this.onDisLikeClicked(item)}
@@ -975,12 +970,78 @@ class VideoListing extends Component {
   }
 
 
+
+  LoadMoreData = () => {
+    this.setState({
+      page: this.state.page + 1,
+      clickedLoadMore: true,
+    },
+      () => this.LoadRandomData(),
+    );
+  };
+
+  LoadRandomData = async () => {
+    console.log("LoadRandomData");
+    const { page } = this.state;
+    let loadData = {
+      payload: {
+        categoryId: '',
+        startLimit: page,
+        userId: userId,
+      },
+    }
+
+    await this.props.getVideoList(loadData);
+
+  };
+
+
+  footer = () => {
+    return (
+      <View>
+        {!this.props.isFetching && this.state.videoDataSource.length >= 10 ? (
+          <TouchableOpacity onPress={() => this.LoadMoreData()}>
+            <View
+              style={{
+                flex: 1,
+                height: hp(7),
+                width: wp(100),
+                backgroundColor: '#EEF8F7',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Text
+                style={{ color: '#0d185c', fontSize: 18, fontWeight: 'bold' }}>
+                Show More
+              </Text>
+            </View>
+          </TouchableOpacity>
+        ) : null}
+        {this.state.clickedLoadMore &&
+          this.props.isFetching &&
+          this.state.videoDataSource.length >= 10 ? (
+            <View
+              style={{
+                flex: 1,
+                height: 40,
+                width: wp(100),
+                backgroundColor: '#EEF8F7',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <ActivityIndicator size="small" color='gray' />
+            </View>
+          ) : null}
+      </View>
+    );
+  };
+
   render() {
     const {
       categoryDataSource, storiesDataSource,
       videoDataSource, appState, rate, duration, muted,
       paused, remainingTime, currentVisibleIndex, currentUserIndex,
-      isModelOpen,
+      isModelOpen, clickedLoadMore
     } = this.state;
 
     const {
@@ -995,7 +1056,7 @@ class VideoListing extends Component {
       profileImg, profileUserName,
     } = VideoListingStyle;
 
-    const { isFetching, videoListingError, viewProfileData } = this.props;
+    const { isFetching, categoryData, videoData, videoListingError, viewProfileData } = this.props;
 
     return (
       <View style={mainContainer}>
@@ -1009,18 +1070,20 @@ class VideoListing extends Component {
             />
           }>
           {/* for Category Part */}
-          <View style={categoryMainView}>
-            {categoryDataSource.length !== 0 ? (
+
+          {categoryData && categoryData.length !== 0 ? (
+            <View style={categoryMainView}>
               <FlatList
                 horizontal={true}
-                data={categoryDataSource}
+                data={categoryData}
                 showsHorizontalScrollIndicator={false}
                 ItemSeparatorComponent={this.FlatListItemSeparator}
                 renderItem={({ item, index }) => this.getCategory(item)}
                 keyExtractor={(item, index) => item.id}
               />
-            ) : null}
-          </View>
+            </View>
+          )
+            : null}
 
           {/* for Stories */}
           {/* {
@@ -1126,10 +1189,11 @@ class VideoListing extends Component {
                 //   viewAreaCoveragePercentThreshold: 100,
                 // }}
                 showsHorizontalScrollIndicator={false}
-                renderItem={({ item, index }) =>
-                  this.getVideoListing(item, index)
-                }
-                keyExtractor={(item, index) => item.id}
+                renderItem={({ item, index }) => this.getVideoListing(item, index)}
+                keyExtractor={(item, index) => item.videoid.toString()}
+                //onEndReached={this.LoadMoreData}
+                //onEndReachedThreshold={0.5}
+                ListFooterComponent={this.footer}
               />
             ) : null}
           </View>
@@ -1162,7 +1226,7 @@ class VideoListing extends Component {
             </CubeNavigationHorizontal>
           </Modal>
         </ScrollView>
-        {isFetching ? (
+        {!clickedLoadMore && isFetching ? (
           <View style={activityIndicatorView}>
             <ActivityIndicator size="large" color={color.tertiaryGray} />
           </View>
@@ -1173,6 +1237,7 @@ class VideoListing extends Component {
             <_Text>{this.state.errorMsg}</_Text>
           </View>
         ) : null} */}
+
       </View>
     );
   }
@@ -1202,44 +1267,37 @@ const styles = StyleSheet.create({
 function mapStateToProps(state) {
   return {
     //category
-    isFetching: state.videoListingReducer.isFetching,
-    categoryData: state.videoListingReducer.categoryData,
-    successCategoryDataVersion:
-      state.videoListingReducer.successCategoryDataVersion,
-    errorCategoryDataVersion:
-      state.videoListingReducer.errorCategoryDataVersion,
-    CatgoryDataErrorMsg: state.videoListingReducer.CatgoryDataErrorMsg,
-    CategoryDataError: state.videoListingReducer.CategoryDataError,
+    isFetching: state.videoListingReducerSaga.isFetching,
 
-    successStoriesVersion: state.videoListingReducer.successStoriesVersion,
-    storiesData: state.videoListingReducer.storiesData,
-    errorStoriesVersion: state.videoListingReducer.errorStoriesVersion,
-    storiesDataErrorMsg: state.videoListingReducer.storiesDataErrorMsg,
-    storieDataError: state.videoListingReducer.storieDataError,
+    categoryData: state.videoListingReducerSaga.categoryData,
+    successCategoryDataVersion: state.videoListingReducerSaga.successCategoryDataVersion,
+    errorCategoryDataVersion: state.videoListingReducerSaga.errorCategoryDataVersion,
+    CatgoryDataErrorMsg: state.videoListingReducerSaga.CatgoryDataErrorMsg,
+    CategoryDataError: state.videoListingReducerSaga.CategoryDataError,
 
-    error: state.videoListingReducer.error,
-    storiesData: state.videoListingReducer.storiesData,
-    successStoriesVersion: state.videoListingReducer.successStoriesVersion,
-    videoData: state.videoListingReducer.videoData,
-    successVideoDataVersion: state.videoListingReducer.successVideoDataVersion,
-    videoListErrorVersion: state.videoListingReducer.videoListErrorVersion,
-    videoListingError: state.videoListingReducer.videoListingError,
-    videoErrorMsg: state.videoListingReducer.videoErrorMsg,
+    storiesData: state.videoListingReducerSaga.storiesData,
+    errorStoriesVersion: state.videoListingReducerSaga.errorStoriesVersion,
+    successStoriesVersion: state.videoListingReducerSaga.successStoriesVersion,
+    storiesDataErrorMsg: state.videoListingReducerSaga.storiesDataErrorMsg,
+    storieDataError: state.videoListingReducerSaga.storieDataError,
 
-    likeDislikeData: state.videoListingReducer.likeDislikeData,
-    likeDislikeError: state.videoListingReducer.likeDislikeError,
-    likeDislikeErrorMsg: state.videoListingReducer.likeDislikeErrorMsg,
-    errorLikeDislikeCountVersion:
-      state.videoListingReducer.errorLikeDislikeCountVersion,
-    successLikeDislikeCountVersion:
-      state.videoListingReducer.successLikeDislikeCountVersion,
+    videoData: state.videoListingReducerSaga.videoData,
+    successVideoDataVersion: state.videoListingReducerSaga.successVideoDataVersion,
+    videoListErrorVersion: state.videoListingReducerSaga.videoListErrorVersion,
+    videoListingError: state.videoListingReducerSaga.videoListingError,
+    videoErrorMsg: state.videoListingReducerSaga.videoErrorMsg,
 
-    shareData: state.videoListingReducer.shareData,
-    shareError: state.videoListingReducer.shareError,
-    shareErrorMsg: state.videoListingReducer.shareErrorMsg,
-    errorShareCountVersion: state.videoListingReducer.errorShareCountVersion,
-    successShareCountVersion:
-      state.videoListingReducer.successShareCountVersion,
+    likeDislikeData: state.videoListingReducerSaga.likeDislikeData,
+    likeDislikeError: state.videoListingReducerSaga.likeDislikeError,
+    likeDislikeErrorMsg: state.videoListingReducerSaga.likeDislikeErrorMsg,
+    errorLikeDislikeCountVersion: state.videoListingReducerSaga.errorLikeDislikeCountVersion,
+    successLikeDislikeCountVersion: state.videoListingReducerSaga.successLikeDislikeCountVersion,
+
+    shareData: state.videoListingReducerSaga.shareData,
+    shareError: state.videoListingReducerSaga.shareError,
+    shareErrorMsg: state.videoListingReducerSaga.shareErrorMsg,
+    errorShareCountVersion: state.videoListingReducerSaga.errorShareCountVersion,
+    successShareCountVersion: state.videoListingReducerSaga.successShareCountVersion,
 
     videoViewsData: state.videoDetailsReducer.videoViewsData,
     successVideoViewsVersion: state.videoDetailsReducer.successVideoViewsVersion,
@@ -1260,11 +1318,8 @@ const mapDispatchToProps = dispatch => ({
   getCategory: () => dispatch(getCategory()),
   getStories: () => dispatch(getStories()),
   getVideoList: requestBody => dispatch(getVideoList(requestBody)),
-  getLikeDislikeCount: requestBody =>
-    dispatch(getLikeDislikeCount(requestBody)),
+  getLikeDislikeCount: requestBody => dispatch(getLikeDislikeCount(requestBody)),
   getShareCount: requestBody => dispatch(getShareCount(requestBody)),
-  resetReducer: () => dispatch(resetAllReducer()),
-  viewProfile: requestpayload => dispatch(viewProfile(requestpayload)),
 
 });
 

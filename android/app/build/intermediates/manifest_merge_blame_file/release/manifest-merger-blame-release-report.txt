@@ -6,276 +6,276 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="16"
-8-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml
+8-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml
+9-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:4:5-67
-11-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:4:22-64
+11-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:4:5-67
+11-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:4:22-64
 12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-12-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:5:5-71
-12-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:5:22-68
+12-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:5:5-71
+12-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:5:22-68
 13    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-13-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:6:5-79
-13-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:6:22-77
+13-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:6:5-79
+13-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:6:22-77
 14    <uses-permission android:name="android.permission.CAMERA" />
-14-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:7:5-65
-14-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:7:22-62
+14-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:7:5-65
+14-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:7:22-62
 15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:8:5-80
-15-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:8:22-77
+15-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:8:5-80
+15-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:8:22-77
 16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-16-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:9:5-81
-16-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:9:22-78
+16-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:9:5-81
+16-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:9:22-78
 17
 18    <queries>
-18-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:5-14:15
+18-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:5-14:15
 19        <intent>
-19-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:9-13:18
+19-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:9-13:18
 20            <action android:name="android.media.action.IMAGE_CAPTURE" />
-20-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:13-73
-20-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:21-70
+20-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:13-73
+20-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:21-70
 21        </intent>
 22    </queries> <!-- Required to access Google Play Licensing -->
 23    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
-23-->[:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:5-73
-23-->[:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:22-70
+23-->[:rn-fetch-blob] /Users/ajinkya/Desktop/GuruAppNew/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:5-73
+23-->[:rn-fetch-blob] /Users/ajinkya/Desktop/GuruAppNew/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:22-70
 24    <!--
 25         Required to keep CPU alive while downloading files
 26        (NOT to keep screen awake)
 27    -->
 28    <uses-permission android:name="android.permission.WAKE_LOCK" />
-28-->[:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:21:5-68
-28-->[:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:21:22-65
+28-->[:rn-fetch-blob] /Users/ajinkya/Desktop/GuruAppNew/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:21:5-68
+28-->[:rn-fetch-blob] /Users/ajinkya/Desktop/GuruAppNew/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:21:22-65
 29    <!--
 30         Required to poll the state of the network connection
 31        and respond to changes
 32    -->
 33    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required to check whether Wi-Fi is enabled -->
-33-->[:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:27:5-79
-33-->[:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:27:22-76
+33-->[:rn-fetch-blob] /Users/ajinkya/Desktop/GuruAppNew/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:27:5-79
+33-->[:rn-fetch-blob] /Users/ajinkya/Desktop/GuruAppNew/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:27:22-76
 34    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-34-->[:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:30:5-76
-34-->[:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:30:22-73
+34-->[:rn-fetch-blob] /Users/ajinkya/Desktop/GuruAppNew/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:30:5-76
+34-->[:rn-fetch-blob] /Users/ajinkya/Desktop/GuruAppNew/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:30:22-73
 35    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 35-->[com.android.installreferrer:installreferrer:1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a518c88900f6739297c1ca16376ec562/jetified-installreferrer-1.0/AndroidManifest.xml:9:5-110
 35-->[com.android.installreferrer:installreferrer:1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/a518c88900f6739297c1ca16376ec562/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
 36
 37    <application
-37-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:11:5-61:19
+37-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:11:5-61:19
 38        android:name="com.guruapp.MainApplication"
-38-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:13:7-38
+38-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:13:7-38
 39        android:allowBackup="false"
-39-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:19:7-34
+39-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:19:7-34
 40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 40-->[androidx.core:core:1.1.0] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/6cdf211888e0a7ccbf81d39b63072413/core-1.1.0/AndroidManifest.xml:24:18-86
 41        android:icon="@mipmap/ic_launcher"
-41-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:15:7-41
+41-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:15:7-41
 42        android:label="@string/app_name"
-42-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:14:7-39
+42-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:14:7-39
 43        android:networkSecurityConfig="@xml/network_security_config"
-43-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:21:8-68
+43-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:21:8-68
 44        android:requestLegacyExternalStorage="true"
-44-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:17:7-50
+44-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:17:7-50
 45        android:roundIcon="@mipmap/ic_launcher_round"
-45-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:18:7-52
+45-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:18:7-52
 46        android:supportsRtl="true"
 46-->[com.facebook.android:facebook-android-sdk:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/af032a041ac459bd26e8dac26be7d215/jetified-facebook-android-sdk-5.15.3/AndroidManifest.xml:28:18-44
 47        android:theme="@style/AppTheme"
-47-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:20:7-38
+47-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:20:7-38
 48        android:usesCleartextTraffic="true" >
-48-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:16:7-42
+48-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:16:7-42
 49        <activity
-49-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:22:7-32:18
+49-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:22:7-32:18
 50            android:name="com.guruapp.MainActivity"
-50-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:23:9-37
+50-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:23:9-37
 51            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-51-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:25:9-79
+51-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:25:9-79
 52            android:label="@string/app_name"
-52-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:24:9-41
+52-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:24:9-41
 53            android:screenOrientation="portrait"
-53-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:26:9-45
+53-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:26:9-45
 54            android:windowSoftInputMode="adjustResize" >
-54-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:27:9-51
+54-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:27:9-51
 55            <intent-filter>
-55-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:28:9-31:25
+55-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:28:9-31:25
 56                <action android:name="android.intent.action.MAIN" />
-56-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:29:13-65
-56-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:29:21-62
+56-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:29:13-65
+56-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:29:21-62
 57
 58                <category android:name="android.intent.category.LAUNCHER" />
-58-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:30:13-73
-58-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:30:23-70
+58-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:30:13-73
+58-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:30:23-70
 59            </intent-filter>
 60        </activity>
 61        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-61-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:33:7-84
-61-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:33:17-81
+61-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:33:7-84
+61-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:33:17-81
 62
 63        <meta-data
-63-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:35:7-36:58
+63-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:35:7-36:58
 64            android:name="com.facebook.sdk.ApplicationId"
-64-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:35:18-63
+64-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:35:18-63
 65            android:value="@string/facebook_app_id" />
-65-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:36:17-56
+65-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:36:17-56
 66
 67        <!-- for fb -->
 68        <activity
-68-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:40:9-43:48
+68-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:40:9-43:48
 69            android:name="com.facebook.FacebookActivity"
-69-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:40:19-63
+69-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:40:19-63
 70            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-70-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:41:13-113
+70-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:41:13-113
 71            android:label="@string/app_name"
-71-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:43:13-45
+71-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:43:13-45
 72            android:theme="@style/com_facebook_activity_theme" />
 72-->[com.facebook.android:facebook-common:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b3e2f255937ae1ba83ab810694a732b5/jetified-facebook-common-5.15.3/AndroidManifest.xml:33:13-63
 73        <activity
-73-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:44:9-53:20
+73-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:44:9-53:20
 74            android:name="com.facebook.CustomTabActivity"
-74-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:45:13-58
+74-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:45:13-58
 75            android:exported="true" >
-75-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:46:13-36
+75-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:46:13-36
 76            <intent-filter>
-76-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:47:13-52:29
+76-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:47:13-52:29
 77                <action android:name="android.intent.action.VIEW" />
-77-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:48:17-69
-77-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:48:25-66
+77-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:48:17-69
+77-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:48:25-66
 78
 79                <category android:name="android.intent.category.DEFAULT" />
-79-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:49:17-76
-79-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:49:27-73
+79-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:49:17-76
+79-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:49:27-73
 80                <category android:name="android.intent.category.BROWSABLE" />
-80-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:50:17-78
-80-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:50:27-75
+80-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:50:17-78
+80-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:50:27-75
 81
 82                <data android:scheme="@string/fb_login_protocol_scheme" />
-82-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:51:17-75
-82-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:51:23-72
+82-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:51:17-75
+82-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:51:23-72
 83            </intent-filter>
 84            <intent-filter>
 84-->[com.facebook.android:facebook-common:5.15.3] /Users/ajinkya/.gradle/caches/transforms-2/files-2.1/b3e2f255937ae1ba83ab810694a732b5/jetified-facebook-common-5.15.3/AndroidManifest.xml:39:13-48:29
 85                <action android:name="android.intent.action.VIEW" />
-85-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:48:17-69
-85-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:48:25-66
+85-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:48:17-69
+85-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:48:25-66
 86
 87                <category android:name="android.intent.category.DEFAULT" />
-87-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:49:17-76
-87-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:49:27-73
+87-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:49:17-76
+87-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:49:27-73
 88                <category android:name="android.intent.category.BROWSABLE" />
-88-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:50:17-78
-88-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:50:27-75
+88-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:50:17-78
+88-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:50:27-75
 89
 90                <data
-90-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:51:17-75
+90-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:51:17-75
 91                    android:host="cct.com.guruapp"
 92                    android:scheme="fbconnect" />
-92-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:51:23-72
+92-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:51:23-72
 93            </intent-filter>
 94        </activity>
 95
 96        <!-- for sharing image / video from facebook added provider with last4 digit of app id -->
 97        <provider
-97-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:57:9-59:39
+97-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:57:9-59:39
 98            android:name="com.facebook.FacebookContentProvider"
-98-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:58:13-64
+98-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:58:13-64
 99            android:authorities="com.facebook.app.FacebookContentProvider8777"
-99-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:57:19-85
+99-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:57:19-85
 100            android:exported="true" />
-100-->/Users/ajinkya/Desktop/guruApp/android/app/src/main/AndroidManifest.xml:59:13-36
+100-->/Users/ajinkya/Desktop/GuruAppNew/android/app/src/main/AndroidManifest.xml:59:13-36
 101        <provider
-101-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:19:9-27:20
+101-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:19:9-27:20
 102            android:name="androidx.core.content.FileProvider"
-102-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:20:13-62
+102-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:20:13-62
 103            android:authorities="com.guruapp.provider"
-103-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:21:13-60
+103-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:21:13-60
 104            android:exported="false"
-104-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:22:13-37
+104-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:22:13-37
 105            android:grantUriPermissions="true" >
-105-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:23:13-47
+105-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:23:13-47
 106            <meta-data
-106-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:24:13-26:58
+106-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:24:13-26:58
 107                android:name="android.support.FILE_PROVIDER_PATHS"
-107-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:25:17-67
+107-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:25:17-67
 108                android:resource="@xml/provider_paths" />
-108-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:26:17-55
+108-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:26:17-55
 109        </provider>
 110
 111        <activity
-111-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:29:9-31:72
+111-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:29:9-31:72
 112            android:name="com.yalantis.ucrop.UCropActivity"
-112-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:30:13-60
+112-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:30:13-60
 113            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-113-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:31:13-69
+113-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:31:13-69
 114
 115        <provider
-115-->[:react-native-image-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:9-18:20
+115-->[:react-native-image-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:9-18:20
 116            android:name="com.imagepicker.FileProvider"
-116-->[:react-native-image-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:13-56
+116-->[:react-native-image-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:13-56
 117            android:authorities="com.guruapp.provider"
-117-->[:react-native-image-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:13-60
+117-->[:react-native-image-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:13-60
 118            android:exported="false"
-118-->[:react-native-image-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-37
+118-->[:react-native-image-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-37
 119            android:grantUriPermissions="true" >
-119-->[:react-native-image-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-47
+119-->[:react-native-image-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-47
 120            <meta-data
-120-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:24:13-26:58
+120-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:24:13-26:58
 121                android:name="android.support.FILE_PROVIDER_PATHS"
-121-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:25:17-67
+121-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:25:17-67
 122                android:resource="@xml/provider_paths" />
-122-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:26:17-55
+122-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:26:17-55
 123        </provider>
 124        <provider
-124-->[:react-native-share] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:9-20:20
+124-->[:react-native-share] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:9-20:20
 125            android:name="cl.json.RNShareFileProvider"
-125-->[:react-native-share] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-55
+125-->[:react-native-share] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-55
 126            android:authorities="com.guruapp.rnshare.fileprovider"
-126-->[:react-native-share] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-72
+126-->[:react-native-share] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-72
 127            android:exported="false"
-127-->[:react-native-share] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:13-37
+127-->[:react-native-share] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:13-37
 128            android:grantUriPermissions="true" >
-128-->[:react-native-share] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:13-47
+128-->[:react-native-share] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-share/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:13-47
 129            <meta-data
-129-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:24:13-26:58
+129-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:24:13-26:58
 130                android:name="android.support.FILE_PROVIDER_PATHS"
-130-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:25:17-67
+130-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:25:17-67
 131                android:resource="@xml/share_download_paths" />
-131-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:26:17-55
+131-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:26:17-55
 132        </provider>
 133        <provider
-133-->[:react-native-webview] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:9-20:20
+133-->[:react-native-webview] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:9-20:20
 134            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
-134-->[:react-native-webview] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-83
+134-->[:react-native-webview] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-83
 135            android:authorities="com.guruapp.fileprovider"
-135-->[:react-native-webview] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-64
+135-->[:react-native-webview] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-64
 136            android:exported="false"
-136-->[:react-native-webview] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:13-37
+136-->[:react-native-webview] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:13-37
 137            android:grantUriPermissions="true" >
-137-->[:react-native-webview] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:13-47
+137-->[:react-native-webview] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:13-47
 138            <meta-data
-138-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:24:13-26:58
+138-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:24:13-26:58
 139                android:name="android.support.FILE_PROVIDER_PATHS"
-139-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:25:17-67
+139-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:25:17-67
 140                android:resource="@xml/file_provider_paths" />
-140-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:26:17-55
+140-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:26:17-55
 141        </provider>
 142        <provider
-142-->[:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:36:9-44:20
+142-->[:rn-fetch-blob] /Users/ajinkya/Desktop/GuruAppNew/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:36:9-44:20
 143            android:name="com.RNFetchBlob.Utils.FileProvider"
-143-->[:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:37:13-62
+143-->[:rn-fetch-blob] /Users/ajinkya/Desktop/GuruAppNew/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:37:13-62
 144            android:authorities="com.guruapp.provider"
-144-->[:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:38:13-60
+144-->[:rn-fetch-blob] /Users/ajinkya/Desktop/GuruAppNew/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:38:13-60
 145            android:exported="false"
-145-->[:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:39:13-37
+145-->[:rn-fetch-blob] /Users/ajinkya/Desktop/GuruAppNew/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:39:13-37
 146            android:grantUriPermissions="true" >
-146-->[:rn-fetch-blob] /Users/ajinkya/Desktop/guruApp/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:40:13-47
+146-->[:rn-fetch-blob] /Users/ajinkya/Desktop/GuruAppNew/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:40:13-47
 147            <meta-data
-147-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:24:13-26:58
+147-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:24:13-26:58
 148                android:name="android.support.FILE_PROVIDER_PATHS"
-148-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:25:17-67
+148-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:25:17-67
 149                android:resource="@xml/provider_paths" />
-149-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/guruApp/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:26:17-55
+149-->[:react-native-image-crop-picker] /Users/ajinkya/Desktop/GuruAppNew/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:26:17-55
 150        </provider>
 151
 152        <activity android:name="com.facebook.CustomTabMainActivity" />

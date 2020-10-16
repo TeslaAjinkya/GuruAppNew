@@ -11,7 +11,7 @@ import { urls } from '@api/urls';
 import styles from '@cardContent/_CardContentStyle'
 import { strings } from '@values/strings';
 import FastImage from 'react-native-fast-image'
-
+import ProgressiveImage from './ProgressiveImage'
 
 
 class _CardContent extends Component {
@@ -22,20 +22,6 @@ class _CardContent extends Component {
     }
   }
 
-  onStart = () => {
-    console.log("onStart");
-    this.setState({
-      isLoading: true
-    })
-  }
-
-  onEnd = () => {
-    console.log("onEnd");
-
-    this.setState({
-      isLoading: false
-    })
-  }
 
 
   render() {
@@ -111,15 +97,19 @@ class _CardContent extends Component {
 
             <FastImage
               style={thumbnailImg}
-              // onLoadStart={this.onStart}
-              // onLoad={this.onEnd}
               source={{
                 uri: item.videoThumbnail ? urls.baseUrl + item.videoThumbnail : null,
-                priority: FastImage.priority.normal,
+                priority: FastImage.priority.high,
               }}
             // resizeMode={FastImage.resizeMode.cover}
             />
 
+            {/* <ProgressiveImage
+              source={{ uri: item.videoThumbnail ? urls.baseUrl + item.videoThumbnail : null }}
+              thumbnailSource={{ uri: item.videoThumbnail ? urls.baseUrl + item.videoThumbnail : null }}
+              style={thumbnailImg}
+              resizeMode="cover"
+            /> */}
 
 
           </View>

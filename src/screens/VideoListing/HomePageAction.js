@@ -50,7 +50,6 @@ export function onFailure(error, type) {
 
 
 export function getSearchResult(searchKey) {
-    console.log("searchKey", searchKey);
 
     return dispatch => {
 
@@ -59,11 +58,9 @@ export function getSearchResult(searchKey) {
         // axios.post(urls.Search.url,searchKey.searchKey,config)
         // Or
 
-        axios.post(urls.Search.url, searchKey , configTwo)
+        axios.post(urls.Search.url, searchKey, configTwo)
             .then(response => {
 
-                console.log("response,data",response.data);
-                
                 if (response.data.success) {
                     dispatch(
                         onSuccess(response.data.videoData, SEARCH_DATA_SUCCESS)

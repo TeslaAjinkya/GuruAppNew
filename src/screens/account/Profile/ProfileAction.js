@@ -47,14 +47,13 @@ export function onFailure(error, type) {
 
 
 export function viewProfile(requestpayload) {
-  console.log("viewProfile requestpayload", requestpayload);
   return dispatch => {
     dispatch(showLoadingIndicator(VIEW_PROFILE_DATA));
 
     axios
       .post(urls.ViewProfile.url, requestpayload, configTwo)
       .then(response => {
-        console.log("viewProfile response.data", response.data);
+        console.log("viewProfile", response.data);
 
         if (response.data.success) {
           dispatch(onSuccess(response.data, VIEW_PROFILE_DATA_SUCCESS));

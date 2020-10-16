@@ -65,6 +65,7 @@ export function onFailure(error, type) {
 }
 
 export function getShareCount(payload) {
+  console.log('payload share', payload);
 
   return dispatch => {
     axios
@@ -85,14 +86,12 @@ export function getShareCount(payload) {
 }
 
 export function getLikeDislikeCount(payload) {
-  console.log("getLikeDislikeCount", payload);
 
   return dispatch => {
     axios
       .post(urls.LikeDisLike.url, payload, configTwo)
       .then(response => {
         if (response.data.success) {
-          console.log("getLikeDislikeCount", response.data);
           if (response.data.success) {
             dispatch(onSuccess(response.data, LIKE_DISLIKE_DATA_SUCCESS));
           }
@@ -113,10 +112,7 @@ export function getCategory() {
       .get(urls.Category.url)
       .then(response => {
 
-        if (
-          response.data.success == true &&
-          response.data.category.length !== 0
-        ) {
+        if (response.data.success == true && response.data.category.length !== 0) {
           dispatch(
             onSuccess(
               response.data.category,
@@ -143,7 +139,6 @@ export function getStories() {
     axios
       .get(urls.Stories.url)
       .then(response => {
-        console.log("response story", response.data);
         if (
           response.data.success == true &&
           (response.data.stories !== [] && response.data.stories !== undefined)
@@ -178,8 +173,6 @@ export function getVideoList(videoListPayload) {
     axios
       .post(urls.VideoListing.url, videoListPayload, configTwo)
       .then(response => {
-        console.log("response list", response.data);
-
         if (
           response.data.success == true &&
           (response.data.videoData !== [] && response.data.videoData !== undefined)

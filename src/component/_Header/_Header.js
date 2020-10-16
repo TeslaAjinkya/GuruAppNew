@@ -83,9 +83,9 @@ class _Header extends Component {
                 backgroundColor: color.white,
 
               }}
-              //source={require('../../assets/img/story4.png')}
-              defaultSource={require('../../assets/img/defaultImage.png')}
-              source={{ uri: urls.baseUrl + profilePic }}
+              source={require('../../assets/img/profilepic2.png')}
+            // defaultSource={require('../../assets/img/defaultImage.png')}
+            // source={{ uri: urls.baseUrl + profilePic }}
             />
           </Button>
         </Right>

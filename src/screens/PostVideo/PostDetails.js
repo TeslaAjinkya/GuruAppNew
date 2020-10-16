@@ -729,7 +729,7 @@ class PostDetails extends Component {
                     borderColor: color.borderOrange,
                     backgroundColor: color.white,
                   }}
-                  defaultSource={require('../../assets/img/defaultImage.png')}
+                 // defaultSource={require('../../assets/img/defaultImage.png')}
                   source={{uri: urls.baseUrl + viewProfileDataSource.userpic}}
                 />
               </View>

@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/../node_modules/@react-native-community/datetimepicker/android" />
             <option value="$PROJECT_DIR$/../node_modules/@react-native-community/masked-view/android" />
             <option value="$PROJECT_DIR$/../node_modules/@react-native-community/voice/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-fast-image/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-fbsdk/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-gesture-handler/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-google-signin/android" />

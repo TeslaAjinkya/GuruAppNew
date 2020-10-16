@@ -62,6 +62,9 @@ class Trending extends Component {
       views: '',
       errorVideoViewsVersion: 0,
       successVideoViewsVersion: 0,
+      page: 0,
+      clickedLoadMore: false,
+
     };
     userId = global.userId;
     requestBody = {
@@ -77,14 +80,12 @@ class Trending extends Component {
     await this.props.getTrendingList(requestBody);
   };
 
-  componentDidMount() {
+  componentDidMount = async () => {
     // this.props.getCategory();
-    this.props.getTrendingList(requestBody);
+    await this.props.getTrendingList(requestBody);
   }
 
-  // componentWillUnmount() {
-  //   this.props.resetReducer();
-  // }
+
 
   static getDerivedStateFromProps(nextProps, prevState) {
     const {
@@ -181,11 +182,13 @@ class Trending extends Component {
       this.setState({ categoryDataSource: categoryData });
     }
 
-    if (
-      this.state.successTrendingDataVersion >
-      prevState.successTrendingDataVersion
-    ) {
-      this.setState({ trendingDataSource: trendingData });
+    if (this.state.successTrendingDataVersion > prevState.successTrendingDataVersion) {
+      // this.setState({ trendingDataSource: trendingData });
+      this.setState({
+        trendingDataSource:
+          this.state.page === 0 ? trendingData : [...this.state.trendingDataSource, ...trendingData],
+      });
+
     }
 
     if (
@@ -648,6 +651,71 @@ class Trending extends Component {
   //   )
   // }
 
+
+  LoadMoreData = () => {
+    this.setState({
+      page: this.state.page + 1,
+      clickedLoadMore: true,
+    },
+      () => this.LoadRandomData(),
+    );
+  };
+
+  LoadRandomData = async () => {
+    const { page } = this.state;
+
+    requestBody = {
+      payload: {
+        userId: userId,
+        startLimit: page,
+      },
+    };
+
+    await this.props.getTrendingList(requestBody);
+
+  };
+
+
+  footer = () => {
+    return (
+      <View>
+        {!this.props.isFetching && this.state.trendingDataSource.length >= 10 ? (
+          <TouchableOpacity onPress={() => this.LoadMoreData()}>
+            <View
+              style={{
+                flex: 1,
+                height: hp(7),
+                width: wp(100),
+                backgroundColor: '#EEF8F7',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Text
+                style={{ color: '#0d185c', fontSize: 18, fontWeight: 'bold' }}>
+                Show More
+              </Text>
+            </View>
+          </TouchableOpacity>
+        ) : null}
+        {this.state.clickedLoadMore &&
+          this.props.isFetching &&
+          this.state.trendingDataSource.length >= 10 ? (
+            <View
+              style={{
+                flex: 1,
+                height: 40,
+                width: wp(100),
+                backgroundColor: '#EEF8F7',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <ActivityIndicator size="small" color='gray' />
+            </View>
+          ) : null}
+      </View>
+    );
+  };
+
   render() {
     const { categoryDataSource, trendingDataSource } = this.state;
     const { mainContainer, mainScrollView } = VideoListingStyle;
@@ -662,7 +730,7 @@ class Trending extends Component {
           style={mainScrollView}
           refreshControl={
             <RefreshControl
-              refreshing={isFetching}
+              refreshing={false}
               onRefresh={() => this.onPullRefresh()}
             />
           }>
@@ -670,25 +738,27 @@ class Trending extends Component {
             {trendingDataSource ? (
               <FlatList
                 data={trendingDataSource}
-                ListEmptyComponent={this.noRecordFound()}
-                onViewableItemsChanged={this.onViewableItemsChanged}
-                viewabilityConfig={{
-                  viewAreaCoveragePercentThreshold: 100,
-                }}
+                ListEmptyComponent={this.noRecordFound}
+                // onViewableItemsChanged={this.onViewableItemsChanged}
+                // viewabilityConfig={{
+                //   viewAreaCoveragePercentThreshold: 100,
+                // }}
                 showsHorizontalScrollIndicator={false}
-                renderItem={({ item, index }) =>
-                  this.getTrendingList(item, index)
-                }
-                keyExtractor={(item, index) => item.id}
+                renderItem={({ item, index }) => this.getTrendingList(item, index)}
+                keyExtractor={(item, index) => item.videoid.toString()}
+                //onEndReached={this.LoadMoreData}
+                //onEndReachedThreshold={0.5}
+                ListFooterComponent={this.footer}
+
               />
             ) : null}
           </View>
         </ScrollView>
-        {isFetching ? (
+        {!this.state.clickedLoadMore && isFetching ? (
           <View
             style={{
               position: 'absolute',
-              height: hp(90),
+              height: hp(80),
               width: wp(100),
               backgroundColor: 'transparent',
               justifyContent: 'center',

@@ -83,18 +83,21 @@ export default function dataReducer(state = initialState, action) {
 
     //stories
     case VIDEO_STORIES_LISTING_DATA_SUCCESS:
+      var storyIncrement = ++initialState.successStoriesVersion;
       return {
         ...state,
-        successStoriesVersion: ++state.successStoriesVersion,
+        successStoriesVersion: storyIncrement,
         storiesData: action.data,
         storiesDataErrorMsg: '',
         storieDataError: false,
       };
 
     case VIDEO_STORIES_LISTING_DATA_ERROR:
+      var storyIncrement2 = ++initialState.errorStoriesVersion;
+
       return {
         storiesData: action.error,
-        errorStoriesVersion: ++state.errorStoriesVersion,
+        errorStoriesVersion: storyIncrement2,
         storiesDataErrorMsg: action.error,
         storieDataError: true,
 
@@ -112,7 +115,6 @@ export default function dataReducer(state = initialState, action) {
 
     case VIDEO_LISTING_DATA_ERROR:
       var increment = ++initialState.videoListErrorVersion;
-      console.log("action.error", action.error);
       return {
         ...state,
         videoListErrorVersion: increment,
@@ -121,7 +123,7 @@ export default function dataReducer(state = initialState, action) {
       };
 
     case LIKE_DISLIKE_DATA_SUCCESS:
-      var increment2 = ++initialState.successLikeDislikeCountVersion;
+      var increment1 = ++initialState.successLikeDislikeCountVersion;
 
       return {
         ...state,
@@ -129,11 +131,11 @@ export default function dataReducer(state = initialState, action) {
         likeDislikeData: action.data,
         likeDislikeError: false,
         likeDislikeErrorMsg: '',
-        successLikeDislikeCountVersion: increment2,
+        successLikeDislikeCountVersion: increment1,
       };
 
     case LIKE_DISLIKE_DATA_ERROR:
-      var increment2 = ++initialState.videoListErrorVersion;
+      var increment2 = ++initialState.errorLikeDislikeCountVersion;
 
       return {
         ...state,
@@ -145,23 +147,26 @@ export default function dataReducer(state = initialState, action) {
       };
 
     case SHARE_DATA_SUCCESS:
+      var shareIncrement = ++initialState.successShareCountVersion;
+
       return {
         ...state,
         isFetching: false,
         shareData: action.data,
         shareError: false,
         shareErrorMsg: '',
-        successShareCountVersion: ++state.successShareCountVersion,
+        successShareCountVersion: shareIncrement,
       };
 
     case SHARE_DATA_ERROR:
+      var shareIncrement2 = ++initialState.errorShareCountVersion;
       return {
         ...state,
         isFetching: false,
         shareData: '',
         shareError: true,
         shareErrorMsg: action.error,
-        errorShareCountVersion: ++state.errorShareCountVersion,
+        errorShareCountVersion: shareIncrement2,
       };
 
     case VIDEO_LISTING_DATA_RESET_REDUCER:

@@ -61,7 +61,10 @@ class SubscribeChannel extends Component {
       errorMsg: '',
       likes: '',
       errorVideoViewsVersion: 0,
-      successVideoViewsVersion: 0
+      successVideoViewsVersion: 0,
+      page: 0,
+      clickedLoadMore: false,
+
     };
     userId = global.userId
   }
@@ -83,6 +86,9 @@ class SubscribeChannel extends Component {
 
     await this.props.getSubscribedChannelList(body);
     await this.props.getSubscribedVideoList(requestPayload);
+
+    this.setState({ page: 0 })
+
   };
 
   // componentWillUnmount() {
@@ -213,17 +219,17 @@ class SubscribeChannel extends Component {
   componentDidUpdate(prevProps, prevState) {
     const { subscriptionData, subscribedChannelData } = this.props;
 
-    if (
-      this.state.successSubscriptionDataVersion >
-      prevState.successSubscriptionDataVersion
-    ) {
-      this.setState({ subscriptionDataSource: subscriptionData });
+    if (this.state.successSubscriptionDataVersion > prevState.successSubscriptionDataVersion) {
+      // this.setState({ subscriptionDataSource: subscriptionData });
+      this.setState({
+        subscriptionDataSource:
+          this.state.page === 0 ? subscriptionData : [...this.state.subscriptionDataSource, ...subscriptionData],
+      });
+
+
     }
 
-    if (
-      this.state.errorSubscriptionDataVersion >
-      prevState.errorSubscriptionDataVersion
-    ) {
+    if (this.state.errorSubscriptionDataVersion > prevState.errorSubscriptionDataVersion) {
       this.setState({ errorMsg: this.props.errorMsg.msg });
       // Toast.show({
       //   text: this.props.errorMsg.msg,
@@ -297,10 +303,7 @@ class SubscribeChannel extends Component {
       });
     }
 
-    if (
-      this.state.successSubscribedChannelDataVersion >
-      prevState.successSubscribedChannelDataVersion
-    ) {
+    if (this.state.successSubscribedChannelDataVersion > prevState.successSubscribedChannelDataVersion) {
       this.setState({ subscribedChannelDataSource: subscribedChannelData });
     }
 
@@ -372,7 +375,7 @@ class SubscribeChannel extends Component {
   }
 
   onChannelSelected = async (item, creatorId) => {
-    var body = {
+    let body = {
       payload: {
         userId: userId,
         creatorId: creatorId.toString(),
@@ -380,7 +383,7 @@ class SubscribeChannel extends Component {
       },
     };
 
-    var requestPayload = {
+    let body1 = {
       payload: {
         userId: userId,
         creatorId: '',
@@ -389,13 +392,16 @@ class SubscribeChannel extends Component {
     };
 
     if (creatorId.toString() === this.state.creatorId) {
-      await this.props.getSubscribedVideoList(requestPayload);
+      await this.props.getSubscribedVideoList(body1);
       this.setState({ creatorId: '' })
     }
     else if (creatorId.toString() !== this.state.creatorId) {
       await this.props.getSubscribedVideoList(body);
       this.setState({ creatorId: creatorId.toString() })
     }
+
+    this.setState({ page: 0 })
+
   }
 
 
@@ -721,7 +727,7 @@ class SubscribeChannel extends Component {
                 borderColor: (item.creatorId).toString() == this.state.creatorId ? "red" : color.borderOrange
               }}
               source={{ uri: urls.baseUrl + item.creatorPic }}
-              defaultSource={require('../../assets/img/defaultImage.png')}
+            // defaultSource={require('../../assets/img/defaultImage.png')}
             />
             {/* <Image
               resizeMode={'cover'}
@@ -748,8 +754,77 @@ class SubscribeChannel extends Component {
     );
   }
 
+
+  LoadMoreData = () => {
+    this.setState({
+      page: this.state.page + 1,
+      clickedLoadMore: true,
+    },
+      () => this.LoadRandomData(),
+    );
+  };
+
+  LoadRandomData = async () => {
+    const { page } = this.state;
+
+    let data = {
+      payload: {
+        userId: userId,
+        creatorId: this.state.creatorId ? this.state.creatorId : '',
+        startLimit: page,
+      },
+    };
+
+    await this.props.getSubscribedVideoList(data);
+
+  };
+
+
+  footer = () => {
+    return (
+      <View>
+        {!this.props.isFetching && this.state.subscriptionDataSource.length >= 10 ? (
+          <TouchableOpacity onPress={() => this.LoadMoreData()}>
+            <View
+              style={{
+                flex: 1,
+                height: hp(7),
+                width: wp(100),
+                backgroundColor: '#EEF8F7',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Text
+                style={{ color: '#0d185c', fontSize: 18, fontWeight: 'bold' }}>
+                Show More
+              </Text>
+            </View>
+          </TouchableOpacity>
+        ) : null}
+        {this.state.clickedLoadMore &&
+          this.props.isFetching &&
+          this.state.subscriptionDataSource.length >= 10 ? (
+            <View
+              style={{
+                flex: 1,
+                height: 40,
+                width: wp(100),
+                backgroundColor: '#EEF8F7',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <ActivityIndicator size="small" color='gray' />
+            </View>
+          ) : null}
+      </View>
+    );
+  };
+
+
+
+
   render() {
-    const { subscriptionDataSource, trendingDataSource } = this.state;
+    const { subscriptionDataSource, trendingDataSource, clickedLoadMore } = this.state;
     const {
       mainContainer,
       mainScrollView,
@@ -795,16 +870,20 @@ class SubscribeChannel extends Component {
                 renderItem={({ item, index }) =>
                   this.getSubscribedList(item, index)
                 }
-                keyExtractor={(item, index) => item.id}
+                keyExtractor={(item, index) => item.videoid.toString()}
+                //  onEndReached={this.LoadMoreData}
+                // onEndReachedThreshold={0.5}
+                ListFooterComponent={this.footer}
+
               />
             ) : null}
           </View>
         </ScrollView>
-        {isFetching ? (
+        {!clickedLoadMore && isFetching ? (
           <View
             style={{
               position: 'absolute',
-              height: hp(90),
+              height: hp(80),
               width: wp(100),
               backgroundColor: 'transparent',
               justifyContent: 'center',

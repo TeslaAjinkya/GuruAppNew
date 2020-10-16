@@ -1599,7 +1599,7 @@ class VideoDetails extends Component {
                           backgroundColor: color.white,
                         }}
                         source={{ uri: urls.baseUrl + videoData.createrLogo }}
-                        defaultSource={require('../../assets/img/defaultImage.png')}
+                      // defaultSource={require('../../assets/img/defaultImage.png')}
                       />
                     </View>
                     <View

@@ -4,9 +4,11 @@ import Scene from './src/navigation/Scene'
 import { Root } from 'native-base';
 import { StatusBar, View } from 'react-native'
 import { Provider } from "react-redux";
-import configureStore from "@redux/store";
 
-const store = configureStore();
+import configureStore from "./src/store/index";
+import { store } from "./src/store";
+
+// const store = configureStore();
 
 class App extends React.Component {
 
@@ -22,6 +24,7 @@ class App extends React.Component {
             <Scene />
           </Provider>
         </Root>
+
 
       </View>
     );
