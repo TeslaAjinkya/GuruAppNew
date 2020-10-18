@@ -65,14 +65,10 @@ export function onFailure(error, type) {
 }
 
 export function getShareCount(payload) {
-  console.log('payload share', payload);
-
   return dispatch => {
     axios
       .post(urls.Share.url, payload, configTwo)
       .then(response => {
-        console.log('response share', response.data);
-
         if (response.data.success) {
           dispatch(onSuccess(response.data, SHARE_DATA_SUCCESS));
         } else {
@@ -150,11 +146,9 @@ export function getStories() {
               VIDEO_STORIES_LISTING_DATA_SUCCESS,
             ),
           );
-          // dispatch(getVideoList(videoListPayload));
         } else {
 
           dispatch(onFailure(response.data, VIDEO_STORIES_LISTING_DATA_ERROR));
-          // dispatch(getVideoList(videoListPayload));
         }
       })
       .catch(function (error) {
@@ -162,7 +156,6 @@ export function getStories() {
         dispatch(
           onFailure(strings.serverFailedMsg, VIDEO_STORIES_LISTING_DATA_ERROR),
         );
-        // dispatch(getVideoList(videoListPayload));
       });
   };
 }

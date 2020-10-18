@@ -74,27 +74,3 @@ export function getTrendingList(requestBody) {
   };
 }
 
-
-// export function resetAllReducer() {
-//   return {
-//     type: TRENDING_DATA_RESET_REDUCER
-//   };
-// }
-// export function getLikeDislikeCount(payload) {
-//   return dispatch => {
-//     axios
-//       .post(urls.LikeDisLike.url, payload, configTwo)
-//       .then(response => {
-//         if (response.data.success) {
-//           if (response.data.success) {
-//             dispatch(onSuccess(response.data, LIKE_DISLIKE_DATA_SUCCESS));
-//           }
-//         } else {
-//           dispatch(onFailure(response.data, LIKE_DISLIKE_DATA_ERROR));
-//         }
-//       })
-//       .catch(function(error) {
-//         dispatch(onFailure(strings.serverFailedMsg, LIKE_DISLIKE_DATA_ERROR));
-//       });
-//   };
-// }

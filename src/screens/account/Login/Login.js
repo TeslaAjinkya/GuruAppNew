@@ -83,8 +83,6 @@ class Login extends Component {
 
         if (this.state.successLoginVersion > prevState.successLoginVersion) {
             if (this.props.loginData.userProfile[0].verified && this.props.loginData.userProfile[0].verified === 'N') {
-                console.log("in if verified false");
-
                 this.props.navigation.navigate('MobileScreen', { token: this.props.loginData.accessToken ? this.props.loginData.accessToken : '' })
             }
             else if (this.props.loginData.userProfile[0].verified && this.props.loginData.userProfile[0].verified === 'Y') {
@@ -165,13 +163,7 @@ class Login extends Component {
                 this.props.signInRequestNormal({ emailId, password })
             }
         } catch (err) {
-            console.log("err", err);
-
             this.showToast(error, 'danger')
-            // Toast.show({
-            //     text: error,
-            //     type: "danger",
-            // });
         }
     }
 
@@ -195,8 +187,6 @@ class Login extends Component {
             var token = userInfo.idToken
 
             await RNFetchBlob.fetch('GET', photo, {
-                //Authorization : accessToken,
-                // more headers  ..
             }).then((res) => {
                 let status = res.info().status;
                 if (status == 200) {
@@ -210,20 +200,13 @@ class Login extends Component {
             console.log("error", error);
 
             if (error.code === statusCodes.SIGN_IN_CANCELLED) {
-
                 this.showToast('You have cancelled Sign in progress', 'danger')
-
             } else if (error.code === statusCodes.IN_PROGRESS) {
-
                 this.showToast('Sign in is in progress already', 'danger')
-
             } else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
-
                 this.showToast('Play services not available or outdated', 'danger')
-
             } else {
-                this.showToast()
-                // some other error happened
+                this.showToast(strings.serverFailedMsg, 'danger')
             }
         }
     };
@@ -285,8 +268,6 @@ class Login extends Component {
         var dob = moment(birthday).format("DD-MM-YYYY")
 
         await RNFetchBlob.fetch('GET', profilePic, {
-            //Authorization : accessToken,
-            // more headers  ..
         }).then((res) => {
             let status = res.info().status;
             if (status == 200) {

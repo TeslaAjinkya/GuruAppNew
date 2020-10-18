@@ -24,7 +24,7 @@ const Story = (props) => {
 
       {type === 'image' ? (
         <Image
-           source={{ uri: urls.baseUrl + url }}
+          source={{ uri: urls.baseUrl + url }}
           //source={ require('../../../assets/img/story3.png')}
           onLoadEnd={props.onImageLoaded}
           style={styles.content}
@@ -40,8 +40,8 @@ const Story = (props) => {
             //style={styles.content}
             resizeMode={"cover"}
             style={{
-                aspectRatio:1,
-                width: "100%"
+              aspectRatio: 1,
+              width: "100%"
             }}
           />
         )}

@@ -55,21 +55,13 @@ export function getSearchResult(searchKey) {
 
         dispatch(showLoadingIndicator());
 
-        // axios.post(urls.Search.url,searchKey.searchKey,config)
-        // Or
-
         axios.post(urls.Search.url, searchKey, configTwo)
             .then(response => {
-
                 if (response.data.success) {
-                    dispatch(
-                        onSuccess(response.data.videoData, SEARCH_DATA_SUCCESS)
-                    )
+                    dispatch(onSuccess(response.data.videoData, SEARCH_DATA_SUCCESS))
                 }
                 else {
-                    dispatch(
-                        onFailure(response, SEARCH_DATA_ERROR)
-                    )
+                    dispatch(onFailure(response, SEARCH_DATA_ERROR))
                 }
             })
             .catch(function (error) {

@@ -16,7 +16,6 @@ import { Toast } from "native-base";
 const qs = require('querystring')
 const config = {
   headers: {
-    // Accept: 'application/json',
     'Content-Type': 'application/json',
   }
 }
@@ -45,7 +44,7 @@ export function onFailure(error, type) {
 }
 
 export function setLoginData(data) {
-  global.userId =  data.userId;
+  global.userId = data.userId;
   AsyncStorage.setItem('userId', data.userId.toString())
   AsyncStorage.setItem('email', data.emailId)
   AsyncStorage.setItem('firstName', data.firstName)
@@ -55,46 +54,42 @@ export function setLoginData(data) {
   AsyncStorage.setItem('dob', data.dob)
   AsyncStorage.setItem('userpic', data.userpic)
   //AsyncStorage.setItem('walletBalance', data.walletBalance.toString())
- AsyncStorage.setItem('subscribersCount', data.subscribersCount.toString())
+  AsyncStorage.setItem('subscribersCount', data.subscribersCount.toString())
 
 }
 
 export function signInRequestNormal(payload) {
 
   const { emailId, password } = payload
-  
-   return dispatch => {
+
+  return dispatch => {
     dispatch(showLoadingIndicator());
 
-     axios.post(urls.Login.url,
-       {
-         "payload": {
-           loginKey: emailId.toLowerCase(),
-           password: password,
-           api: 0
-         }
+    axios.post(urls.Login.url,
+      {
+        payload: {
+          loginKey: emailId.toLowerCase(),
+          password: password,
+          api: 0
+        }
       },
       config
     )
       .then(response => {
-        console.log("response.data.success",response);
-        
-      if (response.data.success && response.data.userProfile.length > 0) {
-           setLoginData(response.data.userProfile[0])  
-           dispatch(
+        if (response.data.success && response.data.userProfile.length > 0) {
+          setLoginData(response.data.userProfile[0])
+          dispatch(
             onSuccess(response.data, LOGIN_DATA_SUCCESS)
-          ) 
-         }
-         else {
-          
+          )
+        }
+        else {
+
           dispatch(
             onFailure(response.data.msg, LOGIN_DATA_ERROR)
           )
-         }
+        }
       })
       .catch(function (error) {
-        console.log("error login normal",error);
-        
         dispatch(
           onFailure(strings.serverFailedMsg, LOGIN_DATA_ERROR)
         );
@@ -104,46 +99,42 @@ export function signInRequestNormal(payload) {
 
 
 export function signInRequestFb(payload) {
-  
-  const { first_name,last_name,email,dob,accessToken,base64ProfileUrl } = payload
-  
- 
+
+  const { first_name, last_name, email, dob, accessToken, base64ProfileUrl } = payload
+
+
   return dispatch => {
     dispatch(showLoadingIndicator());
-   
+
     axios.post(urls.Login.url,
       {
-      'payload':{
-        firstName:first_name ? first_name : '',
-        lastName:last_name ? last_name :'',
-        emailId : email.toLowerCase(),
-        api:1,
-        accessToken:accessToken,
-        profilePic:base64ProfileUrl,
-        //dob:dob
-      }
-    },
+        payload: {
+          firstName: first_name ? first_name : '',
+          lastName: last_name ? last_name : '',
+          emailId: email.toLowerCase(),
+          api: 1,
+          accessToken: accessToken,
+          profilePic: base64ProfileUrl,
+          //dob:dob
+        }
+      },
       config
     )
       .then(response => {
-        console.log("response.data.success fb login",response.data);
-        
         if (response.data.success && response.data.userProfile.length > 0) {
-          setLoginData(response.data.userProfile[0])  
-           dispatch(
+          setLoginData(response.data.userProfile[0])
+          dispatch(
             onSuccess(response.data, LOGIN_DATA_SUCCESS)
-          ) 
-         }
-         else {
-          
+          )
+        }
+        else {
+
           dispatch(
             onFailure(response.data.msg, LOGIN_DATA_ERROR)
           )
-         }
+        }
       })
       .catch(function (error) {
-        console.log("response.error fb login",error);
-
         dispatch(
           onFailure(strings.serverFailedMsg, LOGIN_DATA_ERROR)
         );
@@ -153,43 +144,39 @@ export function signInRequestFb(payload) {
 
 
 export function signInRequestGoogle(payload) {
-  
+
   const { first_name, last_name, email, token, base64ProfileUrlGoogle } = payload
-  
+
   return dispatch => {
     dispatch(showLoadingIndicator());
-   
+
     axios.post(urls.Login.url,
       {
-      'payload':{
-        firstName:first_name ? first_name : '',
-        lastName:last_name ? last_name :'',
-        emailId : email.toLowerCase(),
-        api:1,
-        accessToken:token,
-        profilePic:base64ProfileUrlGoogle,
-      }
-    },
+        'payload': {
+          firstName: first_name ? first_name : '',
+          lastName: last_name ? last_name : '',
+          emailId: email.toLowerCase(),
+          api: 1,
+          accessToken: token,
+          profilePic: base64ProfileUrlGoogle,
+        }
+      },
       config
     )
       .then(response => {
-        console.log("response.data.success google login",response.data);
-        
         if (response.data.success && response.data.userProfile.length > 0) {
-          setLoginData(response.data.userProfile[0])  
-           dispatch(
+          setLoginData(response.data.userProfile[0])
+          dispatch(
             onSuccess(response.data, LOGIN_DATA_SUCCESS)
-          ) 
-         }
-         else {
+          )
+        }
+        else {
           dispatch(
             onFailure(response.data.msg, LOGIN_DATA_ERROR)
           )
-         }
+        }
       })
       .catch(function (error) {
-        console.log("response.error google login",error);
-
         dispatch(
           onFailure(strings.serverFailedMsg, LOGIN_DATA_ERROR)
         );
@@ -199,39 +186,33 @@ export function signInRequestGoogle(payload) {
 
 
 export function signInRequestWithMobileNo(payload) {
-  console.log("payload",payload);
-  
   const { userName, mobileNumber, token } = payload
-  
+
 
   return dispatch => {
     dispatch(showLoadingIndicator());
-   
+
     axios.post(urls.Login.url,
       {
-      'payload':{
-        mobileNumber:mobileNumber,
-        userName:userName,
-        api:1,
-        accessToken:token,
-      }
-    },
+        'payload': {
+          mobileNumber: mobileNumber,
+          userName: userName,
+          api: 1,
+          accessToken: token,
+        }
+      },
       config
     )
       .then(response => {
-        console.log("response.data.success mobile login",response.data);
-        
         if (response.data.success && response.data.userProfile.length > 0) {
-          setLoginData(response.data.userProfile[0])  
-           dispatch(onSuccess(response.data, LOGIN_DATA_MOBILE_SUCCESS)) 
-         }
-         else {
+          setLoginData(response.data.userProfile[0])
+          dispatch(onSuccess(response.data, LOGIN_DATA_MOBILE_SUCCESS))
+        }
+        else {
           dispatch(onFailure(response.data.msg, LOGIN_DATA_MOBILE_ERROR))
-         }
+        }
       })
       .catch(function (error) {
-        console.log("response.error mobile login",error);
-
         dispatch(
           onFailure(strings.serverFailedMsg, LOGIN_DATA_MOBILE_ERROR)
         );

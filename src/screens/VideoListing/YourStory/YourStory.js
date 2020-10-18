@@ -4,7 +4,7 @@ import {
     heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import {
-    View, Text, Platform,PermissionsAndroid,
+    View, Text, Platform, PermissionsAndroid,
     Image, Button, ActivityIndicator, FlatList, SafeAreaView,
     Modal, Alert, TouchableOpacity,
 } from 'react-native';
@@ -17,6 +17,7 @@ import _Card from '@card/_Card';
 import ImagePicker from 'react-native-image-picker';
 import HelperFunction from '@values/HelperFunction';
 import RNFetchBlob from 'rn-fetch-blob';
+import ImagePickerTwo from 'react-native-image-crop-picker';
 
 var videoOptions = {
     title: 'Select Video',
@@ -29,7 +30,7 @@ var imageOptions = {
     title: 'Select Image',
     mediaType: 'photo',
     quality: 0.5,
-   // allowsEditing: true
+    // allowsEditing: true
 };
 
 const cameraOptions = {
@@ -61,7 +62,7 @@ export default class YourStory extends Component {
                     PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE,
                 );
                 if (granted !== PermissionsAndroid.RESULTS.GRANTED) {
-                    Alert.alert('Access is needed to use existing videos while uploading');
+                    Alert.alert('Access is needed to use existing photos/videos while uploading');
                 }
             } catch (err) {
                 console.warn(err);
@@ -72,67 +73,84 @@ export default class YourStory extends Component {
 
     openVideoPicker = async () => {
 
-        ImagePicker.launchImageLibrary(videoOptions, response => {
-            if (response.uri) {
-                let filePath = response.uri;
-                let fileName = response.fileName;
-
-                filePath =
-                    filePath.startsWith(CONSTANTS.filePathStart) && Platform.OS === 'ios'
-                        ? filePath.replace(CONSTANTS.filePathStart, '')
-                        : filePath;
-
-                RNFetchBlob.fs.stat(filePath)
-                    .then((stats) => {
-                        let size = stats.size
-                        if (size <= 50000000) {
-                            this.props.navigation.navigate('VideoStory', { video: response.uri })
-                        }
-                        else {
-                            Toast.show({
-                                text: "File size too large. Try importing short videos",
-                                type: 'danger',
-                                duration: 2500
-                            })
-                        }
-
-                        console.log("response", response);
-                    })
+        ImagePickerTwo.openPicker({
+            mediaType: "video",
+        }).then(video => {
+            console.log(" openVideoPicker video", video);
+            let size = video.size
+            if (size <= 50000000) {
+                this.props.navigation.navigate('VideoStory', { video: video.path })
             }
+            else {
+                Toast.show({
+                    text: "File size too large. Try importing short videos",
+                    type: 'danger',
+                    duration: 2500
+                })
+            }
+
         });
+
+        // ImagePicker.launchImageLibrary(videoOptions, response => {
+        //     if (response.uri) {
+        //         let filePath = response.uri;
+        //         let fileName = response.fileName;
+
+        //         filePath =
+        //             filePath.startsWith(CONSTANTS.filePathStart) && Platform.OS === 'ios'
+        //                 ? filePath.replace(CONSTANTS.filePathStart, '')
+        //                 : filePath;
+
+        //         RNFetchBlob.fs.stat(filePath)
+        //             .then((stats) => {
+        //                 let size = stats.size
+        //                 if (size <= 50000000) {
+        //                     this.props.navigation.navigate('VideoStory', { video: response.uri })
+        //                 }
+        //                 else {
+        //                     Toast.show({
+        //                         text: "File size too large. Try importing short videos",
+        //                         type: 'danger',
+        //                         duration: 2500
+        //                     })
+        //                 }
+
+        //                 console.log("response", response);
+        //             })
+        //     }
+        // });
 
     }
 
 
-    openImagePicker =  () => {
-          ImagePicker.launchImageLibrary(imageOptions, response => {
-            console.log("response", response);
-            
+    openImagePicker = () => {
+        ImagePicker.launchImageLibrary(imageOptions, response => {
+
             if (response.uri) {
                 const source = { uri: response.uri };
 
-                 this.props.navigation.navigate('ImageStory', { image:source,imageData: response})
+                this.props.navigation.navigate('ImageStory', { image: source, imageData: response })
             }
         });
     }
-   
 
-    openCamera = ()=>{
+
+    openCamera = () => {
         ImagePicker.launchCamera(cameraOptions, (response) => {
             console.log('Response = ', response);
-        
+
             if (response.didCancel) {
-              console.log('User cancelled image picker');
+                console.log('User cancelled image picker');
             } else if (response.error) {
-              console.log('ImagePicker Error: ', response.error);
+                console.log('ImagePicker Error: ', response.error);
             } else if (response.customButton) {
-              console.log('User tapped custom button: ', response.customButton);
+                console.log('User tapped custom button: ', response.customButton);
             } else if (response.uri) {
                 const source = { uri: response.uri };
 
-                this.props.navigation.navigate('CameraStory', { image:source,imageData: response})
+                this.props.navigation.navigate('CameraStory', { image: source, imageData: response })
             }
-          });
+        });
     }
 
     takePhoto = () => {
@@ -174,8 +192,8 @@ export default class YourStory extends Component {
 
     uploadImage = () => {
         return (
-            <TouchableOpacity 
-            onPress={() => this.openImagePicker()}
+            <TouchableOpacity
+                onPress={() => this.openImagePicker()}
             >
                 <_Card borderRadius={10} propWidth={wp(95)}>
                     <View style={{ height: hp(18) }}>
@@ -210,8 +228,8 @@ export default class YourStory extends Component {
 
     uploadVideo = () => {
         return (
-            <TouchableOpacity 
-            onPress={() => this.openVideoPicker()} 
+            <TouchableOpacity
+                onPress={() => this.openVideoPicker()}
             >
                 <_Card borderRadius={10} propWidth={wp(95)}  >
                     <View style={{ height: hp(18) }}>
@@ -266,13 +284,8 @@ export default class YourStory extends Component {
                 <View style={{ height: hp(6), backgroundColor: color.white }}>
                     <View
                         style={{ flex: 1, flexDirection: 'row', alignItems: 'center' }}>
-                        <TouchableOpacity
-                            onPress={() => this.props.navigation.goBack()}
-                            style={{
-                                flex: 0.1,
-                                justifyContent: 'center',
-                                alignItems: 'center',
-                            }}>
+                        <TouchableOpacity onPress={() => this.props.navigation.goBack()}
+                            style={{ flex: 0.1, justifyContent: 'center', alignItems: 'center' }}>
                             <Image
                                 defaultSource={require('../../../assets/img/left.png')}
                                 source={require('../../../assets/img/left.png')}

@@ -91,9 +91,6 @@ class SubscribeChannel extends Component {
 
   };
 
-  // componentWillUnmount() {
-  //   this.props.resetReducer();
-  // }
 
   async componentDidMount() {
     var requestPayload = {
@@ -729,15 +726,7 @@ class SubscribeChannel extends Component {
               source={{ uri: urls.baseUrl + item.creatorPic }}
             // defaultSource={require('../../assets/img/defaultImage.png')}
             />
-            {/* <Image
-              resizeMode={'cover'}
-              style={{ height: hp(7), width: hp(7), borderRadius:hp(7)/2,
-                 borderWidth: 3, 
-                 borderColor:(item.creatorId).toString() == this.state.creatorId ? "red" : color.borderOrange
-                }}
-              source={{uri: urls.baseUrl + item.creatorPic}}
-              defaultSource={require('../../assets/img/defaultImage.png')}
-            /> */}
+
           </Animatable.View>
 
           <View style={channelText}>
@@ -862,10 +851,6 @@ class SubscribeChannel extends Component {
               <FlatList
                 data={subscriptionDataSource}
                 ListEmptyComponent={this.noRecordFound()}
-                onViewableItemsChanged={this.onViewableItemsChanged}
-                viewabilityConfig={{
-                  viewAreaCoveragePercentThreshold: 100,
-                }}
                 showsHorizontalScrollIndicator={false}
                 renderItem={({ item, index }) =>
                   this.getSubscribedList(item, index)

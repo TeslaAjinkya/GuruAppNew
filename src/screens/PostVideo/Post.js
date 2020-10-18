@@ -148,25 +148,10 @@ class Post extends Component {
   }
 
   showSelectedVideo = async (item) => {
-    // let filePath = item.node.image.uri;
-    // let fileName = item.node.image.filename;
-    // let fileType = item.node.type;
-    // if (Platform.OS === 'ios') {
-    //   let arr = filePath.split('/');
-    //   const dirs = RNFetchBlob.fs.dirs;
-    //   //  filePath = `file://${dirs.DocumentDir}/${filePath}`
-    //   filePath = `${dirs.DocumentDir}/${arr[arr.length - 1]}`;
-    // } else {
-    //   filePath = filePath;
-    // }
-
     this.getbase64(item.node.image)
-
   }
 
   getbase64 = async (item, config) => {
-
-    // var data = await RNFetchBlob.fs.readFile(filePath, CONSTANTS.base64)
 
     this.props.navigation.navigate('PostDetails', {
       selectedVideoData: item,
@@ -262,43 +247,6 @@ class Post extends Component {
     );
   };
 
-  // getSegment(value, text, group) {
-  //   const {selectedSegment} = this.state;
-
-  //   return (
-  //     <View>
-  //       <Button
-  //         style={{
-  //           borderRadius: 3,
-  //           alignItems: 'center',
-  //           height: hp(5),
-  //           width: wp(48),
-  //           justifyContent: 'center',
-  //           backgroundColor:
-  //             selectedSegment === value ? color.white : color.white,
-  //           borderBottomWidth: selectedSegment === value ? 1 : 0,
-  //           borderColor: selectedSegment === value ? color.tertiaryGray : null,
-  //           borderBottomLeftRadius: value === 1 ? 4 : 0,
-  //         }}
-  //         active={selectedSegment === value ? true : false}
-  //         onPress={() => {
-  //           this.setState({
-  //             selectedSegment: value,
-  //           });
-  //         }}>
-  //         {/* <View style={{backgroundColor:"yellow",alignSelf:"center"}}> */}
-  //         <_Text
-  //           fsHeading
-  //           fwHeading
-  //           style={{alignSelf: 'center'}}
-  //           textColor={color.textNote}>
-  //           {text}
-  //         </_Text>
-  //         {/* </View> */}
-  //       </Button>
-  //     </View>
-  //   );
-  // }
 
   getVideo = async response => {
 
@@ -317,17 +265,9 @@ class Post extends Component {
 
     this.getbase64Two(filePath, response)
 
-    // fetch("http://13.233.165.115:3000/postvideo", config)
-    //   .then((checkStatusAndGetJSONResponse) => {
-    //     debugger
-    //     console.log(checkStatusAndGetJSONResponse);
-    //   }).catch((err) => { console.log(err) });
-
   };
 
   getbase64Two = async (uri, response) => {
-
-    //var data = await RNFetchBlob.fs.readFile(filePath, CONSTANTS.base64)
 
     this.props.navigation.navigate('PostDetails', {
       selectedVideoUrl: uri,
@@ -339,17 +279,6 @@ class Post extends Component {
   }
 
   openVideoPicker = () => {
-    // ImagePicker.launchImageLibrary(options, response => {
-    //   if (response.didCancel) {
-    //     console.log('User cancelled image picker');
-    //   } else if (response.error) {
-    //     console.log('ImagePicker Error: ', response.error);
-    //   } else if (response.customButton) {
-    //     console.log('User tapped custom button: ', response.customButton);
-    //   } else {
-    //     console.log("openVideoPicker response", response);
-    //     this.getVideo(response);
-    //   }
     ImagePicker.openPicker({
       mediaType: "video",
     }).then(video => {

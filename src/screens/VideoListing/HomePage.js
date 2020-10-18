@@ -99,27 +99,6 @@ class HomePage extends Component {
     };
     this.props.viewProfile(requestpayload);
   }
-    // BackHandler.addEventListener('hardwareBackPress', () => {
-
-    //     if (isModalVisible && !searchTerm && backPressed > 0) {
-    //         this.setState({
-    //             isModalVisible: false
-    //         })
-    //     }
-    //     if (backPressed > 0 && !isModalVisible && !searchTerm) {
-    //         BackHandler.exitApp()
-    //         backPressed = 0
-    //     }
-    //     else {
-    //         // backPressed++;
-    //         // ToastAndroid.show("Press Again To Exit GuruApp", ToastAndroid.SHORT);
-    //         // setTimeout(() => { backPressed = 0 }, 2000);
-    //         // return true;
-    //     }
-
-    //     return true;
-    // })
-  //};
 
   static getDerivedStateFromProps(nextProps, prevState) {
     const {

@@ -739,10 +739,6 @@ class Trending extends Component {
               <FlatList
                 data={trendingDataSource}
                 ListEmptyComponent={this.noRecordFound}
-                // onViewableItemsChanged={this.onViewableItemsChanged}
-                // viewabilityConfig={{
-                //   viewAreaCoveragePercentThreshold: 100,
-                // }}
                 showsHorizontalScrollIndicator={false}
                 renderItem={({ item, index }) => this.getTrendingList(item, index)}
                 keyExtractor={(item, index) => item.videoid.toString()}

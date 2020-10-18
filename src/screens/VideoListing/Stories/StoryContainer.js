@@ -16,7 +16,7 @@ const SCREEN_WIDTH = Dimensions.get('window').width;
 
 const StoryContainer = (props) => {
   const { user } = props;
-  
+
   const { stories = [] } = user || {};
   const storiesData = props.user.urls
   const [currentIndex, setCurrentIndex] = useState(0);

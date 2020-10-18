@@ -22,7 +22,7 @@ export default class ImageStory extends Component {
         super(props);
         const imageData = this.props.route.params.imageData;
         const image = this.props.route.params.image;
-        
+
         this.state = {
             image: image,
             emoji: '',
@@ -98,7 +98,8 @@ export default class ImageStory extends Component {
                     <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center' }}>
                         <TouchableOpacity
                             onPress={() => this.props.navigation.goBack()}
-                            style={{top:hp(1),flex: 0.1, paddingLeft: hp(3),
+                            style={{
+                                top: hp(1), flex: 0.1, paddingLeft: hp(3),
                             }}>
                             <Image
                                 defaultSource={require('../../../assets/img/close1.png')}
@@ -109,27 +110,27 @@ export default class ImageStory extends Component {
                     </View>
                 </View>
 
-                <View style={{ height: hp(80),top:hp(0.5), justifyContent: 'center', alignItems: 'center' }}>
+                <View style={{ height: hp(80), top: hp(0.5), justifyContent: 'center', alignItems: 'center' }}>
                     <Image
-                        style={{ height: hp(75), width: wp(100),resizeMode:'cover' }}
+                        style={{ height: hp(75), width: wp(100), resizeMode: 'cover' }}
                         source={image}
-                        //source={require('../../../assets/img/story1.png')}
                         defaultSource={require('../../../assets/img/default.png')}
                     />
                 </View>
 
-                    <View style={{  alignItems: 'flex-end', justifyContent: 'center' }}>
-                        <TouchableOpacity>
-                            <View style={{top:hp(2),
-                                height: hp(5), width: hp(12), borderRadius: 25,
-                                backgroundColor: color.white, borderWidth: 0.5, borderColor: color.textNote,
-                                alignItems: "center", justifyContent: 'center',
-                                marginRight: hp(3)
-                            }}>
-                                <_Text fsHeading fwHeading>Post</_Text>
-                            </View>
-                        </TouchableOpacity>
-                    </View>
+                <View style={{ alignItems: 'flex-end', justifyContent: 'center' }}>
+                    <TouchableOpacity>
+                        <View style={{
+                            top: hp(2),
+                            height: hp(6), width: hp(12), borderRadius: 25,
+                            backgroundColor: color.white, borderWidth: 0.5, borderColor: color.textNote,
+                            alignItems: "center", justifyContent: 'center',
+                            marginRight: hp(3)
+                        }}>
+                            <_Text fsHeading fwHeading>Post</_Text>
+                        </View>
+                    </TouchableOpacity>
+                </View>
 
 
             </SafeAreaView>
