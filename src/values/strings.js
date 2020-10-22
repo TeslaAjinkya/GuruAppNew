@@ -52,4 +52,5 @@ export const strings = {
     notification: 'Notifications',
     posts: 'Posts',
     likes: 'Likes',
+    gifts: 'Gifts'
 }

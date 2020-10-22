@@ -6,7 +6,7 @@ import {
 import { urls } from '@api/urls';
 import { connect } from 'react-redux';
 import {
-    View, Text,
+    View, Text, Dimensions,
     Image, Button, StyleSheet,
     ActivityIndicator, FlatList,
     SafeAreaView, Modal,
@@ -17,6 +17,16 @@ import _Text from '@text/_Text';
 import { color } from '@values/colors';
 import { Toast } from 'native-base';
 import _CustomHeader from '@customHeader/_CustomHeader'
+
+import {
+    LineChart,
+    BarChart,
+    PieChart,
+    ProgressChart,
+    ContributionGraph,
+    StackedBarChart
+} from "react-native-chart-kit"
+
 
 export default class VideoAnalytics extends Component {
     constructor(props) {
@@ -77,11 +87,103 @@ export default class VideoAnalytics extends Component {
         )
     }
 
+    chartView = () => {
+        return (
+            <View style={{ alignItems: 'center' }}>
+                <BarChart
+                    data={{
+                        labels: [
+                            'January',
+                            'February',
+                            'March',
+                            'April',
+                            'May',
+                            'June',
 
+                        ],
+                        datasets: [
+                            {
+                                data: [20, 45, 28, 80, 99, 43],
+                            },
+                        ],
+                    }}
+                    width={wp(95)}
+                    height={220}
+                    // showValuesOnTopOfBars={true}
+                    // yAxisLabel={'views'}
+                    chartConfig={{
+                        backgroundColor: '#1cc910',
+                        backgroundGradientFrom: '#eff3ff',
+                        backgroundGradientTo: '#efefef',
+                        decimalPlaces: 0,
+                        color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
+                    }}
+                    style={{
+                        marginVertical: 8,
+                        borderRadius: 10,
+                    }}
+                />
+            </View>
+        )
+    }
+
+    countView = () => {
+        const { videoData, videoList } = this.state
+
+        return (
+            <View style={{ height: hp(12), backgroundColor: color.primaryGray, flexDirection: 'row', justifyContent: 'space-around' }}>
+                <View style={styles.parts}>
+                    <_Text textColor={color.tertiaryGray} bold fsLarge numberOfLines={1}>
+                        {videoData.views}
+                    </_Text>
+                    <_Text textColor={color.tertiaryGray} fsPrimary>
+                        {strings.view}
+                    </_Text>
+                </View>
+
+                <View style={styles.border} />
+
+                <View style={styles.parts}>
+                    <_Text textColor={color.tertiaryGray} bold fsLarge numberOfLines={1}>
+                        {videoData.likeCount}
+                    </_Text>
+                    <_Text textColor={color.tertiaryGray} fsPrimary>
+                        {strings.likes}
+                    </_Text>
+                </View>
+
+                <View style={styles.border} />
+
+                <View style={styles.parts}>
+                    <_Text textColor={color.tertiaryGray} bold fsLarge numberOfLines={1}>
+                        {videoData.sharesCount}
+                    </_Text>
+                    <_Text textColor={color.tertiaryGray} fsPrimary>
+                        {strings.shares}
+                    </_Text>
+                </View>
+
+                <View style={styles.border} />
+
+                <View style={styles.parts}>
+                    <_Text textColor={color.tertiaryGray} bold fsLarge numberOfLines={1}>
+                        {videoData.giftCount}
+                    </_Text>
+                    <_Text textColor={color.tertiaryGray} fsPrimary>
+                        {strings.gifts}
+                    </_Text>
+                </View>
+
+
+
+            </View>
+
+        )
+    }
     render() {
         const { videoData, videoList } = this.state
 
-
+        console.log("videoData", videoData);
         return (
             <SafeAreaView style={{ flex: 1, backgroundColor: color.white }}>
                 <View style={{ flex: 2 }}>
@@ -91,40 +193,10 @@ export default class VideoAnalytics extends Component {
                         onLeftButtonPress={() => this.props.navigation.goBack()}
                     />
 
-                    <View style={{ height: hp(12), backgroundColor: color.primaryGray, flexDirection: 'row', justifyContent: 'space-around' }}>
-                        <View style={styles.parts}>
-                            <_Text textColor={color.tertiaryGray} bold fsLarge numberOfLines={1}>
-                                {videoData.views}
-                            </_Text>
-                            <_Text textColor={color.tertiaryGray} fsPrimary>
-                                {strings.view}
-                            </_Text>
-                        </View>
 
-                        <View style={styles.border} />
+                    {this.countView()}
 
-                        <View style={styles.parts}>
-                            <_Text textColor={color.tertiaryGray} bold fsLarge numberOfLines={1}>
-                                {videoData.likeCount}
-                            </_Text>
-                            <_Text textColor={color.tertiaryGray} fsPrimary>
-                                {strings.likes}
-                            </_Text>
-                        </View>
-
-                        <View style={styles.border} />
-
-                        <View style={styles.parts}>
-                            <_Text textColor={color.tertiaryGray} bold fsLarge numberOfLines={1}>
-                                {videoData.sharesCount}
-                            </_Text>
-                            <_Text textColor={color.tertiaryGray} fsPrimary>
-                                {strings.shares}
-                            </_Text>
-                        </View>
-
-                    </View>
-
+                    {/* {this.chartView()} */}
 
                     <View style={{ justifyContent: 'center', width: wp(100), paddingTop: 10, flex: 1 }}>
                         <FlatList

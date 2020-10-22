@@ -64,19 +64,28 @@ const Data = [
 ];
 
 class ManageAccount extends Component {
+  constructor(props) {
+    super(props);
+
+    const data = this.props.route.params.profile
+
+    this.state = {
+      profileData: data,
+      showAccountDropDown: false
+    };
+  }
+
 
   FlatListItemSeparator = () => {
+    const { profileData, showAccountDropDown } = this.state
+
     return (
-      <View
-        style={{
-          height: hp(0.09),
-          width: '100%',
-          backgroundColor: color.lightGray,
-        }}
+      <View style={{
+        height: hp(0.09), width: '100%', backgroundColor: showAccountDropDown ? 'white' : color.lightGray,
+      }}
       />
     );
   };
-
 
 
   setLoginData() {
@@ -132,9 +141,9 @@ class ManageAccount extends Component {
     // if (item.id === 4) {
     //   this.props.navigation.navigate('Transactions')
     // }
-    // if (item.id === 2) {
-    //   this.props.navigation.navigate('ChangePassword')
-    // }
+    if (item.id === 1) {
+      this.setState({ showAccountDropDown: !this.state.showAccountDropDown })
+    }
 
 
   }
@@ -143,8 +152,16 @@ class ManageAccount extends Component {
 
 
   getView(item, index) {
+
+    const { profileData, showAccountDropDown } = this.state
+
     return (
-      <TouchableOpacity onPress={() => this.getScreen(item)} style={{ height: hp(6), marginTop: hp(1), marginBottom: hp(1) }}>
+      <TouchableOpacity onPress={() => this.getScreen(item)}
+        style={{
+          height: hp(6),
+          marginTop: showAccountDropDown && item.id === 2 ? hp(14) : hp(1),
+          marginBottom: hp(1)
+        }}>
         <View
           style={{
             flex: 1,
@@ -165,22 +182,102 @@ class ManageAccount extends Component {
             </_Text>
           </View>
           <View style={{ flex: 0.05 }}>
-            <Image
+            {item.id !== 1 && <Image
               source={require('../../assets/img/forwardArrow.png')}
               style={{ height: hp(2), width: hp(2) }}
             />
+            }
+            {item.id == 1 && !showAccountDropDown && <Image
+              source={require('../../assets/img/downArrow.png')}
+              style={{ height: hp(2), width: hp(2) }}
+            />}
+            {item.id == 1 && showAccountDropDown &&
+              <Image
+                source={require('../../assets/img/upArrow.png')}
+                style={{ height: hp(2), width: hp(2) }}
+              />
+            }
+
           </View>
         </View>
+
+        <View style={{
+          height: hp(0.09), width: '100%', backgroundColor: showAccountDropDown && item.id === 1 ? 'white' : color.lightGray,
+        }}
+        />
+        {showAccountDropDown && item.id === 1 && this.accounDropDownView()}
       </TouchableOpacity>
     );
   }
 
+
+  accounDropDownView = () => {
+    const { profileData } = this.state
+
+    return (
+      <View style={{
+        height: hp(15), top: 5,
+        alignItems: 'center',
+      }}>
+        <TouchableOpacity
+          onPress={() => this.props.navigation.navigate('ChangePassword')}
+        >
+          <View
+            style={{
+              flexDirection: 'row',
+              marginTop: 5, height: hp(7), width: wp(80), borderRadius: 8, backgroundColor: color.primaryGray,
+              alignItems: 'center', justifyContent: 'center',
+            }}>
+            <View style={{ flex: 0.10 }} >
+              <Image
+                source={require('../../assets/img/user.png')}
+                style={{ height: hp(4), width: hp(4) }}
+              />
+            </View>
+            <View style={{ flex: 0.80 }}>
+              <_Text fsPrimary textColor={color.tertiaryGray} style={{ paddingLeft: wp(3) }} >
+                Change Password
+            </_Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          onPress={() => this.props.navigation.navigate('EditProfile')}
+        >
+          <View
+            onStartShouldSetResponder={() => this.props.navigation.navigate('EditProfile',)}
+            style={{
+              flexDirection: 'row',
+              marginTop: 10, height: hp(7), width: wp(80), borderRadius: 8, backgroundColor: color.primaryGray,
+              alignItems: 'center', justifyContent: 'center',
+            }}>
+            <View style={{ flex: 0.10 }}>
+              <Image
+                source={require('../../assets/img/user.png')}
+                style={{ height: hp(4), width: hp(4) }}
+              />
+            </View>
+            <View style={{ flex: 0.80 }}>
+              <_Text fsPrimary textColor={color.tertiaryGray} style={{ paddingLeft: wp(3) }} >
+                Edit Profile
+            </_Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+      </View>
+    )
+  }
+
+
+
   render() {
+    const { profileData, showAccountDropDown } = this.state
     return (
       <SafeAreaView style={{ height: hp(100), backgroundColor: color.white }}>
 
         <_CustomHeader
-          title={'Ajinkya'}
+          title={profileData.firstName + ' ' + profileData.lastName}
           onLeftButtonPress={() => this.props.navigation.goBack()}
         />
 
@@ -195,11 +292,15 @@ class ManageAccount extends Component {
           <FlatList
             data={Data}
             showsHorizontalScrollIndicator={false}
-            ItemSeparatorComponent={this.FlatListItemSeparator}
+            // ItemSeparatorComponent={showAccountDropDown && item.id == 1 ? null : this.FlatListItemSeparator}
             renderItem={({ item, index }) => this.getView(item, index)}
             keyExtractor={(item, index) => item.id}
           />
+
+
         </View>
+
+
       </SafeAreaView>
     )
   }

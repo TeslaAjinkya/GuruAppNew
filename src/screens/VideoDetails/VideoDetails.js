@@ -1557,6 +1557,7 @@ class VideoDetails extends Component {
                         {videoData.categoryName}
                       </_Text>
                     </View>
+
                     <TouchableOpacity
                       onPress={() => this.getFlagTrue(showFlag)}
                       style={{ flex: 0.1 }}>

@@ -29,6 +29,7 @@
     "react-native": "0.61.5",
     "react-native-3dcube-navigation": "^1.0.4",
     "react-native-animatable": "^1.3.3",
+    "react-native-chart-kit": "^6.6.1",
     "react-native-elements": "^1.2.7",
     "react-native-fast-image": "^8.3.2",
     "react-native-fbsdk": "^1.1.2",

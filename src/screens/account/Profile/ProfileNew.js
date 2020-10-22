@@ -155,56 +155,8 @@ class ProfileNew extends Component {
         );
     }
 
-    onMenuClick() {
-        this.props.navigation.navigate('ManageAccount')
-    }
-
-
-
-    getVideos = data => {
-        const { selectedSegment } = this.state;
-
-        return (
-            <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-                <FlatList
-                    data={data}
-                    showsHorizontalScrollIndicator={false}
-                    showsVerticalScrollIndicator={false}
-                    renderItem={({ item }) => (
-                        <View
-                            style={{
-                                flexDirection: 'column',
-                                paddingHorizontal: 3,
-                                paddingVertical: 3,
-                            }}>
-                            <TouchableOpacity onPress={() => this.goToDetailsScreen(item)}>
-                                <Image
-                                    style={{
-                                        //borderRadius:5,
-                                        width: wp(30),
-                                        height: hp(12),
-                                        borderWidth: 1,
-                                        borderColor: color.textNote,
-                                    }}
-                                    defaultSource={require('../../../assets/img/default.png')}
-                                    source={{
-                                        uri: item.videoThumbnail
-                                            ? urls.baseUrl + item.videoThumbnail
-                                            : null,
-                                    }}
-                                />
-                            </TouchableOpacity>
-                        </View>
-                    )}
-                    numColumns={3}
-                    keyExtractor={(item, index) => index.toString()}
-                />
-            </View>
-        );
-    };
-
-    editProfile = (data) => {
-        this.props.navigation.navigate('EditProfile', { data: data })
+    onMenuClick = (data) => {
+        this.props.navigation.navigate('ManageAccount', { profile: data })
     }
 
 
@@ -250,6 +202,18 @@ class ProfileNew extends Component {
         )
     }
 
+    noVideoView = () => {
+        return (
+            <View style={{ height: hp(60), alignItems: 'center', justifyContent: 'center', }}>
+                <Image
+                    source={require('../../../assets/gif/noData.gif')}
+                    style={{ height: hp(20), width: hp(20) }}
+                    resizeMode="cover"
+                />
+                <_Text fwPrimary style={{ paddingTop: 5, texAlign: 'center' }}>Oops..! You have not uploaded any video yet.</_Text>
+            </View>
+        );
+    };
 
     render() {
         const { isFetching, viewProfileData } = this.props;
@@ -278,7 +242,7 @@ class ProfileNew extends Component {
                                     <View style={{ flex: 0.8, justifyContent: 'center', alignItems: 'center', }}>
                                         <_Text fsHeading bold>{profileData[0].firstName + ' ' + profileData[0].lastName}</_Text>
                                     </View>
-                                    <TouchableOpacity onPress={() => this.onMenuClick()}
+                                    <TouchableOpacity onPress={() => this.onMenuClick(profileData[0])}
                                         style={{ flex: 0.1, justifyContent: 'center', alignItems: 'center' }}>
                                         <Image
                                             defaultSource={require('../../../assets/img/menu1.png')}
@@ -290,7 +254,7 @@ class ProfileNew extends Component {
                                 <View style={{ borderBottomWidth: wp(0.2), borderBottomColor: color.videoBorderGray }} />
                             </View>
 
-                            <View style={{ height: hp(17), flexDirection: 'row', width: wp(100), marginHorizontal: 5 }}>
+                            <View style={{ height: hp(17), flexDirection: 'row', width: wp(100), marginHorizontal: 20 }}>
 
 
                                 <View style={{ width: wp(20), height: hp(15), alignItems: 'center', justifyContent: 'center', }}>
@@ -370,14 +334,18 @@ class ProfileNew extends Component {
 
                         <View style={{ borderWidth: 0.5, borderColor: color.gray, padddingBottom: 10 }} />
 
-                        <View style={{ justifyContent: 'center', width: wp(100), flex: 1, paddingTop: 10 }}>
-                            <FlatList
-                                data={profileData[0].videoData}
-                                showsVerticalScrollIndicator={false}
-                                keyExtractor={item => item.videoid.toString()}
-                                renderItem={({ item, index }) => (this.showUploadedVideos(item, index))}
-                            />
-                        </View>
+                        {profileData[0].videoData.length > 0 ?
+                            <View style={{ justifyContent: 'center', width: wp(100), flex: 1, paddingTop: 10 }}>
+                                <FlatList
+                                    data={profileData[0].videoData}
+                                    showsVerticalScrollIndicator={false}
+                                    keyExtractor={item => item.videoid.toString()}
+                                    renderItem={({ item, index }) => (this.showUploadedVideos(item, index))}
+                                />
+                            </View>
+                            :
+                            this.noVideoView()
+                        }
                     </View>
                 }
 
