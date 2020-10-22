@@ -11,7 +11,6 @@ import {
 import { color } from '@values/colors';
 import { strings } from '@values/strings';
 import _Text from '@text/_Text';
-import _CustomHeader from '@customHeader/_CustomHeader'
 import { Col, Row, Grid, Toast } from 'native-base';
 import _Card from '@card/_Card';
 import ImagePicker from 'react-native-image-picker';

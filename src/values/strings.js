@@ -49,5 +49,7 @@ export const strings = {
     transactions: 'Transactions',
     editProfile: 'Edit Profile',
     changePassword: 'Change Password',
-    notification: 'Notifications'
+    notification: 'Notifications',
+    posts: 'Posts',
+    likes: 'Likes',
 }

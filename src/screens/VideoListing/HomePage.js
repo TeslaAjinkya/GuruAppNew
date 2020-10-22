@@ -277,7 +277,7 @@ class HomePage extends Component {
   };
 
   onProfilePress() {
-    this.props.navigation.navigate('Profile');
+    this.props.navigation.navigate('ProfileNew');
   }
 
   onNotificationPress() {

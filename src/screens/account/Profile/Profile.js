@@ -160,7 +160,7 @@ class Profile extends Component {
   }
 
   onMenuClick() {
-    this.props.navigation.navigate('PrivacySafety')
+    this.props.navigation.navigate('ManageAccount')
   }
 
 

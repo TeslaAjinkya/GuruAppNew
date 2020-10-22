@@ -1,9 +1,4 @@
 import React, { Component } from 'react'
-import {
-    Header,
-    Left, Button, Body,
-    Right, Title,
-} from 'native-base'
 
 import {
     View, Image, TouchableOpacity
@@ -26,67 +21,39 @@ export default class _CustomHeader extends Component {
 
 
     render() {
+        const { backgroundColor, title } = this.props
 
         return (
             <View >
-                <Header hasTabs
-                    style={{
-                        height: hp(6),
-                        backgroundColor: this.props.backgroundColor ? this.props.backgroundColor : 'transparent'
-                    }}
-                >
-                    <Left style={{ flex: 1 }}>
-                        <Button
-                            style={{ marginLeft: 10, marginTop: 10, }}
-                            transparent
-                            onPress={() => this.props.LeftBtn()}
-                        >
-                            {this.props.LeftBtnIcon &&
-                                <Image
-                                    source={this.props.LeftBtnIcon ? this.props.LeftBtnIcon : require('../../assets/img/left.png')}
-                                    style={{
-                                        height: this.props.height ? this.props.height : hp(2.5),
-                                        width: this.props.width ? this.props.width : hp(2.5)
-                                    }}
-                                />
-                            }
-                        </Button>
-
-                    </Left>
-
-                    {this.props.Title &&
-                        <Body style={{ flex: 1, }}>
-                            <Title style={{ color: color.black, marginTop: -10 }}>
-                                {this.props.Title ? this.props.Title : ''}
-                            </Title>
-                        </Body>
-                    }
-
-                    <Right style={{ flex: 1 }}>
-                        {this.props.RightBtnIcon &&
-                            <Button
-                                style={{ marginRight: 5, marginTop: 10, }}
-                                transparent
-                                onPress={() => this.props.RightBtn()}
-                            >
-                                <Image source={this.props.RightBtnIcon}
-                                    style={{
-                                        height: this.props.height ? this.props.height : hp(2.5),
-                                        width: this.props.width ? this.props.width : hp(2.5)
-                                    }}
-                                />
-
-                            </Button>
-                        }
-                        {this.props.RightBtnText &&
-                            <TouchableOpacity>
-                                <_Text fsHeading bold textColor={color.tertiaryGray}>
-                                    {this.props.RightBtnText}
-                                </_Text>
-                            </TouchableOpacity>
-                        }
-                    </Right>
-                </Header>
+                <View style={{ height: hp(6), backgroundColor: backgroundColor ? backgroundColor : color.white }}>
+                    <View
+                        style={{ flex: 1, flexDirection: 'row', alignItems: 'center' }}>
+                        <TouchableOpacity
+                            onPress={() => this.props.onLeftButtonPress()}
+                            style={{
+                                flex: 0.1,
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}>
+                            <Image
+                                defaultSource={require('../../assets/img/left.png')}
+                                source={require('../../assets/img/left.png')}
+                                style={{ height: hp(2.5), width: hp(2.5) }}
+                            />
+                        </TouchableOpacity>
+                        <View style={{ flex: 0.8, alignItems: 'center' }}>
+                            <_Text fsHeading bold textColor={color.tertiaryGray}>
+                                {title ? title : ''}
+                            </_Text>
+                        </View>
+                    </View>
+                    <View
+                        style={{
+                            borderBottomWidth: wp(0.2),
+                            borderBottomColor: color.videoBorderGray,
+                        }}
+                    />
+                </View>
 
             </View>
         )

@@ -46,7 +46,7 @@ class _Header extends Component {
                   )}
               </Button>
 
-              <Title style={{ color: color.black, marginLeft: hp(1) }}>
+              <Title style={{ color: color.black, marginLeft: hp(1), fontSize: 20 }}>
                 {title ? title : 'GuruApp'}
               </Title>
 
@@ -63,7 +63,7 @@ class _Header extends Component {
               {showSearch ? (
                 <Button transparent onPress={onSearchPress}>
                   <Image
-                    style={{ height: hp(2.5), width: hp(2.5) }}
+                    style={{ height: hp(2.6), width: hp(2.6) }}
                     source={require('../../assets/img/search.png')}
                   />
                 </Button>
@@ -80,17 +80,17 @@ class _Header extends Component {
                 <Image
                   resizeMode={'cover'}
                   style={{
-                    height: Platform.OS === 'ios' ? hp(4) : hp(4.5),
-                    width: Platform.OS === 'ios' ? hp(4) : hp(4.5),
-                    borderRadius: Platform.OS === 'ios' ? hp(4) / 2 : hp(4.5) / 2,
+                    height: Platform.OS === 'ios' ? hp(4) : hp(5),
+                    width: Platform.OS === 'ios' ? hp(4) : hp(5),
+                    borderRadius: Platform.OS === 'ios' ? hp(4) / 2 : hp(5) / 2,
                     borderWidth: wp(0.5),
                     borderColor: color.borderOrange,
                     backgroundColor: color.white,
 
                   }}
-                  source={require('../../assets/img/profilepic2.png')}
-                // defaultSource={require('../../assets/img/defaultImage.png')}
-                // source={{ uri: urls.baseUrl + profilePic }}
+                  // source={require('../../assets/img/profilepic2.png')}
+                  defaultSource={require('../../assets/img/defaultImage.png')}
+                  source={{ uri: urls.baseUrl + profilePic }}
                 />
               </Button>
             </Right>

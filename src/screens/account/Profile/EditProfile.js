@@ -268,8 +268,6 @@ class EditProfile extends Component {
             cropping: false,
             includeBase64: true,
         }).then(image => {
-            console.log("openCamera image", image);
-
             this.setState({
                 profilePhotoTwo: image.path,
                 profileData: image
@@ -286,7 +284,6 @@ class EditProfile extends Component {
             cropping: false,
             mediaType: 'photo'
         }).then(image => {
-            console.log("openImagePicker image", image);
             this.setState({
                 profilePhotoTwo: image.path,
                 profileData: image

@@ -1,4 +1,4 @@
-import React, {Component, createRef} from 'react';
+import React, { Component, createRef } from 'react';
 import {
     widthPercentageToDP as wp,
     heightPercentageToDP as hp,
@@ -18,7 +18,6 @@ import {
 import { color } from '@values/colors';
 import { strings } from '@values/strings';
 import _Text from '@text/_Text';
-import _CustomHeader from '@customHeader/_CustomHeader'
 import Video from 'react-native-video';
 
 
@@ -45,7 +44,8 @@ export default class VideoStory extends Component {
                     <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center' }}>
                         <TouchableOpacity
                             onPress={() => this.props.navigation.goBack()}
-                            style={{top:hp(1),flex: 0.1, paddingLeft: hp(3),
+                            style={{
+                                top: hp(1), flex: 0.1, paddingLeft: hp(3),
                             }}>
                             <Image
                                 defaultSource={require('../../../assets/img/close1.png')}
@@ -61,7 +61,7 @@ export default class VideoStory extends Component {
                         ref={this.postVideoRef}
                         source={{ uri: video }}
                         style={{
-                            aspectRatio:1,
+                            aspectRatio: 1,
                             width: "100%"
                         }}
                         resizeMode={'cover'}
@@ -73,7 +73,8 @@ export default class VideoStory extends Component {
 
                 <View style={{ justifyContent: 'flex-end', alignItems: 'flex-end' }}>
                     <TouchableOpacity>
-                        <View style={{top:hp(2),
+                        <View style={{
+                            top: hp(2),
                             height: hp(5), width: hp(12), borderRadius: 25,
                             backgroundColor: color.white, borderWidth: 0.5, borderColor: color.textNote,
                             alignItems: "center", justifyContent: 'center',

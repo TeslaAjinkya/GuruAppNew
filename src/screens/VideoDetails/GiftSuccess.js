@@ -5,16 +5,15 @@ import {
 } from 'react-native-responsive-screen';
 import {
     View,
-    Text,Image,
-    Button,ActivityIndicator,
-    FlatList,SafeAreaView,
-    Modal,Alert,
+    Text, Image,
+    Button, ActivityIndicator,
+    FlatList, SafeAreaView,
+    Modal, Alert,
     TouchableOpacity,
 } from 'react-native';
 import { color } from '@values/colors';
 import { strings } from '@values/strings';
 import _Text from '@text/_Text';
-import _CustomHeader from '@customHeader/_CustomHeader'
 
 
 export default class GiftSuccess extends Component {
@@ -33,7 +32,8 @@ export default class GiftSuccess extends Component {
                         style={{ flex: 1, flexDirection: 'row', alignItems: 'center' }}>
                         <TouchableOpacity
                             onPress={() => this.props.navigation.goBack()}
-                            style={{flex: 0.1,paddingLeft: hp(3),
+                            style={{
+                                flex: 0.1, paddingLeft: hp(3),
                             }}>
                             <Image
                                 defaultSource={require('../../assets/img/close1.png')}
@@ -66,7 +66,7 @@ export default class GiftSuccess extends Component {
                     {/* <Text style={{ fontSize: 18, fontWeight: 'bold', textAlign: 'center', top: 5 }}>TO AJINKYA</Text> */}
 
                 </View>
-            
+
             </SafeAreaView>
         );
     }

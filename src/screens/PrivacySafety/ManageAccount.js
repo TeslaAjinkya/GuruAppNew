@@ -11,9 +11,9 @@ import {
   ActivityIndicator,
   FlatList,
   SafeAreaView,
-  Modal,
+  Modal, Platform,
   Alert,
-  TouchableOpacity,
+  TouchableOpacity, Linking
 } from 'react-native';
 import { color } from '@values/colors';
 import { strings } from '@values/strings';
@@ -21,62 +21,49 @@ import _Text from '@text/_Text';
 import { CommonActions } from '@react-navigation/native';
 import AsyncStorage from '@react-native-community/async-storage';
 import { Toast } from 'native-base';
+import _CustomHeader from '@customHeader/_CustomHeader'
+
 
 
 const Data = [
   {
     id: 1,
     img: require('../../assets/img/user.png'),
-    title: 'Manage my account',
+    title: 'Manage account',
   },
   {
     id: 2,
-    img: require('../../assets/img/lock1.png'),
-    title: 'Change password',
+    img: require('../../assets/img/wallet.png'),
+    title: 'Wallet',
   },
   {
     id: 3,
-    img: require('../../assets/img/wallet.png'),
-    title: 'Balance',
+    img: require('../../assets/img/privacyPolicy.png'),
+    title: 'Followers',
   },
   {
     id: 4,
-    img: require('../../assets/img/transaction.png'),
-    title: 'All Transactions',
+    img: require('../../assets/img/privacyPolicy.png'),
+    title: 'Following',
   },
   {
     id: 5,
-    img: require('../../assets/img/greyNotification.png'),
-    title: 'Push notifications',
+    img: require('../../assets/img/privacyPolicy.png'),
+    title: 'Help & Support',
   },
   {
     id: 6,
-    img: require('../../assets/img/reportProblem.png'),
-    title: 'Report a problem',
+    img: require('../../assets/img/privacyPolicy.png'),
+    title: 'Rate Us',
   },
   {
     id: 7,
-    img: require('../../assets/img/privacyPolicy.png'),
-    title: 'Privacy policy',
-  },
-  {
-    id: 8,
-    img: require('../../assets/img/termsUse.png'),
-    title: 'Terms of use',
-  },
-  {
-    id: 9,
-    img: require('../../assets/img/helpCenter.png'),
-    title: 'Help center',
-  },
-  {
-    id: 10,
     img: require('../../assets/img/logout.png'),
     title: 'Log out',
   },
 ];
 
-class PrivacySafety extends Component {
+class ManageAccount extends Component {
 
   FlatListItemSeparator = () => {
     return (
@@ -108,7 +95,7 @@ class PrivacySafety extends Component {
 
 
   getScreen(item) {
-    if (item.id == 10) {
+    if (item.id == 7) {
       Alert.alert(
         'Do You Want To Logout',
         '',
@@ -136,15 +123,18 @@ class PrivacySafety extends Component {
         { cancelable: false },
       );
     }
-    if (item.id == 3) {
+    if (item.id == 2) {
       this.props.navigation.navigate('ViewBalance')
     }
-    if (item.id === 4) {
-      this.props.navigation.navigate('Transactions')
+    if (item.id == 6) {
+      Platform.OS === 'ios' ? Linking.openURL('https://www.google.com') : Linking.openURL('https://play.google.com/store/apps')
     }
-    if (item.id === 2) {
-      this.props.navigation.navigate('ChangePassword')
-    }
+    // if (item.id === 4) {
+    //   this.props.navigation.navigate('Transactions')
+    // }
+    // if (item.id === 2) {
+    //   this.props.navigation.navigate('ChangePassword')
+    // }
 
 
   }
@@ -188,41 +178,18 @@ class PrivacySafety extends Component {
   render() {
     return (
       <SafeAreaView style={{ height: hp(100), backgroundColor: color.white }}>
-        <View style={{ height: hp(6), backgroundColor: color.white }}>
-          <View
-            style={{ flex: 1, flexDirection: 'row', alignItems: 'center' }}>
-            <TouchableOpacity
-              onPress={() => this.props.navigation.goBack()}
-              style={{
-                flex: 0.1,
-                justifyContent: 'center',
-                alignItems: 'center',
-              }}>
-              <Image
-                defaultSource={require('../../assets/img/left.png')}
-                source={require('../../assets/img/left.png')}
-                style={{ height: hp(2.5), width: hp(2.5) }}
-              />
-            </TouchableOpacity>
-            <View style={{ flex: 0.8, alignItems: 'center' }}>
-              <_Text fsHeading bold textColor={color.tertiaryGray}>
-                {strings.privacySafety}
-              </_Text>
-            </View>
-          </View>
-          <View
-            style={{
-              borderBottomWidth: wp(0.2),
-              borderBottomColor: color.videoBorderGray,
-            }}
-          />
-        </View>
+
+        <_CustomHeader
+          title={'Ajinkya'}
+          onLeftButtonPress={() => this.props.navigation.goBack()}
+        />
+
         <View
           style={{
             height: hp(94),
             marginLeft: wp(2),
             marginRight: wp(2),
-            marginTop: hp(5),
+            marginTop: hp(1),
             backgroundColor: color.white,
           }}>
           <FlatList
@@ -237,4 +204,4 @@ class PrivacySafety extends Component {
     )
   }
 }
-export default PrivacySafety
+export default ManageAccount

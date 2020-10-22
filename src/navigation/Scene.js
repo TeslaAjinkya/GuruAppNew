@@ -12,11 +12,11 @@ import UserDetails from '@register/UserDetails';
 import Trending from '@trending/Trending';
 import Post from '@post/Post';
 import PostDetails from '@post/PostDetails';
-import Profile from '@profile/Profile';
+import ProfileNew from '@profile/ProfileNew';
 import SubscribeChannel from '@subscribeChannel/SubscribeChannel';
 import MobileScreen from '@login/MobileScreen';
 import ViewBalance from '@viewBalance/ViewBalance'
-import PrivacySafety from '@privacySafety/PrivacySafety'
+import ManageAccount from '@manageAccount/ManageAccount'
 import SendPayment from '@sendPayment/SendPayment'
 import SendGifts from '@sendPayment/SendGifts'
 import Gift from '@sendPayment/Gift'
@@ -34,6 +34,7 @@ import VideoStory from '@yourStory/VideoStory'
 import CameraStory from '@yourStory/CameraStory'
 import ChangePassword from '@changePassword/ChangePassword'
 import Notification from '@notification/Notification'
+import VideoAnalytics from '@profile/VideoAnalytics'
 
 
 
@@ -103,8 +104,8 @@ class Scene extends React.Component {
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="Profile"
-          component={Profile}
+          name="ProfileNew"
+          component={ProfileNew}
           options={{ headerShown: false }}
         />
         <Stack.Screen
@@ -143,8 +144,8 @@ class Scene extends React.Component {
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="PrivacySafety"
-          component={PrivacySafety}
+          name="ManageAccount"
+          component={ManageAccount}
           options={{ headerShown: false }}
         />
         <Stack.Screen
@@ -212,6 +213,11 @@ class Scene extends React.Component {
         <Stack.Screen name="Notification"
           component={Notification} options={{ headerShown: false }}
         />
+        <Stack.Screen name="VideoAnalytics"
+          component={VideoAnalytics} options={{ headerShown: false }}
+        />
+
+
 
       </Stack.Navigator>
     );
@@ -253,8 +259,8 @@ class Scene extends React.Component {
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="Profile"
-          component={Profile}
+          name="ProfileNew"
+          component={ProfileNew}
           options={{ headerShown: false }}
         />
         <Stack.Screen
@@ -293,8 +299,8 @@ class Scene extends React.Component {
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="PrivacySafety"
-          component={PrivacySafety}
+          name="ManageAccount"
+          component={ManageAccount}
           options={{ headerShown: false }}
         />
         <Stack.Screen
@@ -361,7 +367,9 @@ class Scene extends React.Component {
         <Stack.Screen name="Notification"
           component={Notification} options={{ headerShown: false }}
         />
-
+        <Stack.Screen name="VideoAnalytics"
+          component={VideoAnalytics} options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     );
   }

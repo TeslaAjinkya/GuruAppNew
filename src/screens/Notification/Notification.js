@@ -3,7 +3,6 @@ import {
     View, Text, SafeAreaView, Image, ActivityIndicator,
     ScrollView, FlatList, TouchableOpacity
 } from 'react-native';
-import _CustomHeader from '@customHeader/_CustomHeader'
 import {
     widthPercentageToDP as wp,
     heightPercentageToDP as hp,
@@ -20,7 +19,6 @@ const data = [
     { id: '2', title: "Your first notification", date: '2020-07-08', image: require('../../assets/img/best.jpg') },
     { id: '3', title: "Your first notification", date: '2020-07-08', image: require('../../assets/img/best.jpg') },
     { id: '4', title: "Your first notification", date: '2020-07-08', image: require('../../assets/img/best.jpg') },
-
 
 ]
 

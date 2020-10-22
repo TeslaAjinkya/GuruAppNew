@@ -13,7 +13,6 @@ import {
 import { color } from '@values/colors';
 import { strings } from '@values/strings';
 import _Text from '@text/_Text';
-import _CustomHeader from '@customHeader/_CustomHeader'
 import Modal from 'react-native-modal';
 
 
