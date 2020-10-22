@@ -24,8 +24,9 @@ const Story = (props) => {
 
       {type === 'image' ? (
         <Image
-          source={{ uri: urls.baseUrl + url }}
-          //source={ require('../../../assets/img/story3.png')}
+          // source={{ uri: urls.baseUrl + url }}
+          // source={require('../../../assets/img/best.jpg')}
+          source={{ uri: url }}
           onLoadEnd={props.onImageLoaded}
           style={styles.content}
           resizeMode="stretch"
@@ -34,7 +35,8 @@ const Story = (props) => {
       )
         : (
           <Video
-            source={{ uri: urls.baseUrl + url }}
+            // source={{ uri: urls.baseUrl + url }}
+            source={require('../../../assets/video/demo.mp4')}
             paused={props.pause || props.isNewStory}
             onLoad={item => props.onVideoLoaded(item)}
             //style={styles.content}

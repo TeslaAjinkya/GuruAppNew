@@ -583,13 +583,13 @@ class Trending extends Component {
     );
   }
 
+
+
+
   shareVideo = async (url, item) => {
+
     const shareOptions = {
-      title: 'Share file',
-      email: 'gt20.ajinkya@gmail.com',
-      url: url,
-      social: Share.Social.INSTAGRAM,
-      failOnCancel: false,
+      message: url
     };
 
     try {
@@ -607,9 +607,9 @@ class Trending extends Component {
       }
     } catch (error) {
       console.log('Error =>', error);
-      //setResult('error: '.concat(getErrorString(error)))
     }
   };
+
 
   noRecordFound() {
     return (

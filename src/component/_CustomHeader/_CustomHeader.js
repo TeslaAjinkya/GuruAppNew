@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import {
     Header,
-    Left,Button,Body,
-    Right,Title,
+    Left, Button, Body,
+    Right, Title,
 } from 'native-base'
 
 import {
@@ -12,8 +12,9 @@ import _Text from '@text/_Text'
 import {
     widthPercentageToDP as wp,
     heightPercentageToDP as hp,
-  } from 'react-native-responsive-screen';
-  
+} from 'react-native-responsive-screen';
+import { color } from '@values/colors';
+
 
 export default class _CustomHeader extends Component {
 
@@ -29,9 +30,10 @@ export default class _CustomHeader extends Component {
         return (
             <View >
                 <Header hasTabs
-                    style={{ 
-                        height:hp(6),
-                        backgroundColor: this.props.backgroundColor ? this.props.backgroundColor : 'transparent' }}
+                    style={{
+                        height: hp(6),
+                        backgroundColor: this.props.backgroundColor ? this.props.backgroundColor : 'transparent'
+                    }}
                 >
                     <Left style={{ flex: 1 }}>
                         <Button
@@ -53,8 +55,8 @@ export default class _CustomHeader extends Component {
                     </Left>
 
                     {this.props.Title &&
-                        <Body style={{ flex: 1 }}>
-                            <Title style={{ color: color.black }}>
+                        <Body style={{ flex: 1, }}>
+                            <Title style={{ color: color.black, marginTop: -10 }}>
                                 {this.props.Title ? this.props.Title : ''}
                             </Title>
                         </Body>

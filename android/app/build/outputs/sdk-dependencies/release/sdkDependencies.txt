@@ -961,36 +961,6 @@ library {
     sha256: "\351\\\0001\324\314$|\324\201\226\306(~X\322\316\345M\234y\270Z\376\247\311\t 3\002u\257"
   }
 }
-library {
-  maven_library {
-    groupId: "org.jetbrains.kotlin"
-    artifactId: "kotlin-stdlib"
-    version: "1.3.50"
-  }
-  digests {
-    sha256: "\346\360WF\356\003f\320\265(%\240\220\372\304t\334\364@\202\311\b;\273 [\321ivH\215l"
-  }
-}
-library {
-  maven_library {
-    groupId: "org.jetbrains.kotlin"
-    artifactId: "kotlin-stdlib-common"
-    version: "1.3.50"
-  }
-  digests {
-    sha256: "\214\346x\350\216K\240\030\266m\254\354\371RG\036M}\376\341V\250\250\031v\nZ_\362\2352<"
-  }
-}
-library {
-  maven_library {
-    groupId: "org.jetbrains"
-    artifactId: "annotations"
-    version: "13.0"
-  }
-  digests {
-    sha256: "\254\342\241\r\310\342\325\3754\222^\312\300>I\210\262\300\370Qe\f\224\270\316\364\233\241\275\021\024x"
-  }
-}
 library_dependencies {
   library_dep_index: 1
   library_dep_index: 2
@@ -1561,17 +1531,6 @@ library_dependencies {
   library_dep_index: 94
   library_dep_index: 12
   library_dep_index: 17
-}
-library_dependencies {
-  library_index: 96
-  library_dep_index: 97
-  library_dep_index: 98
-}
-library_dependencies {
-  library_index: 97
-}
-library_dependencies {
-  library_index: 98
 }
 module_dependencies {
   module_name: "base"

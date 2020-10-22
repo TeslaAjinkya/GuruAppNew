@@ -14,49 +14,46 @@ const cardMarginHorizontal = 10;
 class OtpScreen extends Component {
     constructor(props) {
         super(props)
-      if(this.props.route.params.mobileNo)
-      {
-         param = {
-            
-            key:"mobileNo",
-            mobileNumber : this.props.route.params.mobileNo,
-            success : true
+        if (this.props.route.params.mobileNo) {
+            param = {
+                key: "mobileNo",
+                mobileNumber: this.props.route.params.mobileNo,
+                success: true
+            }
         }
-      }
-      else{
-        param = {
-            key:"emailId",
-            emailId : this.props.route.params.emailId,
-            success : true
+        else {
+            param = {
+                key: "emailId",
+                emailId: this.props.route.params.emailId,
+                success: true
+            }
         }
-      }
-       
+
 
     }
 
-    otpButtonPressed()
-    {
-        this.props.navigation.navigate('UserDetails',{param})
+    otpButtonPressed = () => {
+        this.props.navigation.navigate('UserDetails', { param })
     }
 
     render() {
         return (
             <SafeAreaView>
                 <View style={{ height: hp(100), backgroundColor: color.white, justifyContent: 'center' }}>
-                    <View style={{ alignItems: 'center' }}>
+                    <View style={{ alignItems: 'center', marginTop: -hp(10) }}>
                         <Image
                             resizeMode={"contain"}
                             style={{ width: wp(30), height: hp(20), justifyContent: 'center', alignSelf: 'center' }}
                             source={require('../../assets/img/otpEmail.png')}
                         />
-                        <_Text fsHeading bold textColor={color.tertiaryGray}>Verification</_Text>
-                        <_Text fsHeading textColor={color.lightGray}>Enter OTP code sent to your number</_Text>
-                        <_Text fsHeading textColor={color.lightGray}>91******98</_Text>
+                        <_Text fsLarge bold textColor={color.tertiaryGray}>Verification</_Text>
+                        <_Text fsHeading textColor={color.lightGray} style={{ marginTop: 20 }}>Enter OTP code sent to your {param.mobileNumber ? 'mobile number' : 'email'}</_Text>
+                        <_Text fsHeading textColor={color.gray} style={{ marginTop: 5 }}>{param.mobileNumber ? param.mobileNumber : param.emailId}</_Text>
                     </View>
                     <View style={{ alignItems: 'center', marginTop: hp(5) }}>
                         <Card style={{ width: wp(95), height: hp(30), borderRadius: 20 }}>
                             <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center' }}>
-                                <View style={{ height: hp(12), width: wp(20), marginLeft: wp(3),  }}>
+                                <View style={{ height: hp(12), width: wp(20), marginLeft: wp(3), }}>
                                     <Input
                                         maxLength={1}
                                         minLength={1}
@@ -64,7 +61,7 @@ class OtpScreen extends Component {
                                         keyboardType={"default"}
                                         style={{
                                             textAlign: 'center',
-                                            paddingLeft:wp(5),
+                                            paddingLeft: wp(5),
                                             fontWeight: 'bold',
                                             height: hp(12), width: wp(20), fontSize: hp(3), color: color.tertiaryGray,
                                             paddingRight: 25, borderWidth: 1.5, borderColor: "#b8b4b4",
@@ -80,9 +77,9 @@ class OtpScreen extends Component {
                                         style={{
                                             textAlign: 'center',
                                             fontWeight: 'bold',
-                                            paddingLeft:wp(5),
+                                            paddingLeft: wp(5),
                                             height: hp(12), width: wp(20), fontSize: hp(3), color: color.tertiaryGray,
-                                            paddingRight: 25,  borderWidth: 1.5, borderColor: "#b8b4b4",
+                                            paddingRight: 25, borderWidth: 1.5, borderColor: "#b8b4b4",
                                             borderRadius: 10
                                         }} />
                                 </View>
@@ -95,7 +92,7 @@ class OtpScreen extends Component {
                                         style={{
                                             textAlign: 'center',
                                             fontWeight: 'bold',
-                                            paddingLeft:wp(5),
+                                            paddingLeft: wp(5),
                                             height: hp(12), width: wp(20), fontSize: hp(3), color: color.tertiaryGray,
                                             paddingRight: 25, borderWidth: 1.5, borderColor: "#b8b4b4",
                                             borderRadius: 10
@@ -110,7 +107,7 @@ class OtpScreen extends Component {
                                         style={{
                                             textAlign: 'center',
                                             fontWeight: 'bold',
-                                            paddingLeft:wp(5),
+                                            paddingLeft: wp(5),
                                             height: hp(12), width: wp(20), fontSize: hp(3), color: color.tertiaryGray,
                                             paddingRight: 25, borderWidth: 1.5, borderColor: "#b8b4b4",
                                             borderRadius: 10

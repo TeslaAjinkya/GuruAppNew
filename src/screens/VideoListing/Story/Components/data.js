@@ -1,0 +1,104 @@
+
+const stories = [
+    {
+        username: 'Raj',
+        profile: 'https://u01.appmifile.com/images/2018/07/23/361da602-8ef6-4c45-afe5-081dfb5f48b7.png',
+        stories: [
+            {
+                id: 1,
+                url: 'https://images.unsplash.com/photo-1515578706925-0dc1a7bfc8cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
+                type: 'image',
+                duration: 2,
+                isReadMore: true,
+            },
+        ],
+    },
+    {
+        username: 'Rahul',
+        profile: 'https://avatars2.githubusercontent.com/u/45196619?s=460&v=4',
+        stories: [
+            {
+                id: 1,
+                url: 'https://images.unsplash.com/photo-1500099817043-86d46000d58f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+                type: 'image',
+                duration: 2,
+                isReadMore: true,
+            },
+            {
+                id: 2,
+                url: 'https://images.unsplash.com/photo-1476292026003-1df8db2694b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+                type: 'image',
+                duration: 2,
+                isSeen: false,
+                isReadMore: true,
+                isPaused: true,
+            },
+
+        ],
+    },
+    {
+        username: 'Steve Jobs',
+        profile: 'https://s3.amazonaws.com/media.eremedia.com/uploads/2012/05/15181015/stevejobs.jpg',
+        stories: [
+            {
+                id: 1,
+                url: 'https://images.unsplash.com/photo-1515578706925-0dc1a7bfc8cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
+                type: 'image',
+                duration: 2,
+                isReadMore: true,
+            },
+            {
+                id: 2,
+                url: 'https://images.unsplash.com/photo-1496287437689-3c24997cca99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+                type: 'image',
+                duration: 2,
+                isSeen: false,
+                isReadMore: true,
+                isPaused: true,
+            },
+            {
+                id: 3,
+                url: 'https://images.unsplash.com/photo-1478397453044-17bb5f994100?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+                type: 'image',
+                duration: 2,
+                isSeen: false,
+                isReadMore: true,
+                isPaused: true,
+            },
+
+        ],
+    },
+    {
+        username: 'Rahul',
+        profile: 'https://images.unsplash.com/profile-1531581190171-0cf831d86212?dpr=2&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff',
+        stories: [
+            {
+                id: 4,
+                url: 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=581&q=80',
+                type: 'image',
+                duration: 2,
+                isReadMore: true,
+            },
+            {
+                id: 5,
+                url: 'https://images.unsplash.com/photo-1478397453044-17bb5f994100?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+                type: 'image',
+                duration: 2,
+                isSeen: false,
+                isReadMore: true,
+                isPaused: true,
+            },
+            {
+                id: 4,
+                url: 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=581&q=80',
+                type: 'image',
+                duration: 2,
+                isSeen: false,
+                isReadMore: true,
+                isPaused: true,
+            },
+        ],
+    },
+];
+
+export default stories;

@@ -41,27 +41,25 @@ class HomeScreen extends React.Component {
         };
     }
     handleBackButton = () => {
-        Alert.alert(
-            'Exit App',
-            'Exiting the application?',
-            [
-                { text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel', },
-                { text: 'OK', onPress: () => BackHandler.exitApp(), },
-            ],
-            { cancelable: false, },
-        );
-        //      if (backPressed > 0 ) {
-        //   console.warn("backPressed > 0");
-        //   BackHandler.exitApp()
-        //   backPressed = 0
-        // }
-        // else {
-        //     console.warn("backPressed 0");
-        //   backPressed++;
-        //   ToastAndroid.show("Press Again To Exit GuruApp", ToastAndroid.SHORT);
-        //   setTimeout(() => { backPressed = 0 }, 2000);
-        //   return true;
-        // }
+        // Alert.alert(
+        //     'Exit App',
+        //     'Exiting the application?',
+        //     [
+        //         { text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel', },
+        //         { text: 'OK', onPress: () => BackHandler.exitApp(), },
+        //     ],
+        //     { cancelable: false, },
+        // );
+        if (backPressed > 0) {
+            BackHandler.exitApp()
+            backPressed = 0
+        }
+        else {
+            backPressed++;
+            ToastAndroid.show("Press Again To Exit App", ToastAndroid.SHORT);
+            setTimeout(() => { backPressed = 0 }, 2000);
+            return true;
+        }
 
         return true;
     };

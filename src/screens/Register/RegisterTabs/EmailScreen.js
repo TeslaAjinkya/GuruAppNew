@@ -90,7 +90,7 @@ class EmailScreen extends Component {
     let error = "";
     try {
       if (!isEmailId) {
-        error = "Please enter Valid Email Id";
+        error = "Please Enter Valid Email Id";
         throw new Error();
       }
       else {
@@ -126,16 +126,17 @@ class EmailScreen extends Component {
             onChangeText={this.onInputEmailChanged}
             style={{ borderRadius: 3 }} ></_InputBox>
         </View>
-        <View style={{ alignItems: 'center', height: hp(10) }}>
+        <View style={{ alignItems: 'center', height: hp(10), top: 20 }}>
           <TouchableOpacity onPress={() => this.emailTabButtonPress()} style={{ width: wp(90), borderRadius: 3, height: hp(6), alignItems: 'center', justifyContent: 'center', backgroundColor: color.loginColor }}>
             <_Text textColor={color.white}>Next</_Text>
           </TouchableOpacity>
         </View>
-        <View style={{ justifyContent: 'flex-start', height: hp(30), alignItems: 'center', justifyContent: 'center' }}>
+
+        <View style={{ top: 15, justifyContent: 'flex-start', alignItems: 'center', }}>
           <View style={{ flexDirection: 'row' }}>
-            <_Text fsSmall textColor={color.teritary}>Already have an Account ? </_Text>
+            <_Text fsSmall textColor={color.teritary}>Already have an account ? </_Text>
             <TouchableOpacity style={{ alignItems: 'center', justifyContent: 'center' }} onPress={() => this.onLoginEmailPress()}>
-              <_Text fsSmall textColor={color.loginColor}>Log In</_Text>
+              <_Text fsSmall textColor={color.loginColor}>{' '}Log In</_Text>
             </TouchableOpacity>
           </View>
         </View>

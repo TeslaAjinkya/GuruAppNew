@@ -14,10 +14,35 @@ import LoginStyle from '@login/LoginStyle'
 import _Text from '@text/_Text'
 import { color } from '@values/colors';
 import { strings } from '@values/strings'
-import { Toast } from 'native-base';
+import { Toast, Container } from 'native-base';
 import { connect } from 'react-redux'
 import _InputBox from '@inputBox/_InputBox';
 import moment from 'moment'
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import MobileScreen from '@forgotPassword/MobileScreen'
+import EmailScreen from '@forgotPassword/EmailScreen'
+
+
+const Tab = createMaterialTopTabNavigator();
+
+function ForgotPasswordTabs() {
+    return (
+        <Tab.Navigator
+            tabBarOptions={{
+                labelStyle: { fontSize: hp(1.7), marginTop: hp(10), padding: 0, color: color.lightGray },
+                indicatorStyle: { backgroundColor: color.black },
+            }}>
+
+            <Tab.Screen name="Mobile No." component={MobileScreen} />
+
+            <Tab.Screen name="Email id" component={EmailScreen} />
+
+        </Tab.Navigator>
+
+    );
+}
+
+
 
 export default class ForgotPassword extends Component {
     constructor(props) {
@@ -61,7 +86,7 @@ export default class ForgotPassword extends Component {
 
         return (
             <SafeAreaView style={{ height: hp(100), backgroundColor: color.white }}>
-                <View>
+                <Container >
                     <View style={{
                         backgroundColor: color.disabledLoginColor,
                         height: height,
@@ -76,32 +101,11 @@ export default class ForgotPassword extends Component {
                         </View>
                     </View>
 
-                </View>
 
-                <View style={{ paddingTop: hp(16) }}>
-                    <View style={{ marginTop: hp(1) }}>
-                        <_InputBox label={"Email Id"}
-                            maxLength={50}
-                            minLength={3}
-                            type="emailId"
-                            inputKey="emailId"
-                            value={emailId ? emailId : null}
-                            onChangeText={this.onInputChanged} keyboardType="email-address">
-                        </_InputBox>
-                    </View>
-                </View>
+                    <ForgotPasswordTabs />
 
-                <View style={{ marginTop: hp(5), alignItems: 'center' }}>
-                    <TouchableOpacity
-                        onPress={() => this.props.navigation.navigate('ResetPassword')}
-                        style={{
-                            width: wp(90), borderRadius: 3, height: hp(7), alignItems: 'center', justifyContent: 'center',
-                            backgroundColor: color.loginColor
-                        }}>
-                        <_Text textColor={color.white}>Request OTP</_Text>
-                    </TouchableOpacity>
-                </View>
 
+                </Container>
             </SafeAreaView>
         );
     }

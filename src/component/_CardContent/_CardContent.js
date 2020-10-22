@@ -4,14 +4,25 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
-import { Card } from 'native-base';
+import { Card, Icon } from 'native-base';
 import { color } from '@values/colors';
 import _Text from '@text/_Text';
 import { urls } from '@api/urls';
 import styles from '@cardContent/_CardContentStyle'
 import { strings } from '@values/strings';
 import FastImage from 'react-native-fast-image'
-import ProgressiveImage from './ProgressiveImage'
+import * as Animatable from 'react-native-animatable'
+
+const colors = {
+  transparent: 'transparent',
+  white: '#fff',
+  heartColor: '#e92f3c',
+  textPrimary: '#bf0000',
+  black: '#000',
+}
+
+
+const AnimatedIcon = Animatable.createAnimatableComponent(Icon)
 
 
 class _CardContent extends Component {
@@ -22,7 +33,14 @@ class _CardContent extends Component {
     }
   }
 
+  onLike = () => {
+    this.smallAnimatedIcon.bounceIn()
+    this.props.onPressLike()
+  }
 
+  handleSmallAnimatedIconRef = (ref) => {
+    this.smallAnimatedIcon = ref
+  }
 
   render() {
     const { onPressLike, item, onPressDislike, onPressDetails, onPressShare, onPressGift } = this.props;
@@ -104,14 +122,6 @@ class _CardContent extends Component {
             // resizeMode={FastImage.resizeMode.cover}
             />
 
-            {/* <ProgressiveImage
-              source={{ uri: item.videoThumbnail ? urls.baseUrl + item.videoThumbnail : null }}
-              thumbnailSource={{ uri: item.videoThumbnail ? urls.baseUrl + item.videoThumbnail : null }}
-              style={thumbnailImg}
-              resizeMode="cover"
-            /> */}
-
-
           </View>
         </TouchableOpacity>
         {/* Likes and shares count display */}
@@ -126,7 +136,7 @@ class _CardContent extends Component {
                 source={require('../../assets/img/blueLike.png')}
               />
               <_Text
-                fsSmall
+                fwSmall
                 textColor={color.lightGray}
                 style={likeText}>
                 {item.likeCount}
@@ -135,7 +145,7 @@ class _CardContent extends Component {
             <View
               style={shareCountView}>
               <_Text
-                fsSmall
+                fwSmall
                 textColor={color.lightGray}
                 style={likeText}>
                 {item.sharesCount ? item.sharesCount : 0}
@@ -162,9 +172,10 @@ class _CardContent extends Component {
           <View
             style={innerMainView}>
             <TouchableOpacity
-              onPress={onPressLike}
+              activeOpacity={1}
+              onPress={this.onLike}
               style={likeTouchable}>
-              {item.operation == 0 || item.operation == 2 ? (
+              {/* {item.operation == 0 || item.operation == 2 ? (
                 <Image
                   resizeMode={'contain'}
                   style={likeDislikeImg}
@@ -175,11 +186,25 @@ class _CardContent extends Component {
                     resizeMode={'contain'}
                     style={likeDislikeImg}
                     source={require('../../assets/img/blueLike1.png')}
+                  // source={require('../../assets/gif/like.gif')}
+
                   />
-                )}
+                )} */}
+              <AnimatedIcon
+                ref={this.handleSmallAnimatedIconRef}
+                name={(item.operation == 0 || item.operation == 2) ? 'heart' : 'heart'}
+                style={{
+                  fontSize: hp(3.5),
+                  paddingHorizontal: 2,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  color: item.operation == 0 || item.operation == 2 ? 'black' : '#e92f3c'
+
+                }}
+              />
               <_Text
                 numberOfLines={1}
-                fsSmall
+                fwSmall
                 textColor={item.operation == 0 || item.operation == 2 ? color.lightGray : color.likeBlueColor}
                 style={likeText}>
                 {strings.like}
@@ -229,7 +254,7 @@ class _CardContent extends Component {
 
               <_Text
                 numberOfLines={1}
-                fsSmall
+                fwSmall
                 textColor={color.lightGray}
                 style={likeText}>
                 {strings.gift}
@@ -249,7 +274,7 @@ class _CardContent extends Component {
               />
               <_Text
                 numberOfLines={1}
-                fsSmall
+                fwSmall
                 textColor={color.lightGray}
                 style={likeText}>
                 {strings.share}

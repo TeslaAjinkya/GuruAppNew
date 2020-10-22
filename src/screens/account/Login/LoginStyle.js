@@ -9,54 +9,54 @@ export default {
         height: hp(100), backgroundColor: color.white
     },
     appNameView: {
-        height: hp(20), justifyContent: 'center', alignItems: 'center' 
+        height: hp(20), justifyContent: 'center', alignItems: 'center'
     },
     mainView: {
-        height: hp(65),paddingTop:hp(8) ,
+        height: hp(65), paddingTop: hp(8),
     },
     fbLogo: {
         height: 25,
         width: 25,
         marginRight: 10
     },
-    userNameView:{
+    userNameView: {
         marginTop: hp(1)
     },
-    passwordView:{
+    passwordView: {
         marginTop: hp(2)
     },
-    btnView:{
-        marginTop: hp(5), alignItems: 'center'
+    btnView: {
+        marginTop: hp(7), alignItems: 'center'
     },
-    nextBtn:{
+    nextBtn: {
         width: wp(90), borderRadius: 3, height: hp(7), alignItems: 'center', justifyContent: 'center',
     },
-    getHelp:{
-      flexDirection:'row',justifyContent:'center',  alignItems: 'center', marginTop: hp(2)
+    getHelp: {
+        flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: hp(2)
 
     },
-    continueView:{
+    continueView: {
         alignItems: 'center', marginTop: hp(3)
     },
-    apiButtonMainView:{
+    apiButtonMainView: {
         flexDirection: 'row', flex: 1
     },
-    fbView:{
+    fbView: {
         flex: 0.5, justifyContent: 'center', alignItems: 'center'
     },
-    apiButton:{
+    apiButton: {
         width: wp(45), borderRadius: 3, flexDirection: 'row', height: hp(7), alignItems: 'center', justifyContent: 'center', backgroundColor: "#efeeec"
     },
-    googleView:{
+    googleView: {
         flex: 0.5, justifyContent: 'center', alignItems: 'center'
     },
-    borderLine:{
-       marginTop:hp(5), borderTopColor: color.lightGray, borderTopWidth: hp(0.1), width: wp(100)
+    borderLine: {
+        marginTop: hp(5), borderTopColor: color.lightGray, borderTopWidth: hp(0.1), width: wp(100)
     },
-    dontHaveView:{
-     flexDirection: 'row', justifyContent: 'center', marginTop: Platform.OS ==='ios'? hp(2) : hp(3),
+    dontHaveView: {
+        flexDirection: 'row', justifyContent: 'center', marginTop: Platform.OS === 'ios' ? hp(2) : hp(3),
     },
-    loaderView:{
-        position:'absolute', height:hp(100), width:wp(100), alignItems:'center', justifyContent:'center'
+    loaderView: {
+        position: 'absolute', height: hp(100), width: wp(100), alignItems: 'center', justifyContent: 'center'
     },
 };

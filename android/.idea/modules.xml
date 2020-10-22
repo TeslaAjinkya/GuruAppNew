@@ -24,7 +24,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/223572367/react-native-svg.iml" filepath="$PROJECT_DIR$/.idea/modules/223572367/react-native-svg.iml" group="GuruApp/react-native-svg" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-740123131/react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/-740123131/react-native-vector-icons.iml" group="GuruApp/react-native-vector-icons" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1558533334/react-native-video.iml" filepath="$PROJECT_DIR$/.idea/modules/1558533334/react-native-video.iml" group="GuruApp/react-native-video" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1398254756/react-native-webview.iml" filepath="$PROJECT_DIR$/.idea/modules/1398254756/react-native-webview.iml" group="GuruApp/react-native-webview" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1641479986/rn-fetch-blob.iml" filepath="$PROJECT_DIR$/.idea/modules/-1641479986/rn-fetch-blob.iml" group="GuruApp/rn-fetch-blob" />
     </modules>
   </component>

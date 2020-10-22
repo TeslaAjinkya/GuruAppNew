@@ -10,7 +10,6 @@ import Login from '@login/Login';
 import OtpScreen from '@register/OtpScreen';
 import UserDetails from '@register/UserDetails';
 import Trending from '@trending/Trending';
-import ProfilePic from '@register/ProfilePic';
 import Post from '@post/Post';
 import PostDetails from '@post/PostDetails';
 import Profile from '@profile/Profile';
@@ -33,6 +32,9 @@ import YourStory from '@yourStory/YourStory'
 import ImageStory from '@yourStory/ImageStory'
 import VideoStory from '@yourStory/VideoStory'
 import CameraStory from '@yourStory/CameraStory'
+import ChangePassword from '@changePassword/ChangePassword'
+import Notification from '@notification/Notification'
+
 
 
 const Stack = createStackNavigator();
@@ -89,11 +91,7 @@ class Scene extends React.Component {
           options={{ headerShown: false }}
         />
         {/* <Stack.Screen name="HomePage" component={HomePage} options={{ headerShown: false }} /> */}
-        <Stack.Screen
-          name="ProfilePic"
-          component={ProfilePic}
-          options={{ headerShown: false }}
-        />
+
         <Stack.Screen
           name="OtpScreen"
           component={OtpScreen}
@@ -196,23 +194,29 @@ class Scene extends React.Component {
           name="ResetPassword"
           component={ResetPassword} options={{ headerShown: false }}
         />
-         <Stack.Screen name="YourStory"
+        <Stack.Screen name="YourStory"
           component={YourStory} options={{ headerShown: false }}
         />
-          <Stack.Screen name="ImageStory"
+        <Stack.Screen name="ImageStory"
           component={ImageStory} options={{ headerShown: false }}
         />
-          <Stack.Screen name="VideoStory"
+        <Stack.Screen name="VideoStory"
           component={VideoStory} options={{ headerShown: false }}
         />
-         <Stack.Screen name="CameraStory"
+        <Stack.Screen name="CameraStory"
           component={CameraStory} options={{ headerShown: false }}
         />
-        
+        <Stack.Screen name="ChangePassword"
+          component={ChangePassword} options={{ headerShown: false }}
+        />
+        <Stack.Screen name="Notification"
+          component={Notification} options={{ headerShown: false }}
+        />
+
       </Stack.Navigator>
     );
   }
-  
+
   getHomeScene() {
     return (
       <Stack.Navigator initialRouteName={HomePage}>
@@ -238,11 +242,6 @@ class Scene extends React.Component {
           options={{ headerShown: false }}
         />
 
-        <Stack.Screen
-          name="ProfilePic"
-          component={ProfilePic}
-          options={{ headerShown: false }}
-        />
         <Stack.Screen
           name="OtpScreen"
           component={OtpScreen}
@@ -339,23 +338,30 @@ class Scene extends React.Component {
           options={{ headerShown: false }}
         />
         <Stack.Screen name="ForgotPassword"
-         component={ForgotPassword} options={{ headerShown: false }}/>
-       
+          component={ForgotPassword} options={{ headerShown: false }} />
+
         <Stack.Screen name="ResetPassword"
           component={ResetPassword} options={{ headerShown: false }}
         />
-           <Stack.Screen name="YourStory"
+        <Stack.Screen name="YourStory"
           component={YourStory} options={{ headerShown: false }}
         />
-           <Stack.Screen name="ImageStory"
+        <Stack.Screen name="ImageStory"
           component={ImageStory} options={{ headerShown: false }}
         />
-         <Stack.Screen name="VideoStory"
+        <Stack.Screen name="VideoStory"
           component={VideoStory} options={{ headerShown: false }}
         />
-         <Stack.Screen name="CameraStory"
+        <Stack.Screen name="CameraStory"
           component={CameraStory} options={{ headerShown: false }}
         />
+        <Stack.Screen name="ChangePassword"
+          component={ChangePassword} options={{ headerShown: false }}
+        />
+        <Stack.Screen name="Notification"
+          component={Notification} options={{ headerShown: false }}
+        />
+
       </Stack.Navigator>
     );
   }

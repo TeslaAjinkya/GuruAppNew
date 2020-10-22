@@ -269,16 +269,6 @@ class HomePage extends Component {
   };
 
   startRecognizing = async () => {
-    // this.setState({
-    //   recognized: '',
-    //   pitch: '',
-    //   error: '',
-    //   started: '',
-    //   results: [],
-    //   partialResults: [],
-    //   end: '',
-    // });
-
     try {
       await Voice.start('en-US');
     } catch (e) {
@@ -289,6 +279,12 @@ class HomePage extends Component {
   onProfilePress() {
     this.props.navigation.navigate('Profile');
   }
+
+  onNotificationPress() {
+    this.props.navigation.navigate('Notification');
+  }
+
+  
 
   destroyRecognizer = async () => {
     try {
@@ -441,6 +437,8 @@ class HomePage extends Component {
 
     return (
       <SafeAreaView style={safeAreaView}>
+        <View style={{flex:1,backgroundColor: color.white}}>
+
         {isModalVisible && (
           <Modal
             animationType="slide"
@@ -657,15 +655,18 @@ class HomePage extends Component {
             </SafeAreaView>
           </Modal>
         )}
+
         <_Container
           showHeader
           showSearch
           profilePic={ profileData  ? profileData[0].userpic : null }
           showLoading={false}
           onSearchPress={() => this.renderSearchbar()}
+          onNotificationPress={()=>this.onNotificationPress()}
           onProfilePress={() => this.onProfilePress()}>
           <_Tabs />
         </_Container>
+        </View>
       </SafeAreaView>
     );
   }

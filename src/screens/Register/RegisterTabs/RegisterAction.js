@@ -41,15 +41,12 @@ export function onFailure(error, type) {
 
 
 export function validateMob(payload) {
-console.log("payload validateMob",payload);
-
     return dispatch => {
         dispatch(showLoadingIndicator());
 
         axios.post(urls.ValidateMobEmail.url, payload, config
 
         ).then(response => {
-            console.log("response.data.success", response);
             if (response.data.success) {
                 dispatch(onSuccess(response.data, VALIDATE_MOB_DATA_SUCCESS))
             }
@@ -58,7 +55,6 @@ console.log("payload validateMob",payload);
             }
         })
             .catch(function (error) {
-                console.log("error login normal", error);
                 dispatch(
                     onFailure(strings.serverFailedMsg, VALIDATE_MOB_DATA_ERROR)
                 );
@@ -68,7 +64,6 @@ console.log("payload validateMob",payload);
 
 
 export function validateEmail(payload) {
-    console.log("payload validateEmail",payload);
 
     return dispatch => {
         dispatch(showLoadingIndicator());
@@ -76,16 +71,14 @@ export function validateEmail(payload) {
         axios.post(urls.ValidateMobEmail.url, payload, config
 
         ).then(response => {
-            console.log("response.data.success", response);
             if (response.data.success) {
                 dispatch(onSuccess(response.data, VALIDATE_EMAIL_DATA_SUCCESS))
             }
             else {
-                dispatch(onFailure(response.data.msg,VALIDATE_EMAIL_DATA_ERROR ))
+                dispatch(onFailure(response.data.msg, VALIDATE_EMAIL_DATA_ERROR))
             }
         })
             .catch(function (error) {
-                console.log("error login normal", error);
                 dispatch(
                     onFailure(strings.serverFailedMsg, VALIDATE_EMAIL_DATA_ERROR)
                 );

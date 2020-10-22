@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View } from 'react-native'
+import { View, TouchableOpacity, Image } from 'react-native'
 import { Container, Header, Content, Input, Item, Label } from 'native-base';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { color } from '@values/colors';
@@ -10,9 +10,18 @@ export default class _InputBox extends Component {
     this.state = {
       text: undefined,
       isValid: undefined,
-      showPassword: false
+      showPassword: false,
+      secureInput: false
     };
   }
+  setSecureInput = () => {
+    if (this.props.secureText) {
+      this.setState({
+        secureInput: !this.state.secureInput,
+      });
+    }
+  };
+
 
   onChangeText = text => {
     const {
@@ -65,6 +74,8 @@ export default class _InputBox extends Component {
       returnKeyType, style, keyboardType, onFocus,
       minLength, disabled } = this.props
 
+    const { secureInput } = this.state
+
     return (
       <View style={{ alignItems: 'center' }}>
         <View style={{
@@ -88,7 +99,7 @@ export default class _InputBox extends Component {
               {label}
             </Label>
             <Input
-              secureTextEntry={secureText}
+              secureTextEntry={secureText && !secureInput}
               maxLength={maxLength}
               onChangeText={this.onChangeText}
               value={value}
@@ -102,6 +113,22 @@ export default class _InputBox extends Component {
                 color: disabled === true ? color.textNote : color.teritaryGray
               }} />
           </Item>
+          {secureText && (
+            <View style={{
+              position: 'absolute',
+              right: 12,
+              top: 20,
+              bottom: 0,
+              justifyContent: 'center',
+            }}>
+              <TouchableOpacity onPress={() => this.setSecureInput(secureInput)}>
+                <Image
+                  style={{ resizeMode: 'contain', width: 25, height: 30, }}
+                  source={secureInput ? require('../../assets/img/visible.png') : require('../../assets/img/hide.png')}
+                />
+              </TouchableOpacity>
+            </View>
+          )}
         </View>
       </View>
     );

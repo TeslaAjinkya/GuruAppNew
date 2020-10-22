@@ -26,7 +26,6 @@ import VideoListingStyle from '@videoListing/VideoListingStyle';
 import { urls } from '@api/urls';
 import { CubeNavigationHorizontal } from 'react-native-3dcube-navigation';
 import StoryContainer from '@stories/StoryContainer';
-// import { } from '@videoListing/VideoListingAction';
 
 import {
   getVideoList, getCategory,
@@ -41,6 +40,9 @@ import _CardContent from '@cardContent/_CardContent';
 import * as Animatable from 'react-native-animatable';
 import AsyncStorage from '@react-native-community/async-storage';
 import FastImage from 'react-native-fast-image'
+
+import Carausal from '../VideoListing/Story/Components/Carausal/Carausal';
+import stories from '../VideoListing/Story/Components/data';
 
 
 var userId = "";
@@ -91,7 +93,8 @@ class VideoListing extends Component {
       viewProfileDataSource: '',
       page: 0,
       clickedLoadMore: false,
-      categorySelected: false
+      categorySelected: false,
+      modalVisible: false
 
     };
     this.modalScroll = createRef();
@@ -339,7 +342,6 @@ class VideoListing extends Component {
         _.find(actionArray, {
           videoid: this.props.likeDislikeData.videoId,
         }).action = this.props.likeDislikeData.action ? 1 : 0;
-        console.log(actionArray);
       }
 
       var Index = _.findIndex(this.state.videoDataSource, {
@@ -630,8 +632,8 @@ class VideoListing extends Component {
     }
   };
 
-
-  getStories = (item, index) => {
+  // STORY 
+  getStoriesView = (item, index) => {
     const {
       storiesView,
       storiesImg,
@@ -643,19 +645,26 @@ class VideoListing extends Component {
 
 
     return (
-      <TouchableOpacity onPress={() => this.openStoryModal(index)}>
+      <TouchableOpacity
+        // onPress={() => this.setState({ modalVisible: true })}
+        onPress={() => this.openStoryModal(index)}
+      >
         <View style={storiesView}>
-          {item.urls[0].type === 'image' ? (
+          {item.stories[0].type === 'image' ? (
             <Image
               resizeMode={'cover'}
               style={storiesImg}
               defaultSource={require('../../assets/img/default.png')}
-              source={{ uri: urls.baseUrl + item.urls[0].url }}
+              // source={{ uri: urls.baseUrl + item.urls[0].url }}
+              source={{ uri: item.stories[0].url }}
+            // source={require('../../assets/img/story3.png')}
+
             />
           ) : (
               <Video
                 resizeMode={'cover'}
-                source={{ uri: urls.baseUrl + item.urls[0].url }}
+                source={{ uri: item.stories[0].url }}
+                // source={{ uri: urls.baseUrl + item.urls[0].url }}
                 //poster={require('../../assets/img/story2.png')}
                 //posterResizeMode={'cover'}
                 paused={true}
@@ -670,14 +679,13 @@ class VideoListing extends Component {
                 resizeMode={'cover'}
                 style={profileImg}
                 defaultSource={require('../../assets/img/defaultImage.png')}
-                source={{
-                  uri: item.profilePic ? urls.baseUrl + item.profilePic : null,
-                }}
+                source={{ uri: item.profile }}
+              // source={{uri: item.profilePic ? urls.baseUrl + item.profilePic : null,}}
               />
               <View style={profileUserName}>
                 <_Text numberOfLines={1} fsPrimary bold textColor={color.white}>
-                  {item.userName.charAt(0).toUpperCase() +
-                    item.userName.slice(1)}
+                  {item.username.charAt(0).toUpperCase() +
+                    item.username.slice(1)}
                 </_Text>
               </View>
             </View>
@@ -985,7 +993,6 @@ class VideoListing extends Component {
   };
 
   LoadRandomData = async () => {
-    console.log("LoadRandomData");
     const { page } = this.state;
     let loadData = {
       payload: {
@@ -1040,12 +1047,17 @@ class VideoListing extends Component {
     );
   };
 
+
+  closeModal = () => { this.setState({ modalVisible: false }) }
+
+
+
   render() {
     const {
       categoryDataSource, storiesDataSource,
       videoDataSource, appState, rate, duration, muted,
       paused, remainingTime, currentVisibleIndex, currentUserIndex,
-      isModelOpen, clickedLoadMore
+      isModelOpen, clickedLoadMore, modalVisible
     } = this.state;
 
     const {
@@ -1061,6 +1073,8 @@ class VideoListing extends Component {
     } = VideoListingStyle;
 
     const { isFetching, categoryData, videoData, videoListingError, viewProfileData } = this.props;
+
+
 
     return (
       <View style={mainContainer}>
@@ -1090,133 +1104,73 @@ class VideoListing extends Component {
             : null}
 
           {/* for Stories */}
-          {!this.props.storieDataError ?
-            <View style={mainStoriesContainer}>
-              <View style={storiesInnerView}>
-                <View style={recentStoriesView}>
-                  <_Text
-                    fsHeading
-                    fwPrimary
-                    numberOfLines={1}
-                    textColor={color.tertiaryGray}>
-                    {strings.recentStories}
-                  </_Text>
-                </View>
-                {/* <View style={watchAllView}>
-                    <TouchableOpacity style={watchTouchableView}>
-                      <_Text fsHeading numberOfLines={1} fwPrimary textColor={color.tertiaryGray}
-                        style={watchAllText}>
-                        {strings.watchAll}
-                      </_Text>
+          {/* {
+          !this.props.storieDataError ? */}
+          <View style={mainStoriesContainer}>
+            <View style={storiesInnerView}>
+              <View style={recentStoriesView}>
+                <_Text
+                  fsHeading
+                  fwPrimary
+                  numberOfLines={1}
+                  textColor={color.tertiaryGray}>
+                  {strings.recentStories}
+                </_Text>
+              </View>
+            </View>
+
+            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+              <View style={{ flexDirection: 'row' }} >
+                <TouchableOpacity onPress={() => this.createStory()}>
+                  <View style={storiesView}>
+                    {viewProfileData && viewProfileData.userProfile ?
+                      <FastImage
+                        style={storiesImg}
+                        source={{
+                          uri: urls.baseUrl + viewProfileData.userProfile[0].userpic,
+                          priority: FastImage.priority.high,
+                        }}
+                        resizeMode={FastImage.resizeMode.cover}
+                      />
+                      :
                       <Image
                         resizeMode={'cover'}
-                        style={[watchAllImage, { marginLeft: 8 }]}
-                        source={require('../../assets/img/watchAll.png')}
+                        style={storiesImg}
+                        defaultSource={require('../../assets/img/default.png')}
                       />
-                    </TouchableOpacity>
-                  </View> */}
-              </View>
+                    }
 
-              <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-                <View style={{ flexDirection: 'row' }} >
-                  <TouchableOpacity onPress={() => this.createStory()}>
-                    <View style={storiesView}>
-                      {viewProfileData && viewProfileData.userProfile ?
-                        <Image resizeMode={'cover'}
-                          style={storiesImg}
-                          defaultSource={require('../../assets/img/default.png')}
-                          source={{ uri: urls.baseUrl + viewProfileData.userProfile[0].userpic }}
-                        /> :
-                        <Image
+                    <View style={profilePicView}>
+                      <View style={profilePicInnerView}>
+                        <Animatable.Image
+                          animation="zoomIn"
                           resizeMode={'cover'}
-                          style={storiesImg}
-                          defaultSource={require('../../assets/img/default.png')}
+                          style={profileImg}
+                          source={require('../../assets/img/circle.png')}
                         />
-                      }
-
-                      <View style={profilePicView}>
-                        <View style={profilePicInnerView}>
-                          <Animatable.Image
-                            animation="zoomIn"
-                            resizeMode={'cover'}
-                            style={profileImg}
-                            source={require('../../assets/img/circle.png')}
-                          />
-                          <View style={profileUserName}>
-                            <_Text numberOfLines={1} fsPrimary bold textColor={color.white}>
-                              Your Story
+                        <View style={profileUserName}>
+                          <_Text numberOfLines={1} fsPrimary bold textColor={color.white}>
+                            Your Story
                           </_Text>
-                          </View>
                         </View>
                       </View>
                     </View>
-                  </TouchableOpacity>
-
-                  {/* {storiesDataSource && storiesDataSource.map((item, index) => (
-                    this.getStories(item, index)
-                  ))} */}
-
-                  {/* static  */}
-                  <View>
-                    <TouchableOpacity>
-                      <View style={storiesView}>
-                        <Image
-                          resizeMode={'cover'}
-                          style={storiesImg}
-                          source={require('../../assets/img/story1.png')}
-                        />
-                        <View style={profilePicView}>
-                          <View style={profilePicInnerView}>
-                            <Animatable.Image
-                              animation="zoomIn"
-                              resizeMode={'cover'}
-                              style={profileImg}
-                              source={require('../../assets/img/story2.png')}
-                            />
-                            <View style={profileUserName}>
-                              <_Text numberOfLines={1} fsPrimary bold textColor={color.white}>Alexander</_Text>
-                            </View>
-                          </View>
-                        </View>
-                      </View>
-                    </TouchableOpacity>
-
                   </View>
-                  <View>
-                    <TouchableOpacity
-                    >
-                      <View style={storiesView}>
-                        <Image
-                          resizeMode={'cover'}
-                          style={storiesImg}
-                          source={require('../../assets/img/story2.png')}
-                        />
-                        <View style={profilePicView}>
-                          <View style={profilePicInnerView}>
-                            <Animatable.Image
-                              animation="zoomIn"
-                              resizeMode={'cover'}
-                              style={profileImg}
-                              source={require('../../assets/img/story1.png')}
-                            />
-                            <View style={profileUserName}>
-                              <_Text numberOfLines={1} fsPrimary bold textColor={color.white}>John</_Text>
-                            </View>
-                          </View>
-                        </View>
-                      </View>
-                    </TouchableOpacity>
+                </TouchableOpacity>
 
-                  </View>
+                {stories && stories.map((item, index) => (
+                  this.getStoriesView(item, index)
+                ))}
 
+                {/* static  */}
 
-                </View>
+              </View>
 
-              </ScrollView>
+            </ScrollView>
 
-            </View>
-            : null
-          }
+          </View>
+          {/* : null
+          } */}
 
           {/* for VideListing */}
           <View style={{ backgroundColor: '#fafafa' }}>
@@ -1234,23 +1188,22 @@ class VideoListing extends Component {
             ) : null}
           </View>
 
+
+          {/* CubeNavigationHorizontal story */}
           <Modal
             animationType="slide"
             transparent={false}
             visible={isModelOpen}
             style={{ flex: 1 }}
-            onShow={() => {
-              if (currentUserIndex > 0) {
-                this.modalScroll.current.scrollTo(currentUserIndex, false);
-              }
-            }}
+            onShow={() => { if (currentUserIndex > 0) { this.modalScroll.current.scrollTo(currentUserIndex, false) } }}
             onRequestClose={() => this.closeStoryModal()}>
             <CubeNavigationHorizontal
               callBackAfterSwipe={g => this.onScrollChange(g)}
               ref={this.modalScroll}
               style={styles.container}>
-              {storiesDataSource &&
-                storiesDataSource.map((data, index) => (
+              {/* <View ref={this.modalScroll}> */}
+              {stories &&
+                stories.map((data, index) => (
                   <StoryContainer
                     onClose={() => this.onStoryClose()}
                     onStoryNext={() => this.onStoryNext()}
@@ -1259,9 +1212,25 @@ class VideoListing extends Component {
                     isNewStory={index !== this.state.currentUserIndex}
                   />
                 ))}
+              {/* </View> */}
             </CubeNavigationHorizontal>
           </Modal>
+
         </ScrollView>
+
+        {/* static story view */}
+        {modalVisible &&
+          <Modal
+            animationType="slide"
+            transparent={false}
+            visible={modalVisible}
+            onRequestClose={() => this.setState({ modalVisible: false })}>
+            <View>
+              <Carausal closeModal={this.closeModal} />
+            </View>
+          </Modal>
+        }
+
         {!clickedLoadMore && isFetching ? (
           <View style={activityIndicatorView}>
             <ActivityIndicator size="large" color={color.tertiaryGray} />
@@ -1359,7 +1328,7 @@ export default connect(
 
 
 
- // onViewableItemsChanged={this.onViewableItemsChanged}
-                // viewabilityConfig={{
-                //   viewAreaCoveragePercentThreshold: 100,
-                // }}
+// onViewableItemsChanged={this.onViewableItemsChanged}
+// viewabilityConfig={{
+//   viewAreaCoveragePercentThreshold: 100,
+// }}

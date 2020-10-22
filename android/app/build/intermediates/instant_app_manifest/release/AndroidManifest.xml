@@ -51,12 +51,23 @@
             android:name="com.guruapp.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/app_name"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- FOR DEEP LINKING -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="mychat" />
             </intent-filter>
         </activity>
         <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
@@ -130,15 +141,6 @@
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/share_download_paths" />
-        </provider>
-        <provider
-            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
-            android:authorities="com.guruapp.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true" >
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_provider_paths" />
         </provider>
         <provider
             android:name="com.RNFetchBlob.Utils.FileProvider"

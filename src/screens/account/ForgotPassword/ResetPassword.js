@@ -129,9 +129,8 @@ export default class ResetPassword extends Component {
 
                 </View>
 
-                <View style={{ marginTop: hp(5), alignItems: 'center' }}>
+                <View style={{ marginTop: hp(7), alignItems: 'center' }}>
                     <TouchableOpacity
-                        onPress={() => this.loginPress()}
                         style={{
                             width: wp(90), borderRadius: 3, height: hp(7), alignItems: 'center', justifyContent: 'center',
                             backgroundColor: color.loginColor

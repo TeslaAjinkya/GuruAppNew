@@ -100,6 +100,6 @@ export default {
     justifyContent: 'center',
   },
   likeDislikeImg: {
-    width: wp(4), height: hp(4)
+    width: wp(5), height: hp(4.1)
   }
 }

@@ -328,7 +328,9 @@ class Login extends Component {
                                 type="password"
                                 inputKey="password"
                                 value={password ? password : null}
-                                secureText={true} label={"Password"}
+                                secureText={true}
+                                secureTextEntry
+                                label={"Password"}
                                 onChangeText={this.onInputChanged}></_InputBox>
                         </View>
 
@@ -340,10 +342,10 @@ class Login extends Component {
                             </TouchableOpacity>
                         </View>
                         <View style={getHelp}>
-                            <_Text fsSmall textColor={color.teritary}>Forgot password?</_Text>
+                            <_Text fsSmall textColor={color.teritary}>Forgot password ?</_Text>
 
                             <TouchableOpacity onPress={() => this.props.navigation.navigate("ForgotPassword")}>
-                                <_Text fsSmall textColor={color.loginColor}> Get Help</_Text>
+                                <_Text fsSmall textColor={color.loginColor}>{' '} Get Help</_Text>
                             </TouchableOpacity>
                         </View>
                         <View style={continueView}>
@@ -375,7 +377,7 @@ class Login extends Component {
                     </View>
                     <View style={borderLine}></View>
                     <View style={dontHaveView}>
-                        <_Text fsSmall textColor={color.teritary}>Don't have an account? </_Text>
+                        <_Text fsSmall textColor={color.teritary}>Don't have an account ? </_Text>
                         <TouchableOpacity onPress={() => this.props.navigation.navigate("Register")}>
                             <_Text fsSmall textColor={color.loginColor}>Sign Up</_Text>
                         </TouchableOpacity>

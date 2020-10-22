@@ -31,7 +31,6 @@
             <option value="$PROJECT_DIR$/../node_modules/react-native-svg/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-vector-icons/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-video/android-exoplayer" />
-            <option value="$PROJECT_DIR$/../node_modules/react-native-webview/android" />
             <option value="$PROJECT_DIR$/../node_modules/rn-fetch-blob/android" />
           </set>
         </option>

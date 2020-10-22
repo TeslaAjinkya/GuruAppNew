@@ -10,95 +10,94 @@ import Video from 'react-native-video';
 import { ScrollView } from 'react-native-gesture-handler';
 import _ from 'lodash';
 
-  export default {
+export default {
     safeAreaView: {
         flex: 1,
-        backgroundColor: color.white
+        // backgroundColor: color.white
     },
     // for top Bar
-    firstContainer:{
-        flex: 0.06, 
-        backgroundColor: color.white, 
-        justifyContent:'center'
+    firstContainer: {
+        flex: 0.06,
+        backgroundColor: color.white,
+        justifyContent: 'center'
     },
-    firstContainerInner:{
-        flexDirection:'row', 
-        flex:1, 
-        alignItems:'center'
+    firstContainerInner: {
+        flexDirection: 'row',
+        flex: 1,
+        alignItems: 'center'
     },
-    logoView:{
+    logoView: {
         flex: 0.64
     },
-    logoImage:{
+    logoImage: {
         height: hp(4), width: hp(4), marginLeft: wp(3)
     },
-    firstContainerIconView:{
-        flex: 0.12, alignItems:'flex-start',
+    firstContainerIconView: {
+        flex: 0.12, alignItems: 'flex-start',
     },
-    searchImage:{
+    searchImage: {
         height: hp(2.5), width: hp(2.5)
     },
-    notificationImage:{
+    notificationImage: {
         height: hp(3), width: hp(2.5)
     },
-    profileImage:{
+    profileImage: {
         height: hp(4.5), width: hp(4.5), borderRadius: hp(4.5) / 2
     },
 
 
-  // for search 
-  searchInput: {
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderColor: '#CCC',
-    borderWidth: 1,
-    height: hp(7),
-    flexDirection: 'row',
-    justifyContent: 'space-between'
-  },
-  micModal: {
-    paddingVertical: 40,
-    paddingHorizontal: 20,
-    height: 50,
-    borderColor: 'white',
-    borderWidth: 0
-  },
-  stat: {
-    fontSize: 20,
-    textAlign: 'left',
-    marginBottom: 1,
-  },
+    // for search 
+    searchInput: {
+        paddingVertical: 10,
+        paddingHorizontal: 20,
+        borderColor: '#CCC',
+        borderWidth: 1,
+        height: hp(7),
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
+    micModal: {
+        paddingVertical: 40,
+        paddingHorizontal: 20,
+        height: 50,
+        borderColor: 'white',
+        borderWidth: 0
+    },
+    stat: {
+        fontSize: 20,
+        textAlign: 'left',
+        marginBottom: 1,
+    },
     inputStyle: {
         borderWidth: 0.5, height: Platform.OS !== 'ios' ? hp(5.5) : hp(4),
         borderColor: color.videoListingbackgroundColor,
         backgroundColor: color.searchInputBackColor,
     },
     //for Bottom bar
-    thirdMainContainer:{
-        flex:0.2, 
-        backgroundColor:color.white,
-        justifyContent:'center', 
-        alignItems:'center'
+    thirdMainContainer: {
+        flex: 0.2,
+        backgroundColor: color.white,
+        justifyContent: 'center',
+        alignItems: 'center'
     },
-    bottomImagesView:{
-        height: hp(3), 
+    bottomImagesView: {
+        height: hp(3),
         width: hp(3),
-        justifyContent:'center', 
-        alignItems:'center'
+        justifyContent: 'center',
+        alignItems: 'center'
     },
-    insideThirdContainer:{
-        flex:0.08
+    insideThirdContainer: {
+        flex: 0.08
     },
-    thirdContainerInner:{
-        flex:1,flexDirection:'row'
+    thirdContainerInner: {
+        flex: 1, flexDirection: 'row'
     },
 
     //for VideListing 
-    secondContainerMain:{
-        flex:0.86
+    secondContainerMain: {
+        flex: 0.86
     },
-    secondContainerInner:{
-        flex: hp(1) 
+    secondContainerInner: {
+        flex: hp(1)
     }
-  };
-  
+};

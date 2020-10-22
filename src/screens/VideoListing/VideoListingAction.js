@@ -69,6 +69,7 @@ export function getShareCount(payload) {
     axios
       .post(urls.Share.url, payload, configTwo)
       .then(response => {
+        console.log("response share", response);
         if (response.data.success) {
           dispatch(onSuccess(response.data, SHARE_DATA_SUCCESS));
         } else {

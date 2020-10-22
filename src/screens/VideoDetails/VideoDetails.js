@@ -21,7 +21,7 @@ import {
 import VideoPlayer from 'react-native-video-controls';
 
 import { Col, Row, Grid } from 'react-native-easy-grid';
-import { Toast } from 'native-base';
+import { Toast, Icon } from 'native-base';
 import Video, {
   OnSeekData,
   OnLoadData,
@@ -78,6 +78,10 @@ var createrName = '';
 var createrId = '';
 var videoKey = '';
 var createrLogo = '';
+
+const AnimatedIcon = Animatable.createAnimatableComponent(Icon)
+
+
 class VideoDetails extends Component {
   constructor(props) {
     super(props);
@@ -537,6 +541,8 @@ class VideoDetails extends Component {
 
   onLikeClicked(data) {
     const { likeFlag } = this.state;
+
+
     if (actionArray.length == 0) {
       if (data.operation == 0 || data.operation == 2) {
         actionArray.push({
@@ -789,7 +795,6 @@ class VideoDetails extends Component {
   };
 
   onLoad = data => {
-    console.log('onLoad');
 
     const { createrId, videoid } = this.props.route.params.videoData;
 
@@ -927,15 +932,11 @@ class VideoDetails extends Component {
     alert(error);
   };
 
-  shareVideo = async (url, data) => {
+  shareVideo = async (url, item) => {
     var res = encodeURI(url);
 
     const shareOptions = {
-      title: 'Share video',
-      email: 'gt20.ajinkya@gmail.com',
-      url: res,
-      social: Share.Social.INSTAGRAM,
-      failOnCancel: false,
+      message: res
     };
 
     try {
@@ -945,17 +946,17 @@ class VideoDetails extends Component {
         var sharePayload = {
           payload: {
             userId: userId,
-            videoId: data.videoid,
+            videoId: item.videoid,
           },
         };
 
         this.props.getShareCount(sharePayload);
       }
     } catch (error) {
-      console.log('Error =>', error.toString());
-      //setResult('error: '.concat(getErrorString(error)))
+      console.log('Error =>', error);
     }
   };
+
 
   formatTime(time = 0, duration) {
     time = Math.min(Math.max(time, 0), duration);
@@ -1221,6 +1222,16 @@ class VideoDetails extends Component {
     });
   };
 
+  onLike = () => {
+    this.smallAnimatedIcon.bounceIn()
+    this.props.onPressLike()
+  }
+
+  handleSmallAnimatedIconRef = (ref) => {
+    this.smallAnimatedIcon = ref
+  }
+
+
   render() {
     const {
       fullScreen,
@@ -1443,14 +1454,7 @@ class VideoDetails extends Component {
                             }}
                           />
                         )}
-                      {/* <Image
-                        source={require('../../assets/img/whiteHeartBordered.png')}
-                        style={{
-                          resizeMode: 'contain',
-                          height: hp(4),
-                          width: hp(4),
-                        }}
-                      /> */}
+
                       <_Text
                         numberOfLines={1}
                         fsSmall

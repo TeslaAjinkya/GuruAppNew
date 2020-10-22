@@ -16,15 +16,14 @@ const SCREEN_WIDTH = Dimensions.get('window').width;
 
 const StoryContainer = (props) => {
   const { user } = props;
-
   const { stories = [] } = user || {};
-  const storiesData = props.user.urls
+  const storiesData = props.user.stories
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isModelOpen, setModel] = useState(false);
   const [isPause, setIsPause] = useState(false);
   const [isLoaded, setLoaded] = useState(false);
   const [duration, setDuration] = useState(3);
-  const story = props.user.urls.length ? props.user.urls[currentIndex] : {};
+  const story = props.user.stories.length ? props.user.stories[currentIndex] : {};
   const { isReadMore, url } = story || {};
 
   // const onVideoLoaded = (length) => {
@@ -138,7 +137,7 @@ const StoryContainer = (props) => {
 
           {loading()}
 
-          <UserView name={user.userName} profile={user.profilePic} onClosePress={props.onClose} />
+          <UserView name={user.username} profile={user.profile} onClosePress={props.onClose} />
 
           {/* {isReadMore && <Readmore onReadMore={onReadMoreOpen} />} */}
 
